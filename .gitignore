@@ -201,9 +201,9 @@ Dependencies/
 
 
 ### SwiftPackageManager ###
-Packages
-xcuserdata
-*.xcodeproj
+# Packages
+# xcuserdata
+# *.xcodeproj
 
 
 ### Xcode ###
