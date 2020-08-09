@@ -62,6 +62,31 @@ abstract_target 'UDMTTargets' do
   end
 end
 
+target 'Domain' do
+  project 'Domain/Domain'
+  sharedPods
+  diPods
+  target 'DomainTests'
+end
+
+target 'AppData' do
+  project 'AppData/AppData'
+  use_frameworks!
+  sharedPods
+  target 'AppDataTests' do
+    diPods
+  end
+end
+
+target 'Networking' do
+  project 'Networking/Networking'
+  sharedPods
+  networkingPods
+  target 'NetworkingTests' do
+    diPods
+  end
+end
+
 post_install do |installer|
     installer.pods_project.targets.each do |target|
         target.build_configurations.each do |config|
