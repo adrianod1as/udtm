@@ -1,0 +1,62 @@
+/* 
+  Localizable.strings
+  Domain
+
+  Created by Adriano Dias on 09/08/20.
+  Copyright © 2020 dias. All rights reserved.
+*/
+
+"Symbol.zero" = "0";
+"Symbol.empty" = "";
+"Symbol.nonBreakingSpace" = " ";
+"Symbol.whitespace" = " ";
+"Symbol.empty" = "";
+"Symbol.Currency" = "R$";
+"Symbol.locale" = "pt_BR";
+"Symbol.percentage" = "%%";
+"Symbol.am" = "a.m";
+"Symbol.backspace" = "\\b";
+"Symbol.zeroCurrency" = "R$0,00";
+"Error.Message.multiRequiment" = "Campos obrigatórios.";
+"Error.Message.requiment" = "Campo obrigatório.";
+"Error.Message.cpf" = "CPF inválido.";
+"Error.Message.rg" = "RG inválido.";
+"Error.Message.name" = "O nome deve ser composto, conter apenas letras e ter ao menos %d caractéres.";
+"Error.Title.ops" = "Ops!";
+"Error.Message.Address.search" = "Não foi possível encontrar o endereço para o cep informado.";
+"Error.Message.Address.validation" = "Não foi possível validar o endereço";
+"Error.Message.zip" = "CEP inválido.";
+"Error.Message.today" = "A data deve ser a partir do dia atual.";
+"Error.Message.date" = "Data inválida.";
+"Error.Message.code" = "Código inválido.";
+"Error.Message.email" = "E-mail inválido.";
+"Error.Message.different" = "Os campos diferem.";
+"Error.Message.cellphone" = "Número de celular inválido.";
+"Error.Message.cardNumber" = "Número inválido.";
+"Error.Message.Age.minimum" = "Você precisa ter mais de %d anos.";
+"Error.Message.Age.maximum" = "Você precisa ter menos de %d anos.";
+"Error.Message.between" = "O valor deve ser entre %@ e %@";
+"Error.Message.greater" = "O valor deve ser maior que %@.";
+"Error.Message.Value.minimum" = "O valor deve ser no mínimo %@.";
+"Error.Message.Value.maximum" = "O valor deve ser no máximo %@.";
+"Error.Message.Value.noMoney" = "Saldo insuficiente.";
+"Error.Message.Password.invalid" = "Senha inválida.";
+"Error.Message.Bank.invalidCode" = "Código inválido.";
+"Error.Message.Agency.invalid" = "Agência inválida.";
+"Error.Message.Account.invalid" = "Conta inválida.";
+"Error.Message.Transfer.fee" = "Com a taxa de %@ do TED, o valor máximo disponível transferência é de %@.";
+"Error.Message.Transfer.noMoney" = "Saldo insuficiente.";
+"Error.Description.connectionProblem" = "Tivemos um problema de conexão, tente novamente mais tarde.";
+"Error.Description.unexpected" = "Houve um erro inesperado.";
+"Error.Description.noInternetConnection" = "Sem conexão com a Internet.";
+"Error.Description.expiredSession" = "Sessão Expirada.";
+"Error.Code.duplicatedAccount" = "E007";
+"Error.Code.unavailableProposal" = "E122";
+"Error.Code.scammer" = "E135";
+"Error.Code.disablingBlock" = "E140";
+"RegularExpression.Error.illegal" = "Illegal regular expression:";
+"Withdraw.Value.minimum" = "R$10,00";
+"Withdraw.Value.maximum" = "R$1.500,00";
+"Deposit.Value.minimum" = "R$20,00";
+"Deposit.Value.maximum" = "R$10.000,00";
+
