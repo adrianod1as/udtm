@@ -87,6 +87,15 @@ target 'Networking' do
   end
 end
 
+target 'Storage' do
+  project 'Storage/Storage'
+  sharedPods
+  storagePods
+  target 'StorageTests' do
+    diPods
+  end
+end
+
 post_install do |installer|
     installer.pods_project.targets.each do |target|
         target.build_configurations.each do |config|
