@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  Networking
+
+  Created by Adriano Dias on 09/08/20.
+  Copyright © 2020 dias. All rights reserved.
+*/
+
+"Error.Descriction.data" = "Não foi possível recuperar os dados.";
+"Error.Descriction.balance" = "Não foi possivel obter o saldo";
+"Error.Descriction.request" = "Não foi possível efetuar a requisição.";
+"Error.Description.connectionProblem" = "Tivemos um problema de conexão, tente novamente mais tarde.";
+"Error.Description.noInternetConnection" = "Sem conexão com a Internet.";
+"Error.Description.expiredSession" = "Sessão Expirada.";
+"Error.Field.single" = "error";
+"Error.Field.collection" = "errors";
+"Error.Field.message" = "message";
+"Error.Field.object" = "message";
+"Error.Field.fault" = "fault";
+"Error.Field.code" = "code";
+"Error.Code.duplicate" = "E007";
+"Response.Field.balance" = "balance";
+"Response.Field.token" = "token";
+"Response.Field.data" = "data";
+"Header.Field.authorization" = "Authorization";
+"Header.Field.xauthorization" = "X-Authorization";
+"Header.Value.bearer" = "Bearer";
+"Error.Description.pinnedCertificate" = "Ocorreu um erro no certificado. Por favor, tente novamente mais tarde.";
