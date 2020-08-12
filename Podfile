@@ -62,6 +62,13 @@ abstract_target 'UDMTTargets' do
   end
 end
 
+target 'DI' do
+  project 'DI/DI'
+  sharedPods
+  diPods
+  target 'DITests'
+end
+
 target 'Domain' do
   project 'Domain/Domain'
   sharedPods

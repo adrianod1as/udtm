@@ -621,7 +621,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 35141BFCB190CD0EB5D95611 /* Pods-Storage-StorageTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KYWC2RHW78;
 				INFOPLIST_FILE = StorageTests/Info.plist;
@@ -641,7 +641,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AC5043D7D1C38830A5387583 /* Pods-Storage-StorageTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KYWC2RHW78;
 				INFOPLIST_FILE = StorageTests/Info.plist;
