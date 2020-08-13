@@ -29,11 +29,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8E73C63F84E89E75F1D2C3A6 /* Pods-AppData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppData.debug.xcconfig"; path = "Target Support Files/Pods-AppData/Pods-AppData.debug.xcconfig"; sourceTree = "<group>"; };
+		8E73C63F84E89E75F1D2C3A6 /* Pods-AppData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppData.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-AppData/Pods-AppData.debug.xcconfig"; sourceTree = "<group>"; };
 		A62B738666314F24FAF8EC4D /* Pods_AppData_AppDataTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppData_AppDataTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9EBCCE1B931A3406F322028 /* Pods_AppData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA3F2904857337D2208B74EB /* Pods-AppData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppData.release.xcconfig"; path = "Target Support Files/Pods-AppData/Pods-AppData.release.xcconfig"; sourceTree = "<group>"; };
-		C20D12729269A60CFB81CA4E /* Pods-AppData-AppDataTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppData-AppDataTests.debug.xcconfig"; path = "Target Support Files/Pods-AppData-AppDataTests/Pods-AppData-AppDataTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AA3F2904857337D2208B74EB /* Pods-AppData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppData.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-AppData/Pods-AppData.release.xcconfig"; sourceTree = "<group>"; };
+		C20D12729269A60CFB81CA4E /* Pods-AppData-AppDataTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppData-AppDataTests.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-AppData-AppDataTests/Pods-AppData-AppDataTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E14443FF24E0555800008203 /* AppData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E144440224E0555900008203 /* AppData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppData.h; sourceTree = "<group>"; };
 		E144440324E0555900008203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,7 +44,7 @@
 		E144443024E056C800008203 /* SignOutRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignOutRepository.swift; sourceTree = "<group>"; };
 		E144443324E056C800008203 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		E144444924E05A2500008203 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F0BE4470F6D9B59519316ECC /* Pods-AppData-AppDataTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppData-AppDataTests.release.xcconfig"; path = "Target Support Files/Pods-AppData-AppDataTests/Pods-AppData-AppDataTests.release.xcconfig"; sourceTree = "<group>"; };
+		F0BE4470F6D9B59519316ECC /* Pods-AppData-AppDataTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppData-AppDataTests.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-AppData-AppDataTests/Pods-AppData-AppDataTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

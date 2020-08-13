@@ -85,7 +85,7 @@ target 'Domain' do
 end
 
 target 'AppData' do
-  project 'AppData/AppData'
+  project 'Data/AppData/AppData'
   use_frameworks!
   sharedPods
   target 'AppDataTests' do
@@ -94,7 +94,7 @@ target 'AppData' do
 end
 
 target 'Networking' do
-  project 'Networking/Networking'
+  project 'Data/Networking/Networking'
   sharedPods
   networkingPods
   target 'NetworkingTests' do
@@ -103,7 +103,7 @@ target 'Networking' do
 end
 
 target 'Storage' do
-  project 'Storage/Storage'
+  project 'Data/Storage/Storage'
   sharedPods
   storagePods
   target 'StorageTests' do
