@@ -69,6 +69,14 @@ target 'DI' do
   target 'DITests'
 end
 
+target 'AppNavigation' do
+  project 'AppNavigation/AppNavigation'
+  use_frameworks!
+  sharedPods
+  diPods
+  target 'AppNavigationTests'
+end
+
 target 'Domain' do
   project 'Domain/Domain'
   sharedPods

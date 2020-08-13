@@ -16,6 +16,7 @@
 		E14A073B24E4B7FA006A5DC5 /* Storage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14A073A24E4B7FA006A5DC5 /* Storage.framework */; };
 		E14A073E24E4B802006A5DC5 /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14A073D24E4B802006A5DC5 /* Networking.framework */; };
 		E14A074124E4B80C006A5DC5 /* AppData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14A074024E4B80C006A5DC5 /* AppData.framework */; };
+		E14A076924E4B98B006A5DC5 /* AppNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14A076824E4B98B006A5DC5 /* AppNavigation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		E14A073A24E4B7FA006A5DC5 /* Storage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Storage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E14A073D24E4B802006A5DC5 /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E14A074024E4B80C006A5DC5 /* AppData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E14A076824E4B98B006A5DC5 /* AppNavigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppNavigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E961799DCE08BEDCD22123AB /* Pods-DI-DITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DI-DITests.release.xcconfig"; path = "Target Support Files/Pods-DI-DITests/Pods-DI-DITests.release.xcconfig"; sourceTree = "<group>"; };
 		EAF7041DB4E06A98E57967FB /* Pods_DI_DITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DI_DITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F06663FD99698F52D06EFA26 /* Pods_DI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E14A076924E4B98B006A5DC5 /* AppNavigation.framework in Frameworks */,
 				E14A073E24E4B802006A5DC5 /* Networking.framework in Frameworks */,
 				E14A074124E4B80C006A5DC5 /* AppData.framework in Frameworks */,
 				E14A073724E4B7F2006A5DC5 /* Domain.framework in Frameworks */,
@@ -87,6 +90,7 @@
 		D2863327F51B1A0F0239366C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E14A076824E4B98B006A5DC5 /* AppNavigation.framework */,
 				E14A074024E4B80C006A5DC5 /* AppData.framework */,
 				E14A073D24E4B802006A5DC5 /* Networking.framework */,
 				E14A073A24E4B7FA006A5DC5 /* Storage.framework */,
@@ -515,6 +519,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9343C734C488A452596E422C /* Pods-DI-DITests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KYWC2RHW78;
 				INFOPLIST_FILE = DITests/Info.plist;
@@ -534,6 +539,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E961799DCE08BEDCD22123AB /* Pods-DI-DITests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KYWC2RHW78;
 				INFOPLIST_FILE = DITests/Info.plist;
