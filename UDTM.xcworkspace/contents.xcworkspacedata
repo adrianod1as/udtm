@@ -5,11 +5,18 @@
       location = "group:UDTM.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:AppNavigation/AppNavigation.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:DI/DI.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:AppNavigation/AppNavigation.xcodeproj">
+   </FileRef>
+   <Group
+      location = "container:"
+      name = "Presentation">
+      <FileRef
+         location = "group:Presentation/Common/Common.xcodeproj">
+      </FileRef>
+   </Group>
    <FileRef
       location = "group:Domain/Domain.xcodeproj">
    </FileRef>

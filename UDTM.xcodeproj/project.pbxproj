@@ -28,6 +28,8 @@
 		E14A076E24E4B99A006A5DC5 /* DI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E14A076C24E4B99A006A5DC5 /* DI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E14A077024E4B9A1006A5DC5 /* AppNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14A076F24E4B9A1006A5DC5 /* AppNavigation.framework */; };
 		E14A077124E4B9A1006A5DC5 /* AppNavigation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E14A076F24E4B9A1006A5DC5 /* AppNavigation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E195A1B424E4C7C300C513F9 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E195A1B324E4C7C300C513F9 /* Common.framework */; };
+		E195A1B524E4C7C300C513F9 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E195A1B324E4C7C300C513F9 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,7 @@
 				E144451924E0790500008203 /* Networking.framework in Embed Frameworks */,
 				E144451324E078F200008203 /* AppData.framework in Embed Frameworks */,
 				E144450F24E078EA00008203 /* Domain.framework in Embed Frameworks */,
+				E195A1B524E4C7C300C513F9 /* Common.framework in Embed Frameworks */,
 				E144451624E078FC00008203 /* Storage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -92,6 +95,7 @@
 		E145729A24DF508E0026D925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E14A076C24E4B99A006A5DC5 /* DI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E14A076F24E4B9A1006A5DC5 /* AppNavigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppNavigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E195A1B324E4C7C300C513F9 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 				E144451524E078FC00008203 /* Storage.framework in Frameworks */,
 				E14A076D24E4B99A006A5DC5 /* DI.framework in Frameworks */,
 				E144451824E0790500008203 /* Networking.framework in Frameworks */,
+				E195A1B424E4C7C300C513F9 /* Common.framework in Frameworks */,
 				E144451224E078F200008203 /* AppData.framework in Frameworks */,
 				E14A077024E4B9A1006A5DC5 /* AppNavigation.framework in Frameworks */,
 			);
@@ -141,6 +146,7 @@
 		B312682DFEFA3B2839EC0759 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E195A1B324E4C7C300C513F9 /* Common.framework */,
 				E14A076F24E4B9A1006A5DC5 /* AppNavigation.framework */,
 				E14A076C24E4B99A006A5DC5 /* DI.framework */,
 				E144451724E0790500008203 /* Networking.framework */,

@@ -62,6 +62,14 @@ abstract_target 'UDMTTargets' do
   end
 end
 
+target 'Common' do
+  project 'Presentation/Common/Common'
+  sharedPods
+  presentationPods
+  diPods
+  target 'CommonTests'
+end
+
 target 'DI' do
   project 'DI/DI'
   sharedPods
