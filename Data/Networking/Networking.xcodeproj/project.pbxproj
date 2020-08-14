@@ -625,7 +625,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2C9917918F8302349AC5BA5A /* Pods-Networking-NetworkingTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KYWC2RHW78;
 				INFOPLIST_FILE = NetworkingTests/Info.plist;
@@ -645,7 +644,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6EAC3EBCAB67BAE0294F3CCE /* Pods-Networking-NetworkingTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KYWC2RHW78;
 				INFOPLIST_FILE = NetworkingTests/Info.plist;

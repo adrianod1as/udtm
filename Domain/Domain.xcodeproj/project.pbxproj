@@ -707,7 +707,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FE07C264BCEEC6CBD8219285 /* Pods-Domain-DomainTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KYWC2RHW78;
 				INFOPLIST_FILE = DomainTests/Info.plist;
@@ -728,7 +727,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B3C1624FFAB38BC409152EF /* Pods-Domain-DomainTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KYWC2RHW78;
 				INFOPLIST_FILE = DomainTests/Info.plist;

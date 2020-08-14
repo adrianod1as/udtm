@@ -100,11 +100,11 @@ PODS:
   - NVActivityIndicatorView/Base (5.0.0)
   - NVActivityIndicatorView/Extended (5.0.0):
     - NVActivityIndicatorView/Base
-  - OxeNetworking (0.1.8):
+  - OxeNetworking (0.1.9):
     - Moya (~> 14.0)
-    - OxeNetworking/Core (= 0.1.8)
+    - OxeNetworking/Core (= 0.1.9)
     - SwiftyJSON (~> 5.0)
-  - OxeNetworking/Core (0.1.8):
+  - OxeNetworking/Core (0.1.9):
     - Moya (~> 14.0)
     - SwiftyJSON (~> 5.0)
   - PromisesObjC (1.2.9)
@@ -226,7 +226,7 @@ SPEC CHECKSUMS:
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
   NVActivityIndicatorView: f109ed069924ac1b4adbc1ae9cfaeac0be1d6c2c
-  OxeNetworking: 4e1a2cdea9f7ea3befd2fb0031499348363bb46f
+  OxeNetworking: 0b35a3876601f4e6f8e83e35fc335fc261ee3fc6
   PromisesObjC: b48e0338dbbac2207e611750777895f7a5811b75
   Protobuf: 2793fcd0622a00b546c60e7cbbcc493e043e9bb9
   SwiftDate: 874e8bbc13bde4e6431d88a8fd3cffeabc0a73f6
@@ -240,6 +240,6 @@ SPEC CHECKSUMS:
   SwinjectStoryboard: f0d5b1c16459949d6ff1cbb6610107946b18e1f8
   UIGradient: 2364e9ebac232686db220713b4d42a68222fffb2
 
-PODFILE CHECKSUM: 0dfa4963d2c8d56c7e4fca44d95d16a605dbb068
+PODFILE CHECKSUM: 5d9cc371f2013eab456a247b10f850301a54882e
 
 COCOAPODS: 1.9.3
