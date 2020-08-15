@@ -28,6 +28,8 @@
 		E14A076E24E4B99A006A5DC5 /* DI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E14A076C24E4B99A006A5DC5 /* DI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E14A077024E4B9A1006A5DC5 /* AppNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14A076F24E4B9A1006A5DC5 /* AppNavigation.framework */; };
 		E14A077124E4B9A1006A5DC5 /* AppNavigation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E14A076F24E4B9A1006A5DC5 /* AppNavigation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E180EC7A24E8A9D200308069 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E180EC7924E8A9D200308069 /* Localizable.strings */; };
+		E180EC7F24E8A9FE00308069 /* SwiftGenStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E180EC7E24E8A9FE00308069 /* SwiftGenStrings.swift */; };
 		E195A1B424E4C7C300C513F9 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E195A1B324E4C7C300C513F9 /* Common.framework */; };
 		E195A1B524E4C7C300C513F9 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E195A1B324E4C7C300C513F9 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -94,6 +96,8 @@
 		E145729A24DF508E0026D925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E14A076C24E4B99A006A5DC5 /* DI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E14A076F24E4B9A1006A5DC5 /* AppNavigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppNavigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E180EC7924E8A9D200308069 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		E180EC7E24E8A9FE00308069 /* SwiftGenStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftGenStrings.swift; sourceTree = "<group>"; };
 		E195A1B324E4C7C300C513F9 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7F79AE1EB3251250F4F3F44 /* Pods-UDMTTargets-UDTM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UDMTTargets-UDTM.release.xcconfig"; path = "Target Support Files/Pods-UDMTTargets-UDTM/Pods-UDMTTargets-UDTM.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -184,6 +188,8 @@
 		E145727524DF508C0026D925 /* UDTM */ = {
 			isa = PBXGroup;
 			children = (
+				E180EC7B24E8A9E700308069 /* Helpers */,
+				E180EC7824E8A9C200308069 /* Resources */,
 				E145727624DF508C0026D925 /* AppDelegate.swift */,
 				E145727A24DF508C0026D925 /* ViewController.swift */,
 				E145727C24DF508C0026D925 /* Main.storyboard */,
@@ -212,6 +218,38 @@
 			path = UDTMUITests;
 			sourceTree = "<group>";
 		};
+		E180EC7824E8A9C200308069 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E180EC7924E8A9D200308069 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E180EC7B24E8A9E700308069 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E180EC7C24E8A9ED00308069 /* Constants */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E180EC7C24E8A9ED00308069 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				E180EC7D24E8A9F200308069 /* Generated */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		E180EC7D24E8A9F200308069 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				E180EC7E24E8A9FE00308069 /* SwiftGenStrings.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -225,6 +263,7 @@
 				E145727124DF508C0026D925 /* Resources */,
 				E144451024E078EA00008203 /* Embed Frameworks */,
 				D6EBC1BAAD80244013E2B741 /* [CP] Embed Pods Frameworks */,
+				E180EC7724E8A7D300308069 /* swiftlint */,
 			);
 			buildRules = (
 			);
@@ -321,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E145728324DF508E0026D925 /* LaunchScreen.storyboard in Resources */,
+				E180EC7A24E8A9D200308069 /* Localizable.strings in Resources */,
 				E145728024DF508E0026D925 /* Assets.xcassets in Resources */,
 				E145727E24DF508C0026D925 /* Main.storyboard in Resources */,
 			);
@@ -404,6 +444,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UDMTTargets-UDTM/Pods-UDMTTargets-UDTM-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E180EC7724E8A7D300308069 /* swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -413,6 +471,7 @@
 			files = (
 				E145727B24DF508C0026D925 /* ViewController.swift in Sources */,
 				E145727724DF508C0026D925 /* AppDelegate.swift in Sources */,
+				E180EC7F24E8A9FE00308069 /* SwiftGenStrings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

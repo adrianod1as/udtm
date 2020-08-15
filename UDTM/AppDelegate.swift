@@ -46,7 +46,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return currentOrientation
     }
 
-
-
 }
-

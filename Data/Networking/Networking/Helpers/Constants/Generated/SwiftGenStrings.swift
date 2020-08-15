@@ -8,23 +8,13 @@ import Foundation
 // MARK: - Strings
 
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
-// swiftlint:disable nesting type_body_length type_name
+// swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 public enum L10n {
 
   public enum Error {
     public enum Code {
       /// E007
       public static let duplicate = L10n.tr("Localizable", "Error.Code.duplicate")
-    }
-    public enum Credentials {
-      public enum Code {
-        /// E057
-        public static let incorrectPassword = L10n.tr("Localizable", "Error.Credentials.Code.incorrectPassword")
-        /// E014
-        public static let invalid = L10n.tr("Localizable", "Error.Credentials.Code.invalid")
-        /// E016
-        public static let passwordChanged = L10n.tr("Localizable", "Error.Credentials.Code.passwordChanged")
-      }
     }
     public enum Descriction {
       /// Não foi possivel obter o saldo
@@ -58,22 +48,6 @@ public enum L10n {
       /// error
       public static let single = L10n.tr("Localizable", "Error.Field.single")
     }
-    public enum Quiz {
-      /// Não foi possível encontrar um quiz para esse cpf.
-      public static let notFound = L10n.tr("Localizable", "Error.Quiz.notFound")
-      public enum Code {
-        /// E074
-        public static let exceededAttempts = L10n.tr("Localizable", "Error.Quiz.Code.exceededAttempts")
-        /// E059
-        public static let incorrectAnswer = L10n.tr("Localizable", "Error.Quiz.Code.incorrectAnswer")
-      }
-    }
-    public enum Transaction {
-      public enum Code {
-        /// E048
-        public static let incorrectPassword = L10n.tr("Localizable", "Error.Transaction.Code.incorrectPassword")
-      }
-    }
   }
 
   public enum Header {
@@ -101,7 +75,7 @@ public enum L10n {
   }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
-// swiftlint:enable nesting type_body_length type_name
+// swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces
 
 // MARK: - Implementation Details
 
@@ -114,8 +88,6 @@ extension L10n {
 
 // swiftlint:disable convenience_type
 private final class BundleToken {
-  static let bundle: Bundle = {
-    Bundle(for: BundleToken.self)
-  }()
+  static let bundle = Bundle(for: BundleToken.self)
 }
 // swiftlint:enable convenience_type

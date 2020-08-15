@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		9A82359A21B9DB20D60A1F53 /* Pods_Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1852D88167A2E224D0F69714 /* Pods_Common.framework */; };
 		A6EF26ED1781B6B32EFAB0F7 /* Pods_Common_CommonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90FAEC7C7409D6B2FB869B4 /* Pods_Common_CommonTests.framework */; };
+		E180EC8424E8AA1500308069 /* SwiftGenFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E180EC8024E8AA1500308069 /* SwiftGenFonts.swift */; };
+		E180EC8524E8AA1500308069 /* SwiftGenColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E180EC8124E8AA1500308069 /* SwiftGenColors.swift */; };
+		E180EC8624E8AA1500308069 /* SwiftGenAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E180EC8224E8AA1500308069 /* SwiftGenAssets.swift */; };
+		E180EC8724E8AA1500308069 /* SwiftGenStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E180EC8324E8AA1500308069 /* SwiftGenStrings.swift */; };
 		E195A19A24E4C6AB00C513F9 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E195A19024E4C6AB00C513F9 /* Common.framework */; };
 		E195A19F24E4C6AC00C513F9 /* CommonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E195A19E24E4C6AB00C513F9 /* CommonTests.swift */; };
 		E195A1A124E4C6AC00C513F9 /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = E195A19324E4C6AB00C513F9 /* Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -34,6 +38,10 @@
 		4C8C3D2CA0220236CE06710E /* Pods-Common.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Common.release.xcconfig"; path = "Target Support Files/Pods-Common/Pods-Common.release.xcconfig"; sourceTree = "<group>"; };
 		97ABB9280BF54070E04FA671 /* Pods-Common.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Common.debug.xcconfig"; path = "Target Support Files/Pods-Common/Pods-Common.debug.xcconfig"; sourceTree = "<group>"; };
 		C90FAEC7C7409D6B2FB869B4 /* Pods_Common_CommonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Common_CommonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E180EC8024E8AA1500308069 /* SwiftGenFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftGenFonts.swift; sourceTree = "<group>"; };
+		E180EC8124E8AA1500308069 /* SwiftGenColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftGenColors.swift; sourceTree = "<group>"; };
+		E180EC8224E8AA1500308069 /* SwiftGenAssets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftGenAssets.swift; sourceTree = "<group>"; };
+		E180EC8324E8AA1500308069 /* SwiftGenStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftGenStrings.swift; sourceTree = "<group>"; };
 		E195A19024E4C6AB00C513F9 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E195A19324E4C6AB00C513F9 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		E195A19424E4C6AB00C513F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -185,6 +193,10 @@
 		E195A1DD24E4C87800C513F9 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
+				E180EC8224E8AA1500308069 /* SwiftGenAssets.swift */,
+				E180EC8124E8AA1500308069 /* SwiftGenColors.swift */,
+				E180EC8024E8AA1500308069 /* SwiftGenFonts.swift */,
+				E180EC8324E8AA1500308069 /* SwiftGenStrings.swift */,
 			);
 			path = Generated;
 			sourceTree = "<group>";
@@ -317,6 +329,7 @@
 				TargetAttributes = {
 					E195A18F24E4C6AB00C513F9 = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 					E195A19824E4C6AB00C513F9 = {
 						CreatedOnToolsVersion = 11.6;
@@ -431,6 +444,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E180EC8624E8AA1500308069 /* SwiftGenAssets.swift in Sources */,
+				E180EC8724E8AA1500308069 /* SwiftGenStrings.swift in Sources */,
+				E180EC8524E8AA1500308069 /* SwiftGenColors.swift in Sources */,
+				E180EC8424E8AA1500308069 /* SwiftGenFonts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,6 +598,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 97ABB9280BF54070E04FA671 /* Pods-Common.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = KYWC2RHW78;
@@ -597,6 +615,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.dias.udtm.Common;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -606,6 +625,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4C8C3D2CA0220236CE06710E /* Pods-Common.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = KYWC2RHW78;
@@ -631,6 +651,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 31C141622C0F2681072A9FAE /* Pods-Common-CommonTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KYWC2RHW78;
 				INFOPLIST_FILE = "Common/Supporting Files/Info.plist";
@@ -650,6 +671,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F23D1EDB667B8F31C5D0DB9F /* Pods-Common-CommonTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KYWC2RHW78;
 				INFOPLIST_FILE = "Common/Supporting Files/Info.plist";
