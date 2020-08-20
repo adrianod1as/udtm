@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import Swinject
+import DI
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var assembler: Assembler?
     var currentOrientation: UIInterfaceOrientationMask = .portrait
+    private lazy var dependencyInjector: DependencyInjector = {
+        return DependencyInjector(environment: SetupConstants.environment)
+    }()
 
     override init() {
         super.init()
@@ -24,7 +30,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
-    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+    func application(_ application: UIApplication,
+                     didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        dependencyInjector.build { assembler, appCoordinator in
+            self.assembler = assembler
+            window?.makeKeyAndVisible()
+            window?.rootViewController = appCoordinator.navigationController
+            appCoordinator.start()
+        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

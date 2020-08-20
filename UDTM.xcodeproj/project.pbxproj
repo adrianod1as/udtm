@@ -32,6 +32,7 @@
 		E180EC7F24E8A9FE00308069 /* SwiftGenStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E180EC7E24E8A9FE00308069 /* SwiftGenStrings.swift */; };
 		E195A1B424E4C7C300C513F9 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E195A1B324E4C7C300C513F9 /* Common.framework */; };
 		E195A1B524E4C7C300C513F9 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E195A1B324E4C7C300C513F9 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E1C9F26724EE19A300DEE93E /* SetupConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C9F26624EE19A300DEE93E /* SetupConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		E180EC7924E8A9D200308069 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		E180EC7E24E8A9FE00308069 /* SwiftGenStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftGenStrings.swift; sourceTree = "<group>"; };
 		E195A1B324E4C7C300C513F9 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1C9F26624EE19A300DEE93E /* SetupConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupConstants.swift; sourceTree = "<group>"; };
 		F7F79AE1EB3251250F4F3F44 /* Pods-UDMTTargets-UDTM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UDMTTargets-UDTM.release.xcconfig"; path = "Target Support Files/Pods-UDMTTargets-UDTM/Pods-UDMTTargets-UDTM.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -196,6 +198,7 @@
 				E145727F24DF508E0026D925 /* Assets.xcassets */,
 				E145728124DF508E0026D925 /* LaunchScreen.storyboard */,
 				E145728424DF508E0026D925 /* Info.plist */,
+				E1C9F26624EE19A300DEE93E /* SetupConstants.swift */,
 			);
 			path = UDTM;
 			sourceTree = "<group>";
@@ -470,6 +473,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E145727B24DF508C0026D925 /* ViewController.swift in Sources */,
+				E1C9F26724EE19A300DEE93E /* SetupConstants.swift in Sources */,
 				E145727724DF508C0026D925 /* AppDelegate.swift in Sources */,
 				E180EC7F24E8A9FE00308069 /* SwiftGenStrings.swift in Sources */,
 			);
