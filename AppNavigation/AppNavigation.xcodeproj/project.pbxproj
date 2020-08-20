@@ -13,6 +13,9 @@
 		E14A075D24E4B8FF006A5DC5 /* AppNavigationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14A075C24E4B8FF006A5DC5 /* AppNavigationTests.swift */; };
 		E14A075F24E4B8FF006A5DC5 /* AppNavigation.h in Headers */ = {isa = PBXBuildFile; fileRef = E14A075124E4B8FF006A5DC5 /* AppNavigation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E195A1B024E4C79900C513F9 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E195A1AF24E4C79900C513F9 /* Common.framework */; };
+		E1CE96C324EDF97F006DEA27 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CE96C224EDF97F006DEA27 /* AppCoordinator.swift */; };
+		E1CE96C524EDF9AD006DEA27 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CE96C424EDF9AD006DEA27 /* Coordinator.swift */; };
+		E1CE96D624EE087D006DEA27 /* CoordinatorManufacturing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CE96D524EE087D006DEA27 /* CoordinatorManufacturing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +42,9 @@
 		E14A075C24E4B8FF006A5DC5 /* AppNavigationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationTests.swift; sourceTree = "<group>"; };
 		E14A075E24E4B8FF006A5DC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E195A1AF24E4C79900C513F9 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1CE96C224EDF97F006DEA27 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		E1CE96C424EDF9AD006DEA27 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		E1CE96D524EE087D006DEA27 /* CoordinatorManufacturing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorManufacturing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,9 @@
 			children = (
 				E14A075124E4B8FF006A5DC5 /* AppNavigation.h */,
 				E14A075224E4B8FF006A5DC5 /* Info.plist */,
+				E1CE96C224EDF97F006DEA27 /* AppCoordinator.swift */,
+				E1CE96C424EDF9AD006DEA27 /* Coordinator.swift */,
+				E1CE96D524EE087D006DEA27 /* CoordinatorManufacturing.swift */,
 			);
 			path = AppNavigation;
 			sourceTree = "<group>";
@@ -188,6 +197,7 @@
 				TargetAttributes = {
 					E14A074D24E4B8FF006A5DC5 = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 					E14A075624E4B8FF006A5DC5 = {
 						CreatedOnToolsVersion = 11.6;
@@ -299,6 +309,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1CE96D624EE087D006DEA27 /* CoordinatorManufacturing.swift in Sources */,
+				E1CE96C524EDF9AD006DEA27 /* Coordinator.swift in Sources */,
+				E1CE96C324EDF97F006DEA27 /* AppCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +458,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4FAEE565BBB3299BCC9C59E7 /* Pods-AppNavigation.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = KYWC2RHW78;
@@ -461,6 +475,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.dias.udtm.navigation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -470,6 +485,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D21BFBEAE42288E591BF73F1 /* Pods-AppNavigation.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = KYWC2RHW78;
@@ -495,6 +511,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 07B0187C5A49634A41DD751A /* Pods-AppNavigation-AppNavigationTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KYWC2RHW78;
 				INFOPLIST_FILE = AppNavigationTests/Info.plist;
@@ -514,6 +531,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 84B32F7B56E2D7BC4AAFB060 /* Pods-AppNavigation-AppNavigationTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KYWC2RHW78;
 				INFOPLIST_FILE = AppNavigationTests/Info.plist;
