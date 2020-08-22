@@ -77,6 +77,7 @@
 		950B017C9F39539BCA4B086E /* Pods-UDMTTargets-UDTM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UDMTTargets-UDTM.debug.xcconfig"; path = "Target Support Files/Pods-UDMTTargets-UDTM/Pods-UDMTTargets-UDTM.debug.xcconfig"; sourceTree = "<group>"; };
 		D0CFA891E2C6AE40132C3D15 /* Pods-UDTMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UDTMTests.debug.xcconfig"; path = "Target Support Files/Pods-UDTMTests/Pods-UDTMTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E12F4EB524F17D3A0084EAD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E12F4EC724F1CD4E0084EAD6 /* udtm.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = udtm.entitlements; sourceTree = "<group>"; };
 		E144450D24E078EA00008203 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E144451124E078F200008203 /* AppData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E144451424E078FC00008203 /* Storage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Storage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -186,6 +187,7 @@
 		E145727524DF508C0026D925 /* UDTM */ = {
 			isa = PBXGroup;
 			children = (
+				E12F4EC724F1CD4E0084EAD6 /* udtm.entitlements */,
 				E180EC7B24E8A9E700308069 /* Helpers */,
 				E180EC7824E8A9C200308069 /* Resources */,
 				E145727624DF508C0026D925 /* AppDelegate.swift */,
@@ -633,6 +635,7 @@
 			baseConfigurationReference = 950B017C9F39539BCA4B086E /* Pods-UDMTTargets-UDTM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = UDTM/udtm.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KYWC2RHW78;
 				INFOPLIST_FILE = UDTM/Info.plist;
@@ -652,6 +655,7 @@
 			baseConfigurationReference = F7F79AE1EB3251250F4F3F44 /* Pods-UDMTTargets-UDTM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = UDTM/udtm.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KYWC2RHW78;
 				INFOPLIST_FILE = UDTM/Info.plist;
