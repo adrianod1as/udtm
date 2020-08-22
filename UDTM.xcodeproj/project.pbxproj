@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9BC608885A3400F9558B0118 /* Pods_UDMTTargets_UDTM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FAB38A057B49883E3475191 /* Pods_UDMTTargets_UDTM.framework */; };
 		B6E762C77E7B6561BD3D582A /* Pods_UDTMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C38BE4F72E3CB4690953A6 /* Pods_UDTMTests.framework */; };
+		E12F4EB624F17D3A0084EAD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E12F4EB524F17D3A0084EAD6 /* Assets.xcassets */; };
 		E144450E24E078EA00008203 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E144450D24E078EA00008203 /* Domain.framework */; };
 		E144450F24E078EA00008203 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E144450D24E078EA00008203 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E144451224E078F200008203 /* AppData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E144451124E078F200008203 /* AppData.framework */; };
@@ -18,9 +19,6 @@
 		E144451824E0790500008203 /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E144451724E0790500008203 /* Networking.framework */; };
 		E144451924E0790500008203 /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E144451724E0790500008203 /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E145727724DF508C0026D925 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E145727624DF508C0026D925 /* AppDelegate.swift */; };
-		E145727B24DF508C0026D925 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E145727A24DF508C0026D925 /* ViewController.swift */; };
-		E145727E24DF508C0026D925 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E145727C24DF508C0026D925 /* Main.storyboard */; };
-		E145728024DF508E0026D925 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E145727F24DF508E0026D925 /* Assets.xcassets */; };
 		E145728324DF508E0026D925 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E145728124DF508E0026D925 /* LaunchScreen.storyboard */; };
 		E145728E24DF508E0026D925 /* UDTMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E145728D24DF508E0026D925 /* UDTMTests.swift */; };
 		E145729924DF508E0026D925 /* UDTMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E145729824DF508E0026D925 /* UDTMUITests.swift */; };
@@ -78,15 +76,13 @@
 		7FAB38A057B49883E3475191 /* Pods_UDMTTargets_UDTM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UDMTTargets_UDTM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		950B017C9F39539BCA4B086E /* Pods-UDMTTargets-UDTM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UDMTTargets-UDTM.debug.xcconfig"; path = "Target Support Files/Pods-UDMTTargets-UDTM/Pods-UDMTTargets-UDTM.debug.xcconfig"; sourceTree = "<group>"; };
 		D0CFA891E2C6AE40132C3D15 /* Pods-UDTMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UDTMTests.debug.xcconfig"; path = "Target Support Files/Pods-UDTMTests/Pods-UDTMTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E12F4EB524F17D3A0084EAD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E144450D24E078EA00008203 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E144451124E078F200008203 /* AppData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E144451424E078FC00008203 /* Storage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Storage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E144451724E0790500008203 /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E145727324DF508C0026D925 /* Uni Duni Tê - Movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Uni Duni Tê - Movies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E145727624DF508C0026D925 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E145727A24DF508C0026D925 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E145727D24DF508C0026D925 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E145727F24DF508E0026D925 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E145728224DF508E0026D925 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E145728424DF508E0026D925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E145728924DF508E0026D925 /* UDTMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UDTMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,9 +189,6 @@
 				E180EC7B24E8A9E700308069 /* Helpers */,
 				E180EC7824E8A9C200308069 /* Resources */,
 				E145727624DF508C0026D925 /* AppDelegate.swift */,
-				E145727A24DF508C0026D925 /* ViewController.swift */,
-				E145727C24DF508C0026D925 /* Main.storyboard */,
-				E145727F24DF508E0026D925 /* Assets.xcassets */,
 				E145728124DF508E0026D925 /* LaunchScreen.storyboard */,
 				E145728424DF508E0026D925 /* Info.plist */,
 				E1C9F26624EE19A300DEE93E /* SetupConstants.swift */,
@@ -225,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				E180EC7924E8A9D200308069 /* Localizable.strings */,
+				E12F4EB524F17D3A0084EAD6 /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -363,9 +357,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E145728324DF508E0026D925 /* LaunchScreen.storyboard in Resources */,
+				E12F4EB624F17D3A0084EAD6 /* Assets.xcassets in Resources */,
 				E180EC7A24E8A9D200308069 /* Localizable.strings in Resources */,
-				E145728024DF508E0026D925 /* Assets.xcassets in Resources */,
-				E145727E24DF508C0026D925 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,7 +465,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E145727B24DF508C0026D925 /* ViewController.swift in Sources */,
 				E1C9F26724EE19A300DEE93E /* SetupConstants.swift in Sources */,
 				E145727724DF508C0026D925 /* AppDelegate.swift in Sources */,
 				E180EC7F24E8A9FE00308069 /* SwiftGenStrings.swift in Sources */,
@@ -511,14 +503,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E145727C24DF508C0026D925 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E145727D24DF508C0026D925 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E145728124DF508E0026D925 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
