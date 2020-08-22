@@ -6,22 +6,7 @@
 //  Copyright © 2020 dias. All rights reserved.
 //
 
-import Foundation
 import KeychainAccess
-
-public protocol Keyable {
-
-    var key: String { get }
-}
-
-public enum AuthenticationType: String, CaseIterable {
-    case simple
-    case biometric
-
-    var key: String {
-        return rawValue
-    }
-}
 
 public protocol KeychainStoring {
 

@@ -16,3 +16,6 @@
 "Error.Descriction.Localized.retrieving" = "Não foi possível recuperar as mensagens.";
 "Address.File.extension" = "json";
 "File.Extension.json" = "json";
+"Realm.Database.defaultName" = "default";
+"Realm.Database.name" = "realm_database_%@";
+"Realm.Database.path" = "%@.realm";

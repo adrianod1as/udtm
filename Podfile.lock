@@ -2,6 +2,7 @@ PODS:
   - Alamofire (5.0.5)
   - AlamofireNetworkActivityLogger (3.0.0):
     - Alamofire (~> 5.0.0-rc.2)
+  - Disk (0.6.4)
   - Fakery (4.1.1)
   - Firebase/Analytics (6.30.0):
     - Firebase/Core
@@ -110,6 +111,11 @@ PODS:
     - SwiftyJSON (~> 5.0)
   - PromisesObjC (1.2.10)
   - Protobuf (3.13.0)
+  - Realm (5.3.5):
+    - Realm/Headers (= 5.3.5)
+  - Realm/Headers (5.3.5)
+  - RealmSwift (5.3.5):
+    - Realm (= 5.3.5)
   - SwiftDate (6.1.0)
   - SwiftGen (6.3.0)
   - SwiftLint (0.40.0)
@@ -127,6 +133,7 @@ PODS:
 
 DEPENDENCIES:
   - AlamofireNetworkActivityLogger (~> 3.0)
+  - Disk
   - Fakery (from `https://github.com/vadymmarkov/Fakery`, branch `master`)
   - Firebase/Analytics
   - Firebase/Crashlytics
@@ -137,6 +144,7 @@ DEPENDENCIES:
   - Keys (from `Pods/CocoaPodsKeys`)
   - NVActivityIndicatorView/Extended
   - OxeNetworking
+  - RealmSwift
   - SwiftDate (from `https://github.com/malcommac/SwiftDate`, branch `master`)
   - SwiftGen (~> 6.0)
   - SwiftLint
@@ -151,6 +159,7 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - AlamofireNetworkActivityLogger
+    - Disk
     - Firebase
     - FirebaseAnalytics
     - FirebaseCore
@@ -170,6 +179,8 @@ SPEC REPOS:
     - OxeNetworking
     - PromisesObjC
     - Protobuf
+    - Realm
+    - RealmSwift
     - SwiftGen
     - SwiftLint
     - SwiftMessages
@@ -212,6 +223,7 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Alamofire: df2f8f826963b08b9a870791ad48e07a10090b2e
   AlamofireNetworkActivityLogger: 94e8a7d454a4a9800cef1d0c1d3699754493684b
+  Disk: dcee5c2e98fb72f9a924cde8da8435b08244a80e
   Fakery: d3380c4aa1efe7631c0831d7e26aa9db4491f014
   Firebase: 210f41ca352067d83b1ba4fd2e7fb49a0c017397
   FirebaseAnalytics: a299a86ef70fcc6aa011418bc65a7e101fb9636c
@@ -234,6 +246,8 @@ SPEC CHECKSUMS:
   OxeNetworking: 0b35a3876601f4e6f8e83e35fc335fc261ee3fc6
   PromisesObjC: b14b1c6b68e306650688599de8a45e49fae81151
   Protobuf: 3dac39b34a08151c6d949560efe3f86134a3f748
+  Realm: 2b52fcc86fc0ed3d75a56ac0eb1e73c4f1a60e16
+  RealmSwift: a6ea2ea561039fc3833c08dec81371a9a3bb5ca6
   SwiftDate: 874e8bbc13bde4e6431d88a8fd3cffeabc0a73f6
   SwiftGen: 3d5024a47ea79e408cded20763d7a17d18a4548c
   SwiftLint: 4154893c73a4c52d6240195507eb7a3e3c64087e
@@ -245,6 +259,6 @@ SPEC CHECKSUMS:
   SwinjectStoryboard: f0d5b1c16459949d6ff1cbb6610107946b18e1f8
   UIGradient: 2364e9ebac232686db220713b4d42a68222fffb2
 
-PODFILE CHECKSUM: 9b082129e0cca57131cf7978c2853772da815c47
+PODFILE CHECKSUM: 55e75041959069b5d937bdabe5c708b8f013eb72
 
 COCOAPODS: 1.9.3

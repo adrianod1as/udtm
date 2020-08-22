@@ -54,6 +54,21 @@ public enum L10n {
       public static let hasLaunched = L10n.tr("Localizable", "LaunchStorage.ValueKey.hasLaunched")
     }
   }
+
+  public enum Realm {
+    public enum Database {
+      /// default
+      public static let defaultName = L10n.tr("Localizable", "Realm.Database.defaultName")
+      /// realm_database_%@
+      public static func name(_ p1: Any) -> String {
+        return L10n.tr("Localizable", "Realm.Database.name", String(describing: p1))
+      }
+      /// %@.realm
+      public static func path(_ p1: Any) -> String {
+        return L10n.tr("Localizable", "Realm.Database.path", String(describing: p1))
+      }
+    }
+  }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

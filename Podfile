@@ -51,6 +51,8 @@ end
 
 def storagePods
   pod 'KeychainAccess'
+  pod 'RealmSwift'
+  pod 'Disk'
 end
 
 abstract_target 'UDMTTargets' do
