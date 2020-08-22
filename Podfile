@@ -5,6 +5,12 @@ inhibit_all_warnings!
 use_frameworks!
 workspace 'UDTM'
 
+plugin 'cocoapods-keys', {
+  :project => "UDTM",
+  :keys => [
+  "TMBDAcessToken"
+  ]}
+
 def firebase
   pod 'Firebase/Crashlytics'
   pod 'Firebase/Analytics'

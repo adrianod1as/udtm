@@ -5,3 +5,11 @@
   Created by Adriano Dias on 15/08/20.
   Copyright © 2020 dias. All rights reserved.
 */
+
+"Headers.Keys.Accept" = "accept";
+"Headers.Keys.ContentType" = "Content-Type";
+"Headers.Keys.Authorization" = "Authorization";
+"SpecificHeaders.Keys.tmdb" = "tmdb";
+"Headers.Values.JsonApplication" = "application/json";
+"Headers.Values.Bearer" = "Bearer %@";
+"Headers.Values.JsonContentType" = "application/json;charset=utf-8";

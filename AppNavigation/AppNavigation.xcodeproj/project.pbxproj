@@ -511,7 +511,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 07B0187C5A49634A41DD751A /* Pods-AppNavigation-AppNavigationTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KYWC2RHW78;
 				INFOPLIST_FILE = AppNavigationTests/Info.plist;
@@ -531,7 +530,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 84B32F7B56E2D7BC4AAFB060 /* Pods-AppNavigation-AppNavigationTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KYWC2RHW78;
 				INFOPLIST_FILE = AppNavigationTests/Info.plist;

@@ -9,6 +9,7 @@
 import Foundation
 import Networking
 import OxeNetworking
+import Keys
 
 struct SetupConstants {
 
@@ -19,11 +20,16 @@ struct SetupConstants {
     static let defaultFixturesType: FixturesType = .none
 
     static let commonHeaders: Headers = {
-        return ["accept": "application/json"]
+        return [L10n.Headers.Keys.accept: L10n.Headers.Values.jsonApplication]
+    }()
+
+    static let tmdbHeaders: Headers = {
+        return [L10n.Headers.Keys.contentType: L10n.Headers.Values.jsonContentType,
+                L10n.Headers.Keys.authorization: L10n.Headers.Values.bearer(MyApplicationKeys().tMBDAcessToken)]
     }()
 
     static let specificHeaders: SpecificHeaders = {
-        return [:]
+        return [SpecificHeaderType.tmdb.key: tmdbHeaders]
     }()
 
     static let environment: Environment = {

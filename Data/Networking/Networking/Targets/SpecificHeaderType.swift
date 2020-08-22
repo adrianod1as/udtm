@@ -10,7 +10,7 @@ import Foundation
 import OxeNetworking
 
 public enum SpecificHeaderType: String, HeaderSpecifying {
-    case tokenGeneration
+    case tmdb
 
     public var key: String {
         return rawValue
