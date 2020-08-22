@@ -16,13 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     var assembler: Assembler?
     var currentOrientation: UIInterfaceOrientationMask = .portrait
+
     private lazy var dependencyInjector: DependencyInjector = {
         return DependencyInjector(environment: SetupConstants.environment)
     }()
 
-    override init() {
-        super.init()
-
+    private func setupWindow(navigationController: UINavigationController) {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        window?.rootViewController = navigationController
     }
 
     func application(_ application: UIApplication,
@@ -32,11 +34,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication,
                      didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        window = UIWindow(frame: UIScreen.main.bounds)
         dependencyInjector.build { assembler, appCoordinator in
             self.assembler = assembler
-            window?.makeKeyAndVisible()
-            window?.rootViewController = appCoordinator.navigationController
+            setupWindow(navigationController: appCoordinator.navigationController)
             appCoordinator.start()
         }
     }
