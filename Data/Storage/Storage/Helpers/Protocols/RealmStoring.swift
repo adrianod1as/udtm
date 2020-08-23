@@ -41,8 +41,8 @@ extension RealmStoring {
         // See also: http://stackoverflow.com/questions/24145838/querying-ios-keychain-using-swift/27721328#27721328
         var dataTypeRef: AnyObject?
         var status = withUnsafeMutablePointer(to: &dataTypeRef) { SecItemCopyMatching(query as CFDictionary, UnsafeMutablePointer($0)) }
-        if status == errSecSuccess {
-            return dataTypeRef as! NSData
+        if status == errSecSuccess, let data = dataTypeRef as? NSData {
+            return data
         }
 
         // No pre-existing key from this application, so generate a new one

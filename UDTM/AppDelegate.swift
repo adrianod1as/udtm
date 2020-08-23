@@ -8,56 +8,23 @@
 
 import UIKit
 import Swinject
-import DI
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-    var window: UIWindow?
-    var assembler: Assembler?
-    var currentOrientation: UIInterfaceOrientationMask = .portrait
-
-    private lazy var dependencyInjector: DependencyInjector = {
-        return DependencyInjector(environment: SetupConstants.environment)
-    }()
-
-    private func setupWindow(navigationController: UINavigationController) {
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.makeKeyAndVisible()
-        window?.rootViewController = navigationController
-    }
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         return true
     }
 
+    // MARK: UISceneSession Lifecycle
     func application(_ application: UIApplication,
-                     didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        dependencyInjector.build { assembler, appCoordinator in
-            self.assembler = assembler
-            setupWindow(navigationController: appCoordinator.navigationController)
-            appCoordinator.start()
-        }
+                     configurationForConnecting connectingSceneSession: UISceneSession,
+                     options: UIScene.ConnectionOptions) -> UISceneConfiguration {
+        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
 
-    func applicationWillResignActive(_ application: UIApplication) {
-    }
-
-    func applicationDidEnterBackground(_ application: UIApplication) {
-    }
-
-    func applicationWillEnterForeground(_ application: UIApplication) {
-    }
-
-    func applicationDidBecomeActive(_ application: UIApplication) {
-    }
-
-    func applicationWillTerminate(_ application: UIApplication) {
-    }
-
-    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
-        return currentOrientation
+    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
     }
 
 }

@@ -24,7 +24,7 @@ class CoordinatorsAssembly: Assembly {
     private func assembleAppCoordinator(container: Container) {
         container.register(AppCoordinator.self) { resolver in
             return AppCoordinator(navigationController: self.navigationController,
-                                  coordinatorFactory: resolver.safelyResolve(CoordinatorFactory.self))
+                                  coordinatorFactory: resolver.safelyResolve(CoordinatorManufacturing.self))
         }
     }
 }

@@ -10,6 +10,7 @@
 		9BC608885A3400F9558B0118 /* Pods_UDMTTargets_UDTM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FAB38A057B49883E3475191 /* Pods_UDMTTargets_UDTM.framework */; };
 		B6E762C77E7B6561BD3D582A /* Pods_UDTMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C38BE4F72E3CB4690953A6 /* Pods_UDTMTests.framework */; };
 		E12F4EB624F17D3A0084EAD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E12F4EB524F17D3A0084EAD6 /* Assets.xcassets */; };
+		E12F4EC924F2EE190084EAD6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12F4EC824F2EE190084EAD6 /* SceneDelegate.swift */; };
 		E144450E24E078EA00008203 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E144450D24E078EA00008203 /* Domain.framework */; };
 		E144450F24E078EA00008203 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E144450D24E078EA00008203 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E144451224E078F200008203 /* AppData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E144451124E078F200008203 /* AppData.framework */; };
@@ -78,6 +79,7 @@
 		D0CFA891E2C6AE40132C3D15 /* Pods-UDTMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UDTMTests.debug.xcconfig"; path = "Target Support Files/Pods-UDTMTests/Pods-UDTMTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E12F4EB524F17D3A0084EAD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E12F4EC724F1CD4E0084EAD6 /* udtm.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = udtm.entitlements; sourceTree = "<group>"; };
+		E12F4EC824F2EE190084EAD6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E144450D24E078EA00008203 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E144451124E078F200008203 /* AppData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E144451424E078FC00008203 /* Storage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Storage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -194,6 +196,7 @@
 				E145728124DF508E0026D925 /* LaunchScreen.storyboard */,
 				E145728424DF508E0026D925 /* Info.plist */,
 				E1C9F26624EE19A300DEE93E /* SetupConstants.swift */,
+				E12F4EC824F2EE190084EAD6 /* SceneDelegate.swift */,
 			);
 			path = UDTM;
 			sourceTree = "<group>";
@@ -470,6 +473,7 @@
 				E1C9F26724EE19A300DEE93E /* SetupConstants.swift in Sources */,
 				E145727724DF508C0026D925 /* AppDelegate.swift in Sources */,
 				E180EC7F24E8A9FE00308069 /* SwiftGenStrings.swift in Sources */,
+				E12F4EC924F2EE190084EAD6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,7 +570,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -620,7 +624,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -679,7 +683,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KYWC2RHW78;
 				INFOPLIST_FILE = UDTMTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -702,7 +706,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KYWC2RHW78;
 				INFOPLIST_FILE = UDTMTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
