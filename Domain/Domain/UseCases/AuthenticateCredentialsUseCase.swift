@@ -17,7 +17,8 @@ public class AuthenticateCredentialsUseCase {
 
 extension AuthenticateCredentialsUseCase: AuthenticateCredentialsUseCaseable {
 
-    public func execute(_ credentials: Credentials, completion: @escaping GenericCompletion<Account>) {
-        repository.authenticateCredentials(credentials, completion: completion)
+    public func execute(_ credentials: Credentials, shouldSaveSession: Bool,
+                        completion: @escaping GenericCompletion<Account>) {
+        repository.authenticateCredentials(credentials, shouldSaveSession: shouldSaveSession, completion: completion)
     }
 }

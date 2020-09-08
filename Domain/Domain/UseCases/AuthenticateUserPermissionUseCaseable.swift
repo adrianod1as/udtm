@@ -8,5 +8,7 @@
 
 public protocol AuthenticateUserPermissionUseCaseable: AnyObject {
 
-    func execute(_ requestToken: String, _ headers: [String: String], completion: @escaping GenericCompletion<Account>)
+    func execute(_ requestToken: String,
+                 _ headers: [String: String], shouldSaveSession: Bool,
+                 completion: @escaping GenericCompletion<Account>)
 }

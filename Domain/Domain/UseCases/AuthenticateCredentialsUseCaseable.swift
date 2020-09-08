@@ -8,5 +8,6 @@
 
 public protocol AuthenticateCredentialsUseCaseable: AnyObject {
 
-    func execute(_ credentials: Credentials, completion: @escaping GenericCompletion<Account>)
+    func execute(_ credentials: Credentials, shouldSaveSession: Bool,
+                 completion: @escaping GenericCompletion<Account>)
 }

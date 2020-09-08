@@ -17,7 +17,8 @@ public class AuthenticateUserPermissionUseCase {
 
 extension AuthenticateUserPermissionUseCase: AuthenticateUserPermissionUseCaseable {
 
-    public func execute(_ requestToken: String, _ headers: [String: String], completion: @escaping GenericCompletion<Account>) {
-        repository.authenticateUserPermission(forRequestToken: requestToken, headers: headers, completion: completion)
+    public func execute(_ requestToken: String, _ headers: [String: String],
+                        shouldSaveSession: Bool, completion: @escaping GenericCompletion<Account>) {
+        repository.authenticateUserPermission(forRequestToken: requestToken, headers: headers, shouldSaveSession: shouldSaveSession, completion: completion)
     }
 }

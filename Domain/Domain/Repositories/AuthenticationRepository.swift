@@ -9,7 +9,9 @@
 public protocol AuthenticationRepository {
 
     func createRequestToken(completion: @escaping GenericCompletion<String>)
-    func authenticateUserPermission(forRequestToken requestToken: String, headers: [String: String],
+    func authenticateUserPermission(forRequestToken requestToken: String,
+                                    headers: [String: String], shouldSaveSession: Bool,
                                     completion: @escaping GenericCompletion<Account>)
-    func authenticateCredentials(_ credentials: Credentials, completion: @escaping GenericCompletion<Account>)
+    func authenticateCredentials(_ credentials: Credentials, shouldSaveSession: Bool,
+                                 completion: @escaping GenericCompletion<Account>)
 }
