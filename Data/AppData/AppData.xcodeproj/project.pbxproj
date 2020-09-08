@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		3B8BDCDDB3781E0ECE011D80 /* Pods_AppData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9EBCCE1B931A3406F322028 /* Pods_AppData.framework */; };
 		3C67FABECD1A109DC69D2B63 /* Pods_AppData_AppDataTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62B738666314F24FAF8EC4D /* Pods_AppData_AppDataTests.framework */; };
+		E12F4ED324F30D7F0084EAD6 /* AuthenticationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12F4ED224F30D7F0084EAD6 /* AuthenticationRepository.swift */; };
+		E12F4ED624F30E280084EAD6 /* SessionRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12F4ED524F30E280084EAD6 /* SessionRemoteDataSource.swift */; };
+		E12F4ED824F30E780084EAD6 /* AuthenticationLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12F4ED724F30E780084EAD6 /* AuthenticationLocalDataSource.swift */; };
+		E12F4EDC24F30FAB0084EAD6 /* AccountRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12F4EDB24F30FAB0084EAD6 /* AccountRemoteDataSource.swift */; };
+		E12F4EDE24F312080084EAD6 /* SessionLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12F4EDD24F312080084EAD6 /* SessionLocalDataSource.swift */; };
 		E144440924E0555900008203 /* AppData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14443FF24E0555800008203 /* AppData.framework */; };
 		E144440E24E0555900008203 /* AppDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E144440D24E0555900008203 /* AppDataTests.swift */; };
 		E144441024E0555900008203 /* AppData.h in Headers */ = {isa = PBXBuildFile; fileRef = E144440224E0555900008203 /* AppData.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -34,6 +39,11 @@
 		A9EBCCE1B931A3406F322028 /* Pods_AppData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA3F2904857337D2208B74EB /* Pods-AppData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppData.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-AppData/Pods-AppData.release.xcconfig"; sourceTree = "<group>"; };
 		C20D12729269A60CFB81CA4E /* Pods-AppData-AppDataTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppData-AppDataTests.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-AppData-AppDataTests/Pods-AppData-AppDataTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E12F4ED224F30D7F0084EAD6 /* AuthenticationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRepository.swift; sourceTree = "<group>"; };
+		E12F4ED524F30E280084EAD6 /* SessionRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionRemoteDataSource.swift; sourceTree = "<group>"; };
+		E12F4ED724F30E780084EAD6 /* AuthenticationLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationLocalDataSource.swift; sourceTree = "<group>"; };
+		E12F4EDB24F30FAB0084EAD6 /* AccountRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRemoteDataSource.swift; sourceTree = "<group>"; };
+		E12F4EDD24F312080084EAD6 /* SessionLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionLocalDataSource.swift; sourceTree = "<group>"; };
 		E14443FF24E0555800008203 /* AppData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E144440224E0555900008203 /* AppData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppData.h; sourceTree = "<group>"; };
 		E144440324E0555900008203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,6 +89,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E1078A6E250827E200E99E22 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				E12F4ED724F30E780084EAD6 /* AuthenticationLocalDataSource.swift */,
+				E12F4EDD24F312080084EAD6 /* SessionLocalDataSource.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		E1078A6F250827EC00E99E22 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				E12F4ED524F30E280084EAD6 /* SessionRemoteDataSource.swift */,
+				E12F4EDB24F30FAB0084EAD6 /* AccountRemoteDataSource.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		E12F4ED424F30DA20084EAD6 /* Datasources */ = {
+			isa = PBXGroup;
+			children = (
+				E1078A6F250827EC00E99E22 /* Remote */,
+				E1078A6E250827E200E99E22 /* Local */,
+			);
+			path = Datasources;
+			sourceTree = "<group>";
+		};
 		E139A2010067B6ED84B9A1D4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +151,7 @@
 		E144440124E0555900008203 /* AppData */ = {
 			isa = PBXGroup;
 			children = (
+				E12F4ED424F30DA20084EAD6 /* Datasources */,
 				E144441924E056C700008203 /* Helpers */,
 				E144441F24E056C800008203 /* Repositories */,
 				E144443224E056C800008203 /* Resources */,
@@ -168,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				E144443024E056C800008203 /* SignOutRepository.swift */,
+				E12F4ED224F30D7F0084EAD6 /* AuthenticationRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -357,7 +396,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E12F4ED324F30D7F0084EAD6 /* AuthenticationRepository.swift in Sources */,
+				E12F4ED824F30E780084EAD6 /* AuthenticationLocalDataSource.swift in Sources */,
 				E144443424E056C800008203 /* SwiftGenStrings.swift in Sources */,
+				E12F4ED624F30E280084EAD6 /* SessionRemoteDataSource.swift in Sources */,
+				E12F4EDC24F30FAB0084EAD6 /* AccountRemoteDataSource.swift in Sources */,
+				E12F4EDE24F312080084EAD6 /* SessionLocalDataSource.swift in Sources */,
 				E144444624E056C800008203 /* SignOutRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
