@@ -72,6 +72,10 @@ extension AuthenticationRepository: Domain.AuthenticationRepository {
         accountRemoteDataSource.getAccount(forSession: sessionId) { result in
             switch result {
             case .success(let account):
+                guard shouldSaveSession else {
+                    completion(.success(account))
+                    return
+                }
                 self.save(sessionId: sessionId, forAccount: account, completion: completion)
             case .failure(let error):
                 completion(.failure(error))

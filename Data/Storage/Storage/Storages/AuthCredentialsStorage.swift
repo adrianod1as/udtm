@@ -22,8 +22,8 @@ public class AuthCredentialsStorage: KeychainStoring {
     }
 
     public enum ValueKeyable: String, Keyable, CaseIterable {
-        case selectedUserId
-        case user
+        case selectedSessionId
+        case sessionId
         case firebaseToken
 
         public var key: String {
@@ -32,7 +32,7 @@ public class AuthCredentialsStorage: KeychainStoring {
 
         public var isAuthenticationInfo: Bool {
             switch self {
-            case .user, .firebaseToken:
+            case .sessionId, .firebaseToken:
                 return false
             default:
                 return true
