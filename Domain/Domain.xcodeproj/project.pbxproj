@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		1D37F418C633D12421D4A703 /* Pods_Domain_DomainTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84E6010860A3B52B6A491BD /* Pods_Domain_DomainTests.framework */; };
 		560FEDE101EFBC7DC13B2E80 /* Pods_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4CC90B70D0F1F1AE161510 /* Pods_Domain.framework */; };
+		E1064C8B25007BC60054B091 /* AuthenticateCredentialsUseCaseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1064C8A25007BC60054B091 /* AuthenticateCredentialsUseCaseable.swift */; };
+		E1078A6D25080ADF00E99E22 /* AuthenticateCredentialsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1078A6C25080ADF00E99E22 /* AuthenticateCredentialsUseCase.swift */; };
+		E12F4ECB24F304710084EAD6 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12F4ECA24F304710084EAD6 /* Account.swift */; };
+		E12F4ECD24F30B730084EAD6 /* AuthenticateUserPermissionUseCaseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12F4ECC24F30B730084EAD6 /* AuthenticateUserPermissionUseCaseable.swift */; };
+		E12F4ECF24F30C660084EAD6 /* AuthenticateUserPermissionUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12F4ECE24F30C660084EAD6 /* AuthenticateUserPermissionUseCase.swift */; };
+		E12F4ED124F30CAE0084EAD6 /* AuthenticationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12F4ED024F30CAE0084EAD6 /* AuthenticationRepository.swift */; };
 		E144428D24E04D9600008203 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E144428324E04D9600008203 /* Domain.framework */; };
 		E144429224E04D9600008203 /* DomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E144429124E04D9600008203 /* DomainTests.swift */; };
 		E144429424E04D9600008203 /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = E144428624E04D9600008203 /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -38,6 +44,7 @@
 		E14443DF24E04E0C00008203 /* Numbers+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E144433824E04E0B00008203 /* Numbers+Ext.swift */; };
 		E14443E024E04E0C00008203 /* SwiftyJSON+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E144433924E04E0B00008203 /* SwiftyJSON+Ext.swift */; };
 		E14443E124E04E0C00008203 /* Array+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E144433A24E04E0B00008203 /* Array+Ext.swift */; };
+		E18A1D112500739000FC04F0 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18A1D102500739000FC04F0 /* Credentials.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +63,12 @@
 		C1EC024FE2762378B2C8F008 /* Pods-Domain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.debug.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.debug.xcconfig"; sourceTree = "<group>"; };
 		C2C3ABB06D1386A8FFC98DD4 /* Pods-Domain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.release.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.release.xcconfig"; sourceTree = "<group>"; };
 		C84E6010860A3B52B6A491BD /* Pods_Domain_DomainTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Domain_DomainTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1064C8A25007BC60054B091 /* AuthenticateCredentialsUseCaseable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateCredentialsUseCaseable.swift; sourceTree = "<group>"; };
+		E1078A6C25080ADF00E99E22 /* AuthenticateCredentialsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateCredentialsUseCase.swift; sourceTree = "<group>"; };
+		E12F4ECA24F304710084EAD6 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		E12F4ECC24F30B730084EAD6 /* AuthenticateUserPermissionUseCaseable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateUserPermissionUseCaseable.swift; sourceTree = "<group>"; };
+		E12F4ECE24F30C660084EAD6 /* AuthenticateUserPermissionUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateUserPermissionUseCase.swift; sourceTree = "<group>"; };
+		E12F4ED024F30CAE0084EAD6 /* AuthenticationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRepository.swift; sourceTree = "<group>"; };
 		E144428324E04D9600008203 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E144428624E04D9600008203 /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
 		E144428724E04D9600008203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -88,6 +101,7 @@
 		E144433824E04E0B00008203 /* Numbers+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Numbers+Ext.swift"; sourceTree = "<group>"; };
 		E144433924E04E0B00008203 /* SwiftyJSON+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftyJSON+Ext.swift"; sourceTree = "<group>"; };
 		E144433A24E04E0B00008203 /* Array+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Ext.swift"; sourceTree = "<group>"; };
+		E18A1D102500739000FC04F0 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		FE07C264BCEEC6CBD8219285 /* Pods-Domain-DomainTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain-DomainTests.debug.xcconfig"; path = "Target Support Files/Pods-Domain-DomainTests/Pods-Domain-DomainTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -180,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				E14442AE24E04E0A00008203 /* SignOutRepository.swift */,
+				E12F4ED024F30CAE0084EAD6 /* AuthenticationRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -208,6 +223,7 @@
 			children = (
 				E14442BC24E04E0B00008203 /* LocalizedRecord.swift */,
 				E14442DA24E04E0B00008203 /* Localized.swift */,
+				E12F4ECA24F304710084EAD6 /* Account.swift */,
 			);
 			path = Responses;
 			sourceTree = "<group>";
@@ -222,6 +238,7 @@
 		E144430024E04E0B00008203 /* Requests */ = {
 			isa = PBXGroup;
 			children = (
+				E18A1D102500739000FC04F0 /* Credentials.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -297,6 +314,10 @@
 		E144433B24E04E0B00008203 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				E12F4ECC24F30B730084EAD6 /* AuthenticateUserPermissionUseCaseable.swift */,
+				E12F4ECE24F30C660084EAD6 /* AuthenticateUserPermissionUseCase.swift */,
+				E1064C8A25007BC60054B091 /* AuthenticateCredentialsUseCaseable.swift */,
+				E1078A6C25080ADF00E99E22 /* AuthenticateCredentialsUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -486,14 +507,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E12F4ECF24F30C660084EAD6 /* AuthenticateUserPermissionUseCase.swift in Sources */,
+				E12F4ED124F30CAE0084EAD6 /* AuthenticationRepository.swift in Sources */,
+				E1064C8B25007BC60054B091 /* AuthenticateCredentialsUseCaseable.swift in Sources */,
 				E14443D824E04E0C00008203 /* Enum+Ext.swift in Sources */,
 				E14443D524E04E0C00008203 /* Regex+Ext.swift in Sources */,
+				E1078A6D25080ADF00E99E22 /* AuthenticateCredentialsUseCase.swift in Sources */,
 				E14443E124E04E0C00008203 /* Array+Ext.swift in Sources */,
+				E12F4ECB24F304710084EAD6 /* Account.swift in Sources */,
 				E14443CD24E04E0C00008203 /* Validatable.swift in Sources */,
 				E14443CC24E04E0C00008203 /* Fakeable.swift in Sources */,
 				E14443D024E04E0C00008203 /* SignOutSceneCoordinating.swift in Sources */,
+				E12F4ECD24F30B730084EAD6 /* AuthenticateUserPermissionUseCaseable.swift in Sources */,
 				E14443CF24E04E0C00008203 /* DomainConvertibleType.swift in Sources */,
 				E144436B24E04E0B00008203 /* LocalizedRecord.swift in Sources */,
+				E18A1D112500739000FC04F0 /* Credentials.swift in Sources */,
 				E14443E024E04E0C00008203 /* SwiftyJSON+Ext.swift in Sources */,
 				E14443CB24E04E0C00008203 /* AppFailure.swift in Sources */,
 				E14443DB24E04E0C00008203 /* Array+Fakery.swift in Sources */,
