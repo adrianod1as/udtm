@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		0F33747758D6634E8D05F55F /* Pods_Storage_StorageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D4302B27533136CD9BE6486 /* Pods_Storage_StorageTests.framework */; };
 		8832CEF83EEA9CCD4A4BF7E6 /* Pods_Storage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2C8E73D7F43E1E2EF879D14 /* Pods_Storage.framework */; };
+		E1078A7B25096DCB00E99E22 /* AccountLocalDatSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1078A7A25096DCB00E99E22 /* AccountLocalDatSource.swift */; };
+		E1078A7E2509706300E99E22 /* RMAccoount.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1078A7D2509706300E99E22 /* RMAccoount.swift */; };
+		E1078A8425097C5600E99E22 /* DomainConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1078A8325097C5600E99E22 /* DomainConvertible.swift */; };
+		E1078A8625097DBA00E99E22 /* RMAccoount+Domain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1078A8525097DBA00E99E22 /* RMAccoount+Domain.swift */; };
 		E12F4EBA24F1BCD50084EAD6 /* RealmStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12F4EB924F1BCD50084EAD6 /* RealmStorage.swift */; };
 		E12F4EBC24F1BD8D0084EAD6 /* Keyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12F4EBB24F1BD8D0084EAD6 /* Keyable.swift */; };
 		E12F4EBE24F1BDA90084EAD6 /* AuthenticationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12F4EBD24F1BDA90084EAD6 /* AuthenticationType.swift */; };
 		E12F4EC024F1BE590084EAD6 /* RealmStoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12F4EBF24F1BE590084EAD6 /* RealmStoring.swift */; };
 		E12F4EC324F1C6160084EAD6 /* Realm+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12F4EC224F1C6160084EAD6 /* Realm+Ext.swift */; };
-		E12F4EC524F1CBD10084EAD6 /* DomainConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12F4EC424F1CBD10084EAD6 /* DomainConvertible.swift */; };
 		E144446824E0724D00008203 /* Storage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E144445E24E0724C00008203 /* Storage.framework */; };
 		E144446D24E0724D00008203 /* StorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E144446C24E0724D00008203 /* StorageTests.swift */; };
 		E144446F24E0724D00008203 /* Storage.h in Headers */ = {isa = PBXBuildFile; fileRef = E144446124E0724C00008203 /* Storage.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -67,12 +70,15 @@
 		5CACC78E148F5633B0C60256 /* Pods-Storage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Storage.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-Storage/Pods-Storage.debug.xcconfig"; sourceTree = "<group>"; };
 		A2C8E73D7F43E1E2EF879D14 /* Pods_Storage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Storage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC5043D7D1C38830A5387583 /* Pods-Storage-StorageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Storage-StorageTests.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-Storage-StorageTests/Pods-Storage-StorageTests.release.xcconfig"; sourceTree = "<group>"; };
+		E1078A7A25096DCB00E99E22 /* AccountLocalDatSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountLocalDatSource.swift; sourceTree = "<group>"; };
+		E1078A7D2509706300E99E22 /* RMAccoount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMAccoount.swift; sourceTree = "<group>"; };
+		E1078A8325097C5600E99E22 /* DomainConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DomainConvertible.swift; sourceTree = "<group>"; };
+		E1078A8525097DBA00E99E22 /* RMAccoount+Domain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RMAccoount+Domain.swift"; sourceTree = "<group>"; };
 		E12F4EB924F1BCD50084EAD6 /* RealmStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmStorage.swift; sourceTree = "<group>"; };
 		E12F4EBB24F1BD8D0084EAD6 /* Keyable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyable.swift; sourceTree = "<group>"; };
 		E12F4EBD24F1BDA90084EAD6 /* AuthenticationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationType.swift; sourceTree = "<group>"; };
 		E12F4EBF24F1BE590084EAD6 /* RealmStoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmStoring.swift; sourceTree = "<group>"; };
 		E12F4EC224F1C6160084EAD6 /* Realm+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Realm+Ext.swift"; sourceTree = "<group>"; };
-		E12F4EC424F1CBD10084EAD6 /* DomainConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainConvertible.swift; sourceTree = "<group>"; };
 		E144445E24E0724C00008203 /* Storage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Storage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E144446124E0724C00008203 /* Storage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Storage.h; sourceTree = "<group>"; };
 		E144446224E0724C00008203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -140,10 +146,19 @@
 			path = ../Pods;
 			sourceTree = "<group>";
 		};
+		E1078A7C2509705700E99E22 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E1078A7D2509706300E99E22 /* RMAccoount.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		E12F4EC124F1C5AC0084EAD6 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				E12F4EC224F1C6160084EAD6 /* Realm+Ext.swift */,
+				E1078A8525097DBA00E99E22 /* RMAccoount+Domain.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -171,6 +186,7 @@
 		E144446024E0724C00008203 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				E1078A7C2509705700E99E22 /* Models */,
 				E144447824E0732800008203 /* DataSources */,
 				E14444D024E0732900008203 /* Helpers */,
 				E14444C224E0732900008203 /* Resources */,
@@ -195,6 +211,7 @@
 			children = (
 				E144448124E0732800008203 /* SignOutLocalDataSource.swift */,
 				E1AA0ED324F3149300A78803 /* SessionLocalDataSource.swift */,
+				E1078A7A25096DCB00E99E22 /* AccountLocalDatSource.swift */,
 			);
 			path = DataSources;
 			sourceTree = "<group>";
@@ -222,12 +239,12 @@
 		E14444CA24E0732900008203 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				E1078A8325097C5600E99E22 /* DomainConvertible.swift */,
 				E14444CB24E0732900008203 /* FileReading.swift */,
 				E14444CC24E0732900008203 /* KeychainStoring.swift */,
 				E14444CD24E0732900008203 /* UserDefaultsStoring.swift */,
 				E12F4EBB24F1BD8D0084EAD6 /* Keyable.swift */,
 				E12F4EBF24F1BE590084EAD6 /* RealmStoring.swift */,
-				E12F4EC424F1CBD10084EAD6 /* DomainConvertible.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -446,8 +463,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E144450A24E0732A00008203 /* UserDefaultsStoring.swift in Sources */,
+				E1078A8425097C5600E99E22 /* DomainConvertible.swift in Sources */,
 				E1AA0ED424F3149400A78803 /* SessionLocalDataSource.swift in Sources */,
-				E12F4EC524F1CBD10084EAD6 /* DomainConvertible.swift in Sources */,
+				E1078A7B25096DCB00E99E22 /* AccountLocalDatSource.swift in Sources */,
+				E1078A7E2509706300E99E22 /* RMAccoount.swift in Sources */,
 				E12F4EBE24F1BDA90084EAD6 /* AuthenticationType.swift in Sources */,
 				E12F4EBC24F1BD8D0084EAD6 /* Keyable.swift in Sources */,
 				E144450424E0732A00008203 /* TransitoryStorage.swift in Sources */,
@@ -458,6 +477,7 @@
 				E144450C24E0732A00008203 /* SwiftGenStrings.swift in Sources */,
 				E144450924E0732A00008203 /* KeychainStoring.swift in Sources */,
 				E144450824E0732A00008203 /* FileReading.swift in Sources */,
+				E1078A8625097DBA00E99E22 /* RMAccoount+Domain.swift in Sources */,
 				E144450624E0732A00008203 /* AuthCredentialsStorage.swift in Sources */,
 				E144450724E0732A00008203 /* FileReader.swift in Sources */,
 				E144450524E0732A00008203 /* LaunchStorage.swift in Sources */,

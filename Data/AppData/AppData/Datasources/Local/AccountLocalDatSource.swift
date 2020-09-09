@@ -1,5 +1,5 @@
 //
-//  AuthenticationLocalDataSource.swift
+//  AccountLocalDatSource.swift
 //  AppData
 //
 //  Created by Adriano Dias on 23/08/20.
@@ -8,8 +8,8 @@
 
 import Domain
 
-public protocol AuthenticationLocalDataSource: SessionLocalDataSource {
+public protocol AccountLocalDatSource: AnyObject {
 
     func save(account: Account, completion: @escaping GenericCompletion<Void>)
-    func getAccount(completion: @escaping GenericCompletion<Account>)
+    func getAccount(for id: String, completion: @escaping GenericCompletion<Account>)
 }

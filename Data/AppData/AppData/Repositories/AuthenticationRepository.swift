@@ -10,23 +10,26 @@ import Domain
 
 public class AuthenticationRepository {
 
-    private let authLocalDatSource: AuthenticationLocalDataSource
-    private let authRemoteDatSource: SessionRemoteDataSource
+    private let authLocalDataSource: SessionLocalDataSource
+    private let accountLocalDataSource: AccountLocalDatSource
+    private let authRemoteDataSource: SessionRemoteDataSource
     private let accountRemoteDataSource: AccountRemoteDataSource
 
-    public init(localDatSource: AuthenticationLocalDataSource,
+    public init(authLocalDataSource: SessionLocalDataSource,
+                accountLocalDataSource: AccountLocalDatSource,
                 remoteDatSource: SessionRemoteDataSource,
                 accountRemoteDataSource: AccountRemoteDataSource) {
-        self.authLocalDatSource = localDatSource
-        self.authRemoteDatSource = remoteDatSource
+        self.authLocalDataSource = authLocalDataSource
+        self.accountLocalDataSource = accountLocalDataSource
+        self.authRemoteDataSource = remoteDatSource
         self.accountRemoteDataSource = accountRemoteDataSource
     }
 }
 
 extension AuthenticationRepository: Domain.AuthenticationRepository {
 
-    public func createRequestToken(completion: @escaping GenericCompletion<String>) {
-        authRemoteDatSource.createRequestToken(completion: completion)
+    public func createRequestToken(completion: @escaping GenericCompletion<RequestToken>) {
+        authRemoteDataSource.createRequestToken(completion: completion)
     }
 
     public func authenticateCredentials(_ credentials: Credentials, shouldSaveSession: Bool,
@@ -34,7 +37,7 @@ extension AuthenticationRepository: Domain.AuthenticationRepository {
         createRequestToken { result in
             switch result {
             case .success(let requestToken):
-                self.authenticate(credentials: credentials, with: requestToken,
+                self.authenticate(credentials: credentials, with: requestToken.code,
                                   shouldSaveSession: shouldSaveSession, completion: completion)
             case .failure(let error):
                 completion(.failure(error))
@@ -44,10 +47,10 @@ extension AuthenticationRepository: Domain.AuthenticationRepository {
 
     private func authenticate(credentials: Credentials, with requestToken: String,
                               shouldSaveSession: Bool, completion: @escaping GenericCompletion<Account>) {
-        authRemoteDatSource.createSession(forCredentials: credentials.setting(requestToken: requestToken)) { result in
+        authRemoteDataSource.createSession(forCredentials: credentials.setting(requestToken: requestToken)) { result in
             switch result {
-            case .success(let id):
-                self.getAccount(forSessionId: id, shouldSaveSession: shouldSaveSession, completion: completion)
+            case .success(let session):
+                self.getAccount(forSessionId: session.id, shouldSaveSession: shouldSaveSession, completion: completion)
             case .failure(let error):
                 completion(.failure(error))
             }
@@ -57,10 +60,11 @@ extension AuthenticationRepository: Domain.AuthenticationRepository {
     public func authenticateUserPermission(forRequestToken requestToken: String,
                                            headers: [String : String], shouldSaveSession: Bool,
                                            completion: @escaping GenericCompletion<Account>) {
-        authRemoteDatSource.createSession(forRequestToken: requestToken, checkingPermissionFromHeaders: headers) { result in
+        authRemoteDataSource.createSession(forRequestToken: requestToken,
+                                          checkingPermissionFromHeaders: headers) { result in
             switch result {
-            case .success(let id):
-                self.getAccount(forSessionId: id, shouldSaveSession: shouldSaveSession, completion: completion)
+            case .success(let session):
+                self.getAccount(forSessionId: session.id, shouldSaveSession: shouldSaveSession, completion: completion)
             case .failure(let error):
                 completion(.failure(error))
             }
@@ -72,6 +76,19 @@ extension AuthenticationRepository: Domain.AuthenticationRepository {
         accountRemoteDataSource.getAccount(forSession: sessionId) { result in
             switch result {
             case .success(let account):
+                self.save(account: account, forSessionId: sessionId,
+                          shouldSaveSession: shouldSaveSession, completion: completion)
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
+
+    private func save(account: Account, forSessionId sessionId: String, shouldSaveSession: Bool,
+                      completion: @escaping GenericCompletion<Account>) {
+        accountLocalDataSource.save(account: account) { result in
+            switch result {
+            case .success:
                 guard shouldSaveSession else {
                     completion(.success(account))
                     return
@@ -84,7 +101,7 @@ extension AuthenticationRepository: Domain.AuthenticationRepository {
     }
 
     private func save(sessionId: String, forAccount account: Account, completion: @escaping GenericCompletion<Account>) {
-        authLocalDatSource.save(sessionId: sessionId, forAccountId: account.id) { result in
+        authLocalDataSource.save(sessionId: sessionId, forAccountId: account.id) { result in
             switch result {
             case .success:
                 completion(.success(account))

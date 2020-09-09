@@ -20,6 +20,15 @@ public class SessionLocalDataSource {
 
 extension SessionLocalDataSource: AppData.SessionLocalDataSource {
 
+    public func select(sessionId: String, completion: @escaping GenericCompletion<Void>) {
+        do {
+            try self.keychainStorage.set(sessionId, keyable: .selectedSessionId, userId: nil, authentication: .simple, prompt: nil)
+            completion(.success(()))
+        } catch let error {
+            completion(.failure(error))
+        }
+    }
+
     public func save(sessionId: String, forAccountId accountId: String, completion: @escaping GenericCompletion<Void>) {
         guard Biometrics.shared.canAuthenticate() else {
             completion(.failure(InteractionError.failedRequest(L10n.Error.Descriction.biometric)))
@@ -29,7 +38,7 @@ extension SessionLocalDataSource: AppData.SessionLocalDataSource {
             do {
                 try self.keychainStorage.set(sessionId, keyable: .sessionId, userId: accountId, authentication: .biometric, prompt: nil)
                 DispatchQueue.main.async {
-                    completion(.success(()))
+                    self.select(sessionId: sessionId, completion: completion)
                 }
             } catch let error {
                 DispatchQueue.main.async {

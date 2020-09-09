@@ -11,6 +11,8 @@
 		560FEDE101EFBC7DC13B2E80 /* Pods_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4CC90B70D0F1F1AE161510 /* Pods_Domain.framework */; };
 		E1064C8B25007BC60054B091 /* AuthenticateCredentialsUseCaseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1064C8A25007BC60054B091 /* AuthenticateCredentialsUseCaseable.swift */; };
 		E1078A6D25080ADF00E99E22 /* AuthenticateCredentialsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1078A6C25080ADF00E99E22 /* AuthenticateCredentialsUseCase.swift */; };
+		E1078A732509567900E99E22 /* RequestToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1078A722509567900E99E22 /* RequestToken.swift */; };
+		E1078A752509579200E99E22 /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1078A742509579200E99E22 /* UserSession.swift */; };
 		E12F4ECB24F304710084EAD6 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12F4ECA24F304710084EAD6 /* Account.swift */; };
 		E12F4ECD24F30B730084EAD6 /* AuthenticateUserPermissionUseCaseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12F4ECC24F30B730084EAD6 /* AuthenticateUserPermissionUseCaseable.swift */; };
 		E12F4ECF24F30C660084EAD6 /* AuthenticateUserPermissionUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12F4ECE24F30C660084EAD6 /* AuthenticateUserPermissionUseCase.swift */; };
@@ -65,6 +67,8 @@
 		C84E6010860A3B52B6A491BD /* Pods_Domain_DomainTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Domain_DomainTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1064C8A25007BC60054B091 /* AuthenticateCredentialsUseCaseable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateCredentialsUseCaseable.swift; sourceTree = "<group>"; };
 		E1078A6C25080ADF00E99E22 /* AuthenticateCredentialsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateCredentialsUseCase.swift; sourceTree = "<group>"; };
+		E1078A722509567900E99E22 /* RequestToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestToken.swift; sourceTree = "<group>"; };
+		E1078A742509579200E99E22 /* UserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
 		E12F4ECA24F304710084EAD6 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		E12F4ECC24F30B730084EAD6 /* AuthenticateUserPermissionUseCaseable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateUserPermissionUseCaseable.swift; sourceTree = "<group>"; };
 		E12F4ECE24F30C660084EAD6 /* AuthenticateUserPermissionUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateUserPermissionUseCase.swift; sourceTree = "<group>"; };
@@ -224,6 +228,8 @@
 				E14442BC24E04E0B00008203 /* LocalizedRecord.swift */,
 				E14442DA24E04E0B00008203 /* Localized.swift */,
 				E12F4ECA24F304710084EAD6 /* Account.swift */,
+				E1078A722509567900E99E22 /* RequestToken.swift */,
+				E1078A742509579200E99E22 /* UserSession.swift */,
 			);
 			path = Responses;
 			sourceTree = "<group>";
@@ -525,6 +531,7 @@
 				E14443E024E04E0C00008203 /* SwiftyJSON+Ext.swift in Sources */,
 				E14443CB24E04E0C00008203 /* AppFailure.swift in Sources */,
 				E14443DB24E04E0C00008203 /* Array+Fakery.swift in Sources */,
+				E1078A752509579200E99E22 /* UserSession.swift in Sources */,
 				E14443DC24E04E0C00008203 /* Encodable+Extensions.swift in Sources */,
 				E14443DD24E04E0C00008203 /* Result+Ext.swift in Sources */,
 				E14443DE24E04E0C00008203 /* Locale+Ext.swift in Sources */,
@@ -538,6 +545,7 @@
 				E14443D324E04E0C00008203 /* Biometrics.swift in Sources */,
 				E144438924E04E0C00008203 /* Localized.swift in Sources */,
 				E144436024E04E0B00008203 /* SignOutRepository.swift in Sources */,
+				E1078A732509567900E99E22 /* RequestToken.swift in Sources */,
 				E14443DA24E04E0C00008203 /* Fakery+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
