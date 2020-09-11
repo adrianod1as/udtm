@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		1D37F418C633D12421D4A703 /* Pods_Domain_DomainTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84E6010860A3B52B6A491BD /* Pods_Domain_DomainTests.framework */; };
 		560FEDE101EFBC7DC13B2E80 /* Pods_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4CC90B70D0F1F1AE161510 /* Pods_Domain.framework */; };
+		E101F1E92509865C00D9C950 /* XCTestCase+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E101F1E82509865C00D9C950 /* XCTestCase+Ext.swift */; };
+		E101F1EF25098A4A00D9C950 /* EnumExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E101F1EE25098A4A00D9C950 /* EnumExtensionsTests.swift */; };
+		E101F204250ACFBE00D9C950 /* Enforcer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E101F203250ACFBE00D9C950 /* Enforcer.swift */; };
+		E101F206250ACFDA00D9C950 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E101F205250ACFDA00D9C950 /* Validation.swift */; };
+		E101F20C250AF2E100D9C950 /* Validation+Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E101F20B250AF2E100D9C950 /* Validation+Collection.swift */; };
 		E1064C8B25007BC60054B091 /* AuthenticateCredentialsUseCaseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1064C8A25007BC60054B091 /* AuthenticateCredentialsUseCaseable.swift */; };
 		E1078A6D25080ADF00E99E22 /* AuthenticateCredentialsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1078A6C25080ADF00E99E22 /* AuthenticateCredentialsUseCase.swift */; };
 		E1078A732509567900E99E22 /* RequestToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1078A722509567900E99E22 /* RequestToken.swift */; };
@@ -65,6 +70,11 @@
 		C1EC024FE2762378B2C8F008 /* Pods-Domain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.debug.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.debug.xcconfig"; sourceTree = "<group>"; };
 		C2C3ABB06D1386A8FFC98DD4 /* Pods-Domain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.release.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.release.xcconfig"; sourceTree = "<group>"; };
 		C84E6010860A3B52B6A491BD /* Pods_Domain_DomainTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Domain_DomainTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E101F1E82509865C00D9C950 /* XCTestCase+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Ext.swift"; sourceTree = "<group>"; };
+		E101F1EE25098A4A00D9C950 /* EnumExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumExtensionsTests.swift; sourceTree = "<group>"; };
+		E101F203250ACFBE00D9C950 /* Enforcer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enforcer.swift; sourceTree = "<group>"; };
+		E101F205250ACFDA00D9C950 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		E101F20B250AF2E100D9C950 /* Validation+Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Validation+Collection.swift"; sourceTree = "<group>"; };
 		E1064C8A25007BC60054B091 /* AuthenticateCredentialsUseCaseable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateCredentialsUseCaseable.swift; sourceTree = "<group>"; };
 		E1078A6C25080ADF00E99E22 /* AuthenticateCredentialsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateCredentialsUseCase.swift; sourceTree = "<group>"; };
 		E1078A722509567900E99E22 /* RequestToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestToken.swift; sourceTree = "<group>"; };
@@ -151,6 +161,64 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E101F1E62509863E00D9C950 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E101F1E72509864B00D9C950 /* Extensions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E101F1E72509864B00D9C950 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E101F1E82509865C00D9C950 /* XCTestCase+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E101F1EB2509868700D9C950 /* TestCases */ = {
+			isa = PBXGroup;
+			children = (
+				E101F1EC250989A000D9C950 /* Helpers */,
+			);
+			path = TestCases;
+			sourceTree = "<group>";
+		};
+		E101F1EC250989A000D9C950 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E101F1ED25098A3500D9C950 /* Extensions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E101F1ED25098A3500D9C950 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E101F1EE25098A4A00D9C950 /* EnumExtensionsTests.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E101F1F0250A95C500D9C950 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		E101F200250ABCF900D9C950 /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				E144432124E04E0B00008203 /* Validatable.swift */,
+				E101F203250ACFBE00D9C950 /* Enforcer.swift */,
+				E101F205250ACFDA00D9C950 /* Validation.swift */,
+				E101F20B250AF2E100D9C950 /* Validation+Collection.swift */,
+			);
+			path = Validator;
+			sourceTree = "<group>";
+		};
 		E144427924E04D9600008203 = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +242,7 @@
 		E144428524E04D9600008203 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				E101F200250ABCF900D9C950 /* Validator */,
 				E144432424E04E0B00008203 /* Helpers */,
 				E144433B24E04E0B00008203 /* UseCases */,
 				E14442B224E04E0B00008203 /* Models */,
@@ -188,6 +257,8 @@
 		E144429024E04D9600008203 /* DomainTests */ = {
 			isa = PBXGroup;
 			children = (
+				E101F1EB2509868700D9C950 /* TestCases */,
+				E101F1E62509863E00D9C950 /* Helpers */,
 				E144429124E04D9600008203 /* DomainTests.swift */,
 				E144429324E04D9600008203 /* Info.plist */,
 			);
@@ -214,6 +285,7 @@
 		E14442B224E04E0B00008203 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E101F1F0250A95C500D9C950 /* Sources */,
 				E14442B324E04E0B00008203 /* Responses */,
 				E14442DE24E04E0B00008203 /* Fakes */,
 				E144430024E04E0B00008203 /* Requests */,
@@ -254,7 +326,6 @@
 			children = (
 				E144431F24E04E0B00008203 /* AppFailure.swift */,
 				E144432024E04E0B00008203 /* Fakeable.swift */,
-				E144432124E04E0B00008203 /* Validatable.swift */,
 				E144432224E04E0B00008203 /* InteractionError.swift */,
 				E144432324E04E0B00008203 /* DomainConvertibleType.swift */,
 			);
@@ -519,6 +590,7 @@
 				E14443D824E04E0C00008203 /* Enum+Ext.swift in Sources */,
 				E14443D524E04E0C00008203 /* Regex+Ext.swift in Sources */,
 				E1078A6D25080ADF00E99E22 /* AuthenticateCredentialsUseCase.swift in Sources */,
+				E101F20C250AF2E100D9C950 /* Validation+Collection.swift in Sources */,
 				E14443E124E04E0C00008203 /* Array+Ext.swift in Sources */,
 				E12F4ECB24F304710084EAD6 /* Account.swift in Sources */,
 				E14443CD24E04E0C00008203 /* Validatable.swift in Sources */,
@@ -526,6 +598,7 @@
 				E14443D024E04E0C00008203 /* SignOutSceneCoordinating.swift in Sources */,
 				E12F4ECD24F30B730084EAD6 /* AuthenticateUserPermissionUseCaseable.swift in Sources */,
 				E14443CF24E04E0C00008203 /* DomainConvertibleType.swift in Sources */,
+				E101F206250ACFDA00D9C950 /* Validation.swift in Sources */,
 				E144436B24E04E0B00008203 /* LocalizedRecord.swift in Sources */,
 				E18A1D112500739000FC04F0 /* Credentials.swift in Sources */,
 				E14443E024E04E0C00008203 /* SwiftyJSON+Ext.swift in Sources */,
@@ -541,6 +614,7 @@
 				E14443CE24E04E0C00008203 /* InteractionError.swift in Sources */,
 				E14443D624E04E0C00008203 /* String+Extensions.swift in Sources */,
 				E14443D124E04E0C00008203 /* AppFlowStopping.swift in Sources */,
+				E101F204250ACFBE00D9C950 /* Enforcer.swift in Sources */,
 				E14443D224E04E0C00008203 /* SwiftGenStrings.swift in Sources */,
 				E14443D324E04E0C00008203 /* Biometrics.swift in Sources */,
 				E144438924E04E0C00008203 /* Localized.swift in Sources */,
@@ -554,6 +628,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E101F1E92509865C00D9C950 /* XCTestCase+Ext.swift in Sources */,
+				E101F1EF25098A4A00D9C950 /* EnumExtensionsTests.swift in Sources */,
 				E144429224E04D9600008203 /* DomainTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -746,7 +822,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KYWC2RHW78;
 				INFOPLIST_FILE = DomainTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -766,7 +842,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KYWC2RHW78;
 				INFOPLIST_FILE = DomainTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

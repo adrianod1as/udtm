@@ -19,6 +19,10 @@ extension AuthenticateCredentialsUseCase: AuthenticateCredentialsUseCaseable {
 
     public func execute(_ credentials: Credentials, shouldSaveSession: Bool,
                         completion: @escaping GenericCompletion<Account>) {
+        guard credentials.isValid else {
+            credentials.failures.forEach { completion(.failure($0)) }
+            return
+        }
         repository.authenticateCredentials(credentials, shouldSaveSession: shouldSaveSession, completion: completion)
     }
 }

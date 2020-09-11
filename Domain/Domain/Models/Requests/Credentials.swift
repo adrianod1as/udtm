@@ -41,3 +41,38 @@ public struct Credentials: Codable {
         return credentials
     }
 }
+
+extension Credentials: Validatable {
+
+    public enum Failure: LocalizedError {
+        case user(String)
+        case password(String)
+
+        public var failureReason: String? {
+            return L10n.Error.Title.ops
+        }
+
+        public var errorDescription: String? {
+            switch self {
+            case .user(let message), .password(let message):
+                return message
+            }
+        }
+    }
+
+    var validations: [ValidationResult] {
+        return [usernameValidation, passwordValidation]
+    }
+
+    var usernameValidation: ValidationResult {
+        return Enforcer(value: username,
+                        validations: [.nonEmpty(error: Failure.user(L10n.Error.Message.requiment))])
+                        .enforce()
+    }
+
+    var passwordValidation: ValidationResult {
+        return Enforcer(value: password,
+                        validations: [.nonEmpty(error: Failure.password(L10n.Error.Message.requiment))])
+                        .enforce()
+    }
+}

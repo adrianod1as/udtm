@@ -12,18 +12,18 @@ public typealias ValidationResult = Result<Void, Error>
 
 internal protocol Validatable {
 
-    associatedtype ValidationError: LocalizedError
+    associatedtype Failure: Error
     var validations: [ValidationResult] { get }
 }
 
 internal extension Validatable {
 
-    var errors: [Error] {
+    var failures: [Error] {
         return validations.compactMap({ $0.failure })
     }
 
     var isValid: Bool {
-        return errors.isEmpty
+        return failures.isEmpty
     }
 
 }

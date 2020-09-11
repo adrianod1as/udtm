@@ -22,7 +22,7 @@ public enum L10n {
     public enum Descriction {
       /// Não foi possível recuperar o saldo da conta.
       public static let balance = L10n.tr("Localizable", "Error.Descriction.balance")
-      /// Não foi possível recuperar o saldo da conta.
+      /// Não foi possível recuperar os dados via biometria.
       public static let biometric = L10n.tr("Localizable", "Error.Descriction.biometric")
       /// Não foi possível recuperar seu CPF.
       public static let cpf = L10n.tr("Localizable", "Error.Descriction.cpf")
