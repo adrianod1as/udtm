@@ -19,6 +19,10 @@ extension AuthenticateUserPermissionUseCase: AuthenticateUserPermissionUseCaseab
 
     public func execute(_ requestToken: String, _ headers: [String: String],
                         shouldSaveSession: Bool, completion: @escaping GenericCompletion<Account>) {
+        guard !headers.isEmpty else {
+            completion(.failure(InteractionError.invalidInput("Lista vazia de headers")))
+            return
+        }
         repository.authenticateUserPermission(forRequestToken: requestToken, headers: headers, shouldSaveSession: shouldSaveSession, completion: completion)
     }
 }

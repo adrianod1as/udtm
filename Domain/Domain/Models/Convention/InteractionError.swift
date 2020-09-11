@@ -32,17 +32,8 @@ extension InteractionError: LocalizedError {
 
     public var errorDescription: String? {
         switch self {
-        case .invalidInput(let message):
-            return message
-        case .failedRequest(let message):
-            return message
-        case .connectionProblem(let message):
-            return message
-        case .resourceNotFound(let message):
-            return message
-        case .noInternetConnection(let message):
-            return message
-        case .expiredUserSession(let message):
+        case .invalidInput(let message), .failedRequest(let message), .connectionProblem(let message),
+             .resourceNotFound(let message), .noInternetConnection(let message), .expiredUserSession(let message):
             return message
         case .appFailure(let errors):
             return errors.errorDescription
