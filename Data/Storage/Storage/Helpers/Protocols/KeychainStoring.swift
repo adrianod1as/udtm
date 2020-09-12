@@ -39,68 +39,64 @@ extension KeychainStoring {
             return Keychain(accessGroup: group)
         } else if let service = self.service {
             return Keychain(service: service)
-        } else {
-            return Keychain()
         }
+        return Keychain()
     }
 
-    public func set(_ value: String, keyable: ValueKeyable, userId: String?, authentication: AuthenticationType, prompt: String?) throws {
+    internal func biometricKeychain(prompt: String?) -> Keychain {
+        var keychain = self.keychain.accessibility(.whenPasscodeSetThisDeviceOnly, authenticationPolicy: .biometryAny)
+        if let prompt = prompt, !prompt.isEmpty {
+            keychain = keychain.authenticationPrompt(prompt)
+        }
+        return keychain
+    }
+
+    public func set(_ value: String, keyable: ValueKeyable, userId: String?,
+                    authentication: AuthenticationType, prompt: String?) throws {
         let key = getKey(keyable: keyable, userId: userId, authentication: authentication)
         switch authentication {
         case .simple:
             try keychain.set(value, key: key)
         case .biometric:
-            var keychain = self.keychain.accessibility(.whenPasscodeSetThisDeviceOnly, authenticationPolicy: .biometryAny)
-            if let prompt = prompt, !prompt.isEmpty {
-                keychain = keychain.authenticationPrompt(prompt)
-            }
-            return try keychain.set(value, key: key)
+            return try biometricKeychain(prompt: prompt).set(value, key: key)
         }
     }
 
-    public func set(_ value: Data, keyable: ValueKeyable, userId: String?, authentication: AuthenticationType, prompt: String?) throws {
+    public func set(_ value: Data, keyable: ValueKeyable, userId: String?,
+                    authentication: AuthenticationType, prompt: String?) throws {
         let key = getKey(keyable: keyable, userId: userId, authentication: authentication)
         switch authentication {
         case .simple:
             try keychain.set(value, key: key)
         case .biometric:
-            var keychain = self.keychain.accessibility(.whenPasscodeSetThisDeviceOnly, authenticationPolicy: .biometryAny)
-            if let prompt = prompt, !prompt.isEmpty {
-                keychain = keychain.authenticationPrompt(prompt)
-            }
-            return try keychain.set(value, key: key)
+            return try biometricKeychain(prompt: prompt).set(value, key: key)
         }
     }
 
-    public func getString(keyable: ValueKeyable, userId: String?, authentication: AuthenticationType, prompt: String?) throws -> String? {
+    public func getString(keyable: ValueKeyable, userId: String?,
+                          authentication: AuthenticationType, prompt: String?) throws -> String? {
         let key = getKey(keyable: keyable, userId: userId, authentication: authentication)
         switch authentication {
         case .simple:
             return try keychain.get(key)
         case .biometric:
-            var keychain = self.keychain.accessibility(.whenPasscodeSetThisDeviceOnly, authenticationPolicy: .biometryAny)
-            if let prompt = prompt, !prompt.isEmpty {
-                keychain = keychain.authenticationPrompt(prompt)
-            }
-            return try keychain.get(key)
+            return try biometricKeychain(prompt: prompt).get(key)
         }
     }
 
-    public func getData(keyable: ValueKeyable, userId: String?, authentication: AuthenticationType, prompt: String?) throws -> Data? {
+    public func getData(keyable: ValueKeyable, userId: String?,
+                        authentication: AuthenticationType, prompt: String?) throws -> Data? {
         let key = getKey(keyable: keyable, userId: userId, authentication: authentication)
         switch authentication {
         case .simple:
             return try keychain.getData(key)
         case .biometric:
-            var keychain = self.keychain.accessibility(.whenPasscodeSetThisDeviceOnly, authenticationPolicy: .biometryAny)
-            if let prompt = prompt, !prompt.isEmpty {
-                keychain = keychain.authenticationPrompt(prompt)
-            }
-            return try keychain.getData(key)
+            return try biometricKeychain(prompt: prompt).getData(key)
         }
     }
 
-    public func removeItem(keyable: ValueKeyable, userId: String?, authentication: AuthenticationType) throws {
+    public func removeItem(keyable: ValueKeyable, userId: String?,
+                           authentication: AuthenticationType) throws {
         let key = getKey(keyable: keyable, userId: userId, authentication: authentication)
         try keychain.remove(key)
     }
