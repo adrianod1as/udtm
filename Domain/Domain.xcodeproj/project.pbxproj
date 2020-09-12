@@ -71,6 +71,9 @@
 		E1D043A9250D38A7006F559C /* ValidatableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D043A8250D38A7006F559C /* ValidatableTests.swift */; };
 		E1D043AD250D38E9006F559C /* ErrorStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D043AC250D38E9006F559C /* ErrorStub.swift */; };
 		E1D043AF250D390F006F559C /* ModelStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D043AE250D390F006F559C /* ModelStub.swift */; };
+		E1D043B4250D5CFE006F559C /* Account+Fakeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D043B3250D5CFE006F559C /* Account+Fakeable.swift */; };
+		E1D043B6250D5D22006F559C /* UserSession+Fakeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D043B5250D5D22006F559C /* UserSession+Fakeable.swift */; };
+		E1D043B8250D5D30006F559C /* RequesToken+Fakeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D043B7250D5D30006F559C /* RequesToken+Fakeable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,6 +157,9 @@
 		E1D043A8250D38A7006F559C /* ValidatableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatableTests.swift; sourceTree = "<group>"; };
 		E1D043AC250D38E9006F559C /* ErrorStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorStub.swift; sourceTree = "<group>"; };
 		E1D043AE250D390F006F559C /* ModelStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelStub.swift; sourceTree = "<group>"; };
+		E1D043B3250D5CFE006F559C /* Account+Fakeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+Fakeable.swift"; sourceTree = "<group>"; };
+		E1D043B5250D5D22006F559C /* UserSession+Fakeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserSession+Fakeable.swift"; sourceTree = "<group>"; };
+		E1D043B7250D5D30006F559C /* RequesToken+Fakeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RequesToken+Fakeable.swift"; sourceTree = "<group>"; };
 		FE07C264BCEEC6CBD8219285 /* Pods-Domain-DomainTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain-DomainTests.debug.xcconfig"; path = "Target Support Files/Pods-Domain-DomainTests/Pods-Domain-DomainTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -218,6 +224,7 @@
 		E101F1EB2509868700D9C950 /* TestCases */ = {
 			isa = PBXGroup;
 			children = (
+				E144429124E04D9600008203 /* DomainTests.swift */,
 				E1D04395250D2F72006F559C /* UseCases */,
 				E1D0438D250D2A4E006F559C /* Validator */,
 				E1D0438E250D2A5A006F559C /* Models */,
@@ -310,7 +317,6 @@
 				E1D043AB250D38D6006F559C /* Models */,
 				E101F1EB2509868700D9C950 /* TestCases */,
 				E101F1E62509863E00D9C950 /* Helpers */,
-				E144429124E04D9600008203 /* DomainTests.swift */,
 				E144429324E04D9600008203 /* Info.plist */,
 				E1D043AA250D38CD006F559C /* Repositories */,
 			);
@@ -362,6 +368,9 @@
 			isa = PBXGroup;
 			children = (
 				E1D04391250D2AB1006F559C /* Credentials+Fakeable.swift */,
+				E1D043B3250D5CFE006F559C /* Account+Fakeable.swift */,
+				E1D043B5250D5D22006F559C /* UserSession+Fakeable.swift */,
+				E1D043B7250D5D30006F559C /* RequesToken+Fakeable.swift */,
 			);
 			path = Fakes;
 			sourceTree = "<group>";
@@ -707,13 +716,16 @@
 				E14443DD24E04E0C00008203 /* Result+Ext.swift in Sources */,
 				E14443DE24E04E0C00008203 /* Locale+Ext.swift in Sources */,
 				E14443D724E04E0C00008203 /* SwiftDate+Extensions.swift in Sources */,
+				E1D043B8250D5D30006F559C /* RequesToken+Fakeable.swift in Sources */,
 				E14443DF24E04E0C00008203 /* Numbers+Ext.swift in Sources */,
 				E14443D924E04E0C00008203 /* KeyedEncodingContainer+Ext.swift in Sources */,
 				E14443CE24E04E0C00008203 /* InteractionError.swift in Sources */,
 				E14443D624E04E0C00008203 /* String+Extensions.swift in Sources */,
+				E1D043B6250D5D22006F559C /* UserSession+Fakeable.swift in Sources */,
 				E14443D124E04E0C00008203 /* AppFlowStopping.swift in Sources */,
 				E101F204250ACFBE00D9C950 /* Enforcer.swift in Sources */,
 				E14443D224E04E0C00008203 /* SwiftGenStrings.swift in Sources */,
+				E1D043B4250D5CFE006F559C /* Account+Fakeable.swift in Sources */,
 				E14443D324E04E0C00008203 /* Biometrics.swift in Sources */,
 				E144438924E04E0C00008203 /* Localized.swift in Sources */,
 				E144436024E04E0B00008203 /* SignOutRepository.swift in Sources */,

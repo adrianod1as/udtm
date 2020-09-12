@@ -10,18 +10,18 @@ import Domain
 
 public class AuthenticationRepository {
 
-    private let authLocalDataSource: SessionLocalDataSource
-    private let accountLocalDataSource: AccountLocalDatSource
-    private let authRemoteDataSource: SessionRemoteDataSource
-    private let accountRemoteDataSource: AccountRemoteDataSource
+    internal let authLocalDataSource: SessionLocalDataSource
+    internal let accountLocalDataSource: AccountLocalDatSource
+    internal let authRemoteDataSource: SessionRemoteDataSource
+    internal let accountRemoteDataSource: AccountRemoteDataSource
 
     public init(authLocalDataSource: SessionLocalDataSource,
                 accountLocalDataSource: AccountLocalDatSource,
-                remoteDatSource: SessionRemoteDataSource,
+                authRemoteDataSource: SessionRemoteDataSource,
                 accountRemoteDataSource: AccountRemoteDataSource) {
         self.authLocalDataSource = authLocalDataSource
         self.accountLocalDataSource = accountLocalDataSource
-        self.authRemoteDataSource = remoteDatSource
+        self.authRemoteDataSource = authRemoteDataSource
         self.accountRemoteDataSource = accountRemoteDataSource
     }
 }
@@ -45,8 +45,9 @@ extension AuthenticationRepository: Domain.AuthenticationRepository {
         }
     }
 
-    private func authenticate(credentials: Credentials, with requestToken: String,
-                              shouldSaveSession: Bool, completion: @escaping GenericCompletion<Account>) {
+    internal func authenticate(credentials: Credentials,
+                               with requestToken: String, shouldSaveSession: Bool,
+                               completion: @escaping GenericCompletion<Account>) {
         authRemoteDataSource.createSession(forCredentials: credentials.setting(requestToken: requestToken)) { result in
             switch result {
             case .success(let session):
@@ -71,7 +72,7 @@ extension AuthenticationRepository: Domain.AuthenticationRepository {
         }
     }
 
-    private func getAccount(forSessionId sessionId: String, shouldSaveSession: Bool,
+    internal func getAccount(forSessionId sessionId: String, shouldSaveSession: Bool,
                             completion: @escaping GenericCompletion<Account>) {
         accountRemoteDataSource.getAccount(forSession: sessionId) { result in
             switch result {
@@ -84,8 +85,9 @@ extension AuthenticationRepository: Domain.AuthenticationRepository {
         }
     }
 
-    private func save(account: Account, forSessionId sessionId: String, shouldSaveSession: Bool,
-                      completion: @escaping GenericCompletion<Account>) {
+    internal func save(account: Account,
+                       forSessionId sessionId: String, shouldSaveSession: Bool,
+                       completion: @escaping GenericCompletion<Account>) {
         accountLocalDataSource.save(account: account) { result in
             switch result {
             case .success:
@@ -100,7 +102,8 @@ extension AuthenticationRepository: Domain.AuthenticationRepository {
         }
     }
 
-    private func save(sessionId: String, forAccount account: Account, completion: @escaping GenericCompletion<Account>) {
+    internal func save(sessionId: String, forAccount account: Account,
+                       completion: @escaping GenericCompletion<Account>) {
         authLocalDataSource.save(sessionId: sessionId, forAccountId: account.id) { result in
             switch result {
             case .success:

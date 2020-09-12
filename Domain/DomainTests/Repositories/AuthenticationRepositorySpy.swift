@@ -6,7 +6,6 @@
 //  Copyright © 2020 dias. All rights reserved.
 //
 
-import Foundation
 @testable import Domain
 
 class AuthenticationRepositorySpy: AuthenticationRepository {

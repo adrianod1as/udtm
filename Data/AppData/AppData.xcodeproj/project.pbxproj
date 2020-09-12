@@ -21,6 +21,11 @@
 		E144444624E056C800008203 /* SignOutRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E144443024E056C800008203 /* SignOutRepository.swift */; };
 		E144444824E056C800008203 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E144443324E056C800008203 /* Localizable.strings */; };
 		E144444A24E05A2500008203 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E144444924E05A2500008203 /* Domain.framework */; };
+		E1D043B2250D5CCB006F559C /* AuthenticationRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D043B1250D5CCB006F559C /* AuthenticationRepositoryTests.swift */; };
+		E1D043BA250D60BD006F559C /* SessionLocalDataSourceFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D043B9250D60BD006F559C /* SessionLocalDataSourceFake.swift */; };
+		E1E6169E250D618B0082901D /* AccountLocalDatSourceFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E6169D250D618B0082901D /* AccountLocalDatSourceFake.swift */; };
+		E1E616A0250D61D30082901D /* SessionRemoteDataSourceFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E6169F250D61D30082901D /* SessionRemoteDataSourceFake.swift */; };
+		E1E616A2250D62E60082901D /* AccountRemoteDataSourceFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E616A1250D62E60082901D /* AccountRemoteDataSourceFake.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +59,11 @@
 		E144443024E056C800008203 /* SignOutRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignOutRepository.swift; sourceTree = "<group>"; };
 		E144443324E056C800008203 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		E144444924E05A2500008203 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1D043B1250D5CCB006F559C /* AuthenticationRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRepositoryTests.swift; sourceTree = "<group>"; };
+		E1D043B9250D60BD006F559C /* SessionLocalDataSourceFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionLocalDataSourceFake.swift; sourceTree = "<group>"; };
+		E1E6169D250D618B0082901D /* AccountLocalDatSourceFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountLocalDatSourceFake.swift; sourceTree = "<group>"; };
+		E1E6169F250D61D30082901D /* SessionRemoteDataSourceFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionRemoteDataSourceFake.swift; sourceTree = "<group>"; };
+		E1E616A1250D62E60082901D /* AccountRemoteDataSourceFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRemoteDataSourceFake.swift; sourceTree = "<group>"; };
 		F0BE4470F6D9B59519316ECC /* Pods-AppData-AppDataTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppData-AppDataTests.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-AppData-AppDataTests/Pods-AppData-AppDataTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -164,8 +174,9 @@
 		E144440C24E0555900008203 /* AppDataTests */ = {
 			isa = PBXGroup;
 			children = (
-				E144440D24E0555900008203 /* AppDataTests.swift */,
+				E1D043B0250D5CA4006F559C /* TestCases */,
 				E144440F24E0555900008203 /* Info.plist */,
+				E1D043BB250D60C1006F559C /* Datasources */,
 			);
 			path = AppDataTests;
 			sourceTree = "<group>";
@@ -217,6 +228,26 @@
 				E144443324E056C800008203 /* Localizable.strings */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		E1D043B0250D5CA4006F559C /* TestCases */ = {
+			isa = PBXGroup;
+			children = (
+				E144440D24E0555900008203 /* AppDataTests.swift */,
+				E1D043B1250D5CCB006F559C /* AuthenticationRepositoryTests.swift */,
+			);
+			path = TestCases;
+			sourceTree = "<group>";
+		};
+		E1D043BB250D60C1006F559C /* Datasources */ = {
+			isa = PBXGroup;
+			children = (
+				E1D043B9250D60BD006F559C /* SessionLocalDataSourceFake.swift */,
+				E1E6169D250D618B0082901D /* AccountLocalDatSourceFake.swift */,
+				E1E6169F250D61D30082901D /* SessionRemoteDataSourceFake.swift */,
+				E1E616A1250D62E60082901D /* AccountRemoteDataSourceFake.swift */,
+			);
+			path = Datasources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -411,6 +442,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E144440E24E0555900008203 /* AppDataTests.swift in Sources */,
+				E1D043B2250D5CCB006F559C /* AuthenticationRepositoryTests.swift in Sources */,
+				E1E616A0250D61D30082901D /* SessionRemoteDataSourceFake.swift in Sources */,
+				E1E616A2250D62E60082901D /* AccountRemoteDataSourceFake.swift in Sources */,
+				E1D043BA250D60BD006F559C /* SessionLocalDataSourceFake.swift in Sources */,
+				E1E6169E250D618B0082901D /* AccountLocalDatSourceFake.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
