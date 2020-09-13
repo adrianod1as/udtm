@@ -13,7 +13,6 @@ class AuthenticateCredentialsUseCaseTestsTests: XCTestCase {
 
     private var sut: AuthenticateCredentialsUseCase!
     private var spy: AuthenticationRepositorySpy!
-    private let dummyLocalizeds = [Localized.unexpected]
 
     override func setUp() {
         super.setUp()

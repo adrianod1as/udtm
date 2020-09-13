@@ -10,7 +10,7 @@ import Foundation
 import OxeNetworking
 import SwiftyJSON
 
-public enum EnvironmentType: String, EnvironmentSpecifying {
+public enum EnvironmentType: String, EnvironmentSpecifying, CaseIterable {
     case development, production, store
 
     public var name: String {

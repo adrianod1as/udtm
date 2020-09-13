@@ -23,16 +23,16 @@ class ResultExtensionsTests: XCTestCase {
     }
 
     func testSuccess() {
-        let dummy = L10n.Symbol.locale
-        sut = .success(dummy)
-        XCTAssertEqual(sut.success, dummy)
+        let stub = L10n.Symbol.locale
+        sut = .success(stub)
+        XCTAssertEqual(sut.success, stub)
         XCTAssertNil(sut.failure)
     }
 
     func testFailure() {
-        let dummy = InteractionError.failedRequest(L10n.Error.Message.email)
-        sut = .failure(dummy)
-        XCTAssertEqual(sut.failure?.localizedDescription, dummy.localizedDescription)
+        let stub = InteractionError.failedRequest(L10n.Error.Message.email)
+        sut = .failure(stub)
+        XCTAssertEqual(sut.failure?.localizedDescription, stub.localizedDescription)
         XCTAssertNil(sut.success)
     }
 }

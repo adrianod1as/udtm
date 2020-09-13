@@ -21,7 +21,7 @@ extension AccountTarget: TMDBApiFriendly {
     }
 
     public var version: String {
-        return "3"
+        return 3.description
     }
 
     public var path: String {

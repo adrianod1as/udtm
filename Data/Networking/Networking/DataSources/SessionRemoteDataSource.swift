@@ -29,7 +29,8 @@ extension SessionRemoteDataSource: AppData.SessionRemoteDataSource {
         dispatcher.getDecodable(RequestToken.self, from: AuthenticationTarget.requestToken, completion: completion)
     }
 
-    public func createSession(forRequestToken requestToken: String, checkingPermissionFromHeaders headers: [String : String],
+    public func createSession(forRequestToken requestToken: String,
+                              checkingPermissionFromHeaders headers: [String : String],
                               completion: @escaping GenericCompletion<UserSession>) {
         guard headers.hasUserAuthenticatedToken else {
             completion(.failure(InteractionError.failedRequest("Token não autenticado pelo usuário.")))
@@ -39,7 +40,7 @@ extension SessionRemoteDataSource: AppData.SessionRemoteDataSource {
     }
 
     public func createSession(forCredentials credentials: Credentials, completion: @escaping GenericCompletion<UserSession>) {
-        dispatcher.getDecodable(RequestToken.self, from: AuthenticationTarget.authenticateTokenWithCredentials(credentials)) { result in
+        createRequestToken(forCredentials: credentials) { result in
             switch result {
             case .success(let token):
                 self.createSession(forAuthenticatedRequestToken: token.code, completion: completion)
@@ -47,6 +48,13 @@ extension SessionRemoteDataSource: AppData.SessionRemoteDataSource {
                 completion(.failure(error))
             }
         }
+    }
+
+    internal func createRequestToken(forCredentials credentials: Credentials,
+                                    completion: @escaping GenericCompletion<RequestToken>) {
+        dispatcher.getDecodable(RequestToken.self,
+                                from: AuthenticationTarget.authenticateTokenWithCredentials(credentials),
+                                completion: completion)
     }
 }
 

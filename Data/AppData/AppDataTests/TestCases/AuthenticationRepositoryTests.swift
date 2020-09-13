@@ -17,7 +17,7 @@ class AuthenticationRepositoryTests: XCTestCase {
     private var accountLocalDataSourceFake: AccountLocalDatSource!
     private var authRemoteDataSourceFake: SessionRemoteDataSource!
     private var accountRemoteDataSourceFake: AccountRemoteDataSource!
-    private let dummyError = InteractionError.failedRequest("")
+    private let stubError = InteractionError.failedRequest("")
 
     override func setUp() {
         super.setUp()
@@ -50,7 +50,7 @@ class AuthenticationRepositoryTests: XCTestCase {
 
     func testAuthenticateCredentialsFailure() {
         (sut.authRemoteDataSource as? SessionRemoteDataSourceFake)?
-            .createRequestTokenResult = .failure(dummyError)
+            .createRequestTokenResult = .failure(stubError)
         sut.authenticateCredentials(Credentials.getFakedItem(), shouldSaveSession: true) { result in
             XCTAssertNotNil(result.failure)
         }
@@ -65,7 +65,7 @@ class AuthenticationRepositoryTests: XCTestCase {
 
     func testAuthenticateCredentialsWithRequestTokenFailure() {
         (sut.authRemoteDataSource as? SessionRemoteDataSourceFake)?
-            .createSessionForCredentialsTokenResult = .failure(dummyError)
+            .createSessionForCredentialsTokenResult = .failure(stubError)
         sut.authenticate(credentials: Credentials.getFakedItem(),
                          with: RequestToken.getFakedItem().code, shouldSaveSession: true) { result in
             XCTAssertNotNil(result.failure)
@@ -81,7 +81,7 @@ class AuthenticationRepositoryTests: XCTestCase {
 
     func testAuthenticateUserPermissionFailure() {
         (sut.authRemoteDataSource as? SessionRemoteDataSourceFake)?
-            .createSessionForRequestTokenResult = .failure(dummyError)
+            .createSessionForRequestTokenResult = .failure(stubError)
         sut.authenticateUserPermission(forRequestToken: RequestToken.getFakedItem().code,
                                        headers: ["key": "value"], shouldSaveSession: true) { result in
             XCTAssertNotNil(result.failure)
@@ -95,7 +95,7 @@ class AuthenticationRepositoryTests: XCTestCase {
     }
 
     func testGetAccountFailure() {
-        (sut.accountRemoteDataSource as? AccountRemoteDataSourceFake)?.getAccountResult = .failure(dummyError)
+        (sut.accountRemoteDataSource as? AccountRemoteDataSourceFake)?.getAccountResult = .failure(stubError)
         sut.getAccount(forSessionId: UserSession.getFakedItem().id, shouldSaveSession: true) { result in
             XCTAssertNotNil(result.failure)
         }
@@ -116,7 +116,7 @@ class AuthenticationRepositoryTests: XCTestCase {
     }
 
     func testSaveAccountFailure() {
-        (sut.accountLocalDataSource as? AccountLocalDatSourceFake)?.saveAccountResult = .failure(dummyError)
+        (sut.accountLocalDataSource as? AccountLocalDatSourceFake)?.saveAccountResult = .failure(stubError)
         sut.save(account: Account.getFakedItem(),
                  forSessionId: UserSession.getFakedItem().id, shouldSaveSession: false) { result in
             XCTAssertNotNil(result.failure)
@@ -130,7 +130,7 @@ class AuthenticationRepositoryTests: XCTestCase {
     }
 
     func testSaveSessionFailure() {
-        (sut.authLocalDataSource as? SessionLocalDataSourceFake)?.saveSessionIdResult = .failure(dummyError)
+        (sut.authLocalDataSource as? SessionLocalDataSourceFake)?.saveSessionIdResult = .failure(stubError)
         sut.save(sessionId: UserSession.getFakedItem().id, forAccount: Account.getFakedItem()) { result in
             XCTAssertNotNil(result.failure)
         }
