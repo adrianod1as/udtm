@@ -9,7 +9,7 @@
 import RealmSwift
 import Disk
 
-protocol RealmStoring {
+public protocol RealmStoring {
 
     var group: String { get }
     var indentifier: String { get }
@@ -22,11 +22,11 @@ protocol RealmStoring {
 
 extension RealmStoring {
 
-    var migrationBlock: MigrationBlock? {
+    public var migrationBlock: MigrationBlock? {
         return { _, _ in }
     }
 
-    var key: NSData {
+    public var key: NSData {
         let keychainIdentifierData = indentifier.data(using: String.Encoding.utf8, allowLossyConversion: false)!
 
         // First check in the keychain for an existing key
@@ -72,7 +72,7 @@ extension RealmStoring {
         }
     }
 
-    func getConfiguration(for path: String) -> Realm.Configuration {
+    public func getConfiguration(for path: String) -> Realm.Configuration {
         let containerURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: group)
         let fileURL = containerURL!.appendingPathComponent(path)
         var configuration = Realm.Configuration(fileURL: fileURL, encryptionKey: key as Data)
@@ -81,7 +81,7 @@ extension RealmStoring {
         return configuration
     }
 
-    func asRealm(forUser name: String?) -> Realm {
+    public func asRealm(forUser name: String?) -> Realm {
         let name = name ?? L10n.Realm.Database.defaultName
         let path = L10n.Realm.Database.path(L10n.Realm.Database.name(name))
         let realm = getConfiguration(for: path).asRealm()
@@ -89,4 +89,7 @@ extension RealmStoring {
         return realm
     }
 
+    var defaultRealm: Realm {
+        return asRealm(forUser: nil)
+    }
 }

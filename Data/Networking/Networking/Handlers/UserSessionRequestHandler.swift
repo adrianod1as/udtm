@@ -17,20 +17,20 @@ import OxeNetworking
 public class UserSessionRequestHandler: RequestHandler {
 
     public var environment: Environment
-    private let coordinator: SignOutSceneCoordinating
+    internal let coordinator: SignOutSceneCoordinating
     private let lock = NSLock()
     private var isRefreshing = false
     private var requestsToRetry: [(RetryResult) -> Void] = []
     private var retryCount: Int = 0
 
-    private lazy var session: Alamofire.Session = {
+    internal lazy var session: Alamofire.Session = {
         let configuration = URLSessionConfiguration.default
         configuration.httpAdditionalHeaders = HTTPHeaders.default.dictionary
-        let manager = Alamofire.Session(configuration: URLSessionConfiguration.default)
-        return manager
+        let session = Alamofire.Session(configuration: configuration)
+        return session
     }()
 
-    private lazy var provider: MoyaProvider<MultiTarget> = {
+    internal lazy var provider: MoyaProvider<MultiTarget> = {
         let endpointClosure = { (target: MultiTarget) -> Endpoint in
             return Endpoint.from(target: target, inEnvironment: self.environment)
         }

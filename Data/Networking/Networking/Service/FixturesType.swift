@@ -9,7 +9,7 @@
 import Foundation
 import OxeNetworking
 
-public enum FixturesType: String, FixtureTypeSpecifying {
+public enum FixturesType: String, FixtureTypeSpecifying, CaseIterable {
     case object, json, none
 
     public var isEnabled: Bool {

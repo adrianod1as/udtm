@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		58371008283A69C4C3CF2B9C /* Pods_Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 783F8E3E9CC6F69E513C14E3 /* Pods_Networking.framework */; };
 		CE0ECADD613E643232FAECC3 /* Pods_Networking_NetworkingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FC6A6359A7DFE316C2141EB /* Pods_Networking_NetworkingTests.framework */; };
+		E1078A7125094DA400E99E22 /* AuthenticationTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1078A7025094DA400E99E22 /* AuthenticationTarget.swift */; };
+		E1078A772509683600E99E22 /* AccountTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1078A762509683600E99E22 /* AccountTarget.swift */; };
+		E12F4EE024F313C10084EAD6 /* SessionRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12F4EDF24F313C10084EAD6 /* SessionRemoteDataSource.swift */; };
 		E14441FC24E0487100008203 /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14441F224E0487100008203 /* Networking.framework */; };
 		E144420124E0487100008203 /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E144420024E0487100008203 /* NetworkingTests.swift */; };
 		E144420324E0487100008203 /* Networking.h in Headers */ = {isa = PBXBuildFile; fileRef = E14441F524E0487100008203 /* Networking.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +26,20 @@
 		E144427724E0498500008203 /* UserSessionRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E144424624E0498500008203 /* UserSessionRequestHandler.swift */; };
 		E144444E24E05A4500008203 /* AppData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E144444D24E05A4500008203 /* AppData.framework */; };
 		E144445224E05B9D00008203 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E144445124E05B9D00008203 /* Domain.framework */; };
+		E1AA0ED224F3143200A78803 /* AccountRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AA0ED124F3143200A78803 /* AccountRemoteDataSource.swift */; };
+		E1E616A8250E9DF50082901D /* ErrorExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E616A7250E9DF50082901D /* ErrorExtensionsTests.swift */; };
+		E1E616AA250E9F050082901D /* NetworkingReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E616A9250E9F050082901D /* NetworkingReachability.swift */; };
+		E1E616AD250EA0680082901D /* NetworkingReachabilityStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E616AC250EA0680082901D /* NetworkingReachabilityStub.swift */; };
+		E1E616AF250EA60E0082901D /* CertificatesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E616AE250EA60E0082901D /* CertificatesTests.swift */; };
+		E1E616B1250EA6A70082901D /* SpecificHeaderTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E616B0250EA6A70082901D /* SpecificHeaderTypeTests.swift */; };
+		E1E616B6250EA7500082901D /* FixtureTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E616B5250EA7500082901D /* FixtureTypeTests.swift */; };
+		E1E616B8250EA8140082901D /* EnvironmentTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E616B7250EA8140082901D /* EnvironmentTypeTests.swift */; };
+		E1E616BB250EA8F20082901D /* AccountTargetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E616BA250EA8F20082901D /* AccountTargetTests.swift */; };
+		E1E616BE250EAD6F0082901D /* AccountRemoteDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E616BD250EAD6F0082901D /* AccountRemoteDataSourceTests.swift */; };
+		E1E616C1250EB9FA0082901D /* DispatcherFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E616C0250EB9FA0082901D /* DispatcherFake.swift */; };
+		E1E616C3250EBF320082901D /* SessionRemoteDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E616C2250EBF320082901D /* SessionRemoteDataSourceTests.swift */; };
+		E1E616C6250EC6310082901D /* UserSessionRequestHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E616C5250EC6310082901D /* UserSessionRequestHandlerTests.swift */; };
+		E1E616C9250EC7AD0082901D /* SignOutSceneCoordinatorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E616C8250EC7AD0082901D /* SignOutSceneCoordinatorSpy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +59,9 @@
 		6EAC3EBCAB67BAE0294F3CCE /* Pods-Networking-NetworkingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Networking-NetworkingTests.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-Networking-NetworkingTests/Pods-Networking-NetworkingTests.release.xcconfig"; sourceTree = "<group>"; };
 		783F8E3E9CC6F69E513C14E3 /* Pods_Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		785AAF85556AAEC57B950495 /* Pods-Networking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Networking.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-Networking/Pods-Networking.release.xcconfig"; sourceTree = "<group>"; };
+		E1078A7025094DA400E99E22 /* AuthenticationTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTarget.swift; sourceTree = "<group>"; };
+		E1078A762509683600E99E22 /* AccountTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTarget.swift; sourceTree = "<group>"; };
+		E12F4EDF24F313C10084EAD6 /* SessionRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionRemoteDataSource.swift; sourceTree = "<group>"; };
 		E14441F224E0487100008203 /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E14441F524E0487100008203 /* Networking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Networking.h; sourceTree = "<group>"; };
 		E14441F624E0487100008203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,6 +79,20 @@
 		E144424624E0498500008203 /* UserSessionRequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSessionRequestHandler.swift; sourceTree = "<group>"; };
 		E144444D24E05A4500008203 /* AppData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E144445124E05B9D00008203 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1AA0ED124F3143200A78803 /* AccountRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRemoteDataSource.swift; sourceTree = "<group>"; };
+		E1E616A7250E9DF50082901D /* ErrorExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorExtensionsTests.swift; sourceTree = "<group>"; };
+		E1E616A9250E9F050082901D /* NetworkingReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingReachability.swift; sourceTree = "<group>"; };
+		E1E616AC250EA0680082901D /* NetworkingReachabilityStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingReachabilityStub.swift; sourceTree = "<group>"; };
+		E1E616AE250EA60E0082901D /* CertificatesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificatesTests.swift; sourceTree = "<group>"; };
+		E1E616B0250EA6A70082901D /* SpecificHeaderTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificHeaderTypeTests.swift; sourceTree = "<group>"; };
+		E1E616B5250EA7500082901D /* FixtureTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixtureTypeTests.swift; sourceTree = "<group>"; };
+		E1E616B7250EA8140082901D /* EnvironmentTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentTypeTests.swift; sourceTree = "<group>"; };
+		E1E616BA250EA8F20082901D /* AccountTargetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTargetTests.swift; sourceTree = "<group>"; };
+		E1E616BD250EAD6F0082901D /* AccountRemoteDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRemoteDataSourceTests.swift; sourceTree = "<group>"; };
+		E1E616C0250EB9FA0082901D /* DispatcherFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatcherFake.swift; sourceTree = "<group>"; };
+		E1E616C2250EBF320082901D /* SessionRemoteDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionRemoteDataSourceTests.swift; sourceTree = "<group>"; };
+		E1E616C5250EC6310082901D /* UserSessionRequestHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionRequestHandlerTests.swift; sourceTree = "<group>"; };
+		E1E616C8250EC7AD0082901D /* SignOutSceneCoordinatorSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutSceneCoordinatorSpy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +180,10 @@
 		E14441FF24E0487100008203 /* NetworkingTests */ = {
 			isa = PBXGroup;
 			children = (
-				E144420024E0487100008203 /* NetworkingTests.swift */,
+				E1E616C7250EC7970082901D /* Coordinators */,
+				E1E616BF250EB9EE0082901D /* Dispatcher */,
+				E1E616AB250E9FE20082901D /* Service */,
+				E1E616A6250E9DC60082901D /* TestCases */,
 				E144420224E0487100008203 /* Info.plist */,
 			);
 			path = NetworkingTests;
@@ -203,6 +240,8 @@
 		E144421924E0498400008203 /* DataSources */ = {
 			isa = PBXGroup;
 			children = (
+				E12F4EDF24F313C10084EAD6 /* SessionRemoteDataSource.swift */,
+				E1AA0ED124F3143200A78803 /* AccountRemoteDataSource.swift */,
 			);
 			path = DataSources;
 			sourceTree = "<group>";
@@ -213,6 +252,7 @@
 				E144422C24E0498400008203 /* EnvironmentType.swift */,
 				E144422D24E0498400008203 /* FixturesType.swift */,
 				E144422E24E0498400008203 /* Certificates.swift */,
+				E1E616A9250E9F050082901D /* NetworkingReachability.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -222,6 +262,8 @@
 			children = (
 				E144423924E0498400008203 /* TMDBApiFriendly.swift */,
 				E144423A24E0498400008203 /* SpecificHeaderType.swift */,
+				E1078A7025094DA400E99E22 /* AuthenticationTarget.swift */,
+				E1078A762509683600E99E22 /* AccountTarget.swift */,
 			);
 			path = Targets;
 			sourceTree = "<group>";
@@ -240,6 +282,95 @@
 				E144424624E0498500008203 /* UserSessionRequestHandler.swift */,
 			);
 			path = Handlers;
+			sourceTree = "<group>";
+		};
+		E1E616A6250E9DC60082901D /* TestCases */ = {
+			isa = PBXGroup;
+			children = (
+				E1E616C4250EC6200082901D /* Handlers */,
+				E1E616BC250EAD620082901D /* Datasources */,
+				E1E616B9250EA8E60082901D /* Targets */,
+				E144420024E0487100008203 /* NetworkingTests.swift */,
+				E1E616B3250EA6C90082901D /* Helpers */,
+				E1E616B2250EA6BC0082901D /* Services */,
+			);
+			path = TestCases;
+			sourceTree = "<group>";
+		};
+		E1E616AB250E9FE20082901D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E1E616AC250EA0680082901D /* NetworkingReachabilityStub.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		E1E616B2250EA6BC0082901D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E1E616AE250EA60E0082901D /* CertificatesTests.swift */,
+				E1E616B0250EA6A70082901D /* SpecificHeaderTypeTests.swift */,
+				E1E616B5250EA7500082901D /* FixtureTypeTests.swift */,
+				E1E616B7250EA8140082901D /* EnvironmentTypeTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E1E616B3250EA6C90082901D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E1E616B4250EA6CF0082901D /* Extensions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E1E616B4250EA6CF0082901D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E1E616A7250E9DF50082901D /* ErrorExtensionsTests.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E1E616B9250EA8E60082901D /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				E1E616BA250EA8F20082901D /* AccountTargetTests.swift */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		E1E616BC250EAD620082901D /* Datasources */ = {
+			isa = PBXGroup;
+			children = (
+				E1E616BD250EAD6F0082901D /* AccountRemoteDataSourceTests.swift */,
+				E1E616C2250EBF320082901D /* SessionRemoteDataSourceTests.swift */,
+			);
+			path = Datasources;
+			sourceTree = "<group>";
+		};
+		E1E616BF250EB9EE0082901D /* Dispatcher */ = {
+			isa = PBXGroup;
+			children = (
+				E1E616C0250EB9FA0082901D /* DispatcherFake.swift */,
+			);
+			path = Dispatcher;
+			sourceTree = "<group>";
+		};
+		E1E616C4250EC6200082901D /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				E1E616C5250EC6310082901D /* UserSessionRequestHandlerTests.swift */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		E1E616C7250EC7970082901D /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				E1E616C8250EC7AD0082901D /* SignOutSceneCoordinatorSpy.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -419,14 +550,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E12F4EE024F313C10084EAD6 /* SessionRemoteDataSource.swift in Sources */,
 				E144426124E0498500008203 /* FixturesType.swift in Sources */,
+				E1AA0ED224F3143200A78803 /* AccountRemoteDataSource.swift in Sources */,
 				E144424B24E0498500008203 /* Error+Ext.swift in Sources */,
 				E144426C24E0498500008203 /* TMDBApiFriendly.swift in Sources */,
+				E1078A7125094DA400E99E22 /* AuthenticationTarget.swift in Sources */,
 				E144426024E0498500008203 /* EnvironmentType.swift in Sources */,
 				E144427724E0498500008203 /* UserSessionRequestHandler.swift in Sources */,
 				E144424A24E0498500008203 /* SwiftGenStrings.swift in Sources */,
 				E144426224E0498500008203 /* Certificates.swift in Sources */,
+				E1078A772509683600E99E22 /* AccountTarget.swift in Sources */,
 				E144426D24E0498500008203 /* SpecificHeaderType.swift in Sources */,
+				E1E616AA250E9F050082901D /* NetworkingReachability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,7 +570,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1E616C6250EC6310082901D /* UserSessionRequestHandlerTests.swift in Sources */,
+				E1E616B1250EA6A70082901D /* SpecificHeaderTypeTests.swift in Sources */,
+				E1E616A8250E9DF50082901D /* ErrorExtensionsTests.swift in Sources */,
+				E1E616BB250EA8F20082901D /* AccountTargetTests.swift in Sources */,
+				E1E616AD250EA0680082901D /* NetworkingReachabilityStub.swift in Sources */,
+				E1E616B6250EA7500082901D /* FixtureTypeTests.swift in Sources */,
+				E1E616BE250EAD6F0082901D /* AccountRemoteDataSourceTests.swift in Sources */,
+				E1E616C9250EC7AD0082901D /* SignOutSceneCoordinatorSpy.swift in Sources */,
 				E144420124E0487100008203 /* NetworkingTests.swift in Sources */,
+				E1E616C3250EBF320082901D /* SessionRemoteDataSourceTests.swift in Sources */,
+				E1E616C1250EB9FA0082901D /* DispatcherFake.swift in Sources */,
+				E1E616B8250EA8140082901D /* EnvironmentTypeTests.swift in Sources */,
+				E1E616AF250EA60E0082901D /* CertificatesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

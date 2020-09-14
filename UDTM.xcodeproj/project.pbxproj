@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76BAC12467F92ACADC5BF666 /* Pods_UDTMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C38BE4F72E3CB4690953A6 /* Pods_UDTMTests.framework */; };
 		9BC608885A3400F9558B0118 /* Pods_UDMTTargets_UDTM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FAB38A057B49883E3475191 /* Pods_UDMTTargets_UDTM.framework */; };
-		B6E762C77E7B6561BD3D582A /* Pods_UDTMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C38BE4F72E3CB4690953A6 /* Pods_UDTMTests.framework */; };
+		E100639A25100B120071FB41 /* UDTMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100639925100B120071FB41 /* UDTMTests.swift */; };
 		E12F4EB624F17D3A0084EAD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E12F4EB524F17D3A0084EAD6 /* Assets.xcassets */; };
 		E12F4EC924F2EE190084EAD6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12F4EC824F2EE190084EAD6 /* SceneDelegate.swift */; };
 		E144450E24E078EA00008203 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E144450D24E078EA00008203 /* Domain.framework */; };
@@ -21,8 +22,6 @@
 		E144451924E0790500008203 /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E144451724E0790500008203 /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E145727724DF508C0026D925 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E145727624DF508C0026D925 /* AppDelegate.swift */; };
 		E145728324DF508E0026D925 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E145728124DF508E0026D925 /* LaunchScreen.storyboard */; };
-		E145728E24DF508E0026D925 /* UDTMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E145728D24DF508E0026D925 /* UDTMTests.swift */; };
-		E145729924DF508E0026D925 /* UDTMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E145729824DF508E0026D925 /* UDTMUITests.swift */; };
 		E14A076D24E4B99A006A5DC5 /* DI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14A076C24E4B99A006A5DC5 /* DI.framework */; };
 		E14A076E24E4B99A006A5DC5 /* DI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E14A076C24E4B99A006A5DC5 /* DI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E14A077024E4B9A1006A5DC5 /* AppNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14A076F24E4B9A1006A5DC5 /* AppNavigation.framework */; };
@@ -35,14 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E145728A24DF508E0026D925 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E145726B24DF508C0026D925 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E145727224DF508C0026D925;
-			remoteInfo = UDTM;
-		};
-		E145729524DF508E0026D925 /* PBXContainerItemProxy */ = {
+		E100639C25100B120071FB41 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E145726B24DF508C0026D925 /* Project object */;
 			proxyType = 1;
@@ -77,6 +69,9 @@
 		7FAB38A057B49883E3475191 /* Pods_UDMTTargets_UDTM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UDMTTargets_UDTM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		950B017C9F39539BCA4B086E /* Pods-UDMTTargets-UDTM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UDMTTargets-UDTM.debug.xcconfig"; path = "Target Support Files/Pods-UDMTTargets-UDTM/Pods-UDMTTargets-UDTM.debug.xcconfig"; sourceTree = "<group>"; };
 		D0CFA891E2C6AE40132C3D15 /* Pods-UDTMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UDTMTests.debug.xcconfig"; path = "Target Support Files/Pods-UDTMTests/Pods-UDTMTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E100639725100B120071FB41 /* UDTMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UDTMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E100639925100B120071FB41 /* UDTMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDTMTests.swift; sourceTree = "<group>"; };
+		E100639B25100B120071FB41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E12F4EB524F17D3A0084EAD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E12F4EC724F1CD4E0084EAD6 /* udtm.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = udtm.entitlements; sourceTree = "<group>"; };
 		E12F4EC824F2EE190084EAD6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,10 +83,6 @@
 		E145727624DF508C0026D925 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E145728224DF508E0026D925 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E145728424DF508E0026D925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E145728924DF508E0026D925 /* UDTMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UDTMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E145728D24DF508E0026D925 /* UDTMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDTMTests.swift; sourceTree = "<group>"; };
-		E145728F24DF508E0026D925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E145729424DF508E0026D925 /* UDTMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UDTMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E145729824DF508E0026D925 /* UDTMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDTMUITests.swift; sourceTree = "<group>"; };
 		E145729A24DF508E0026D925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E14A076C24E4B99A006A5DC5 /* DI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +95,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E100639425100B120071FB41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76BAC12467F92ACADC5BF666 /* Pods_UDTMTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E145727024DF508C0026D925 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -116,21 +115,6 @@
 				E144451224E078F200008203 /* AppData.framework in Frameworks */,
 				E14A077024E4B9A1006A5DC5 /* AppNavigation.framework in Frameworks */,
 				9BC608885A3400F9558B0118 /* Pods_UDMTTargets_UDTM.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E145728624DF508E0026D925 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B6E762C77E7B6561BD3D582A /* Pods_UDTMTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E145729124DF508E0026D925 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,12 +148,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E100639825100B120071FB41 /* UDTMTests */ = {
+			isa = PBXGroup;
+			children = (
+				E100639925100B120071FB41 /* UDTMTests.swift */,
+				E100639B25100B120071FB41 /* Info.plist */,
+			);
+			path = UDTMTests;
+			sourceTree = "<group>";
+		};
 		E145726A24DF508C0026D925 = {
 			isa = PBXGroup;
 			children = (
 				E145727524DF508C0026D925 /* UDTM */,
-				E145728C24DF508E0026D925 /* UDTMTests */,
 				E145729724DF508E0026D925 /* UDTMUITests */,
+				E100639825100B120071FB41 /* UDTMTests */,
 				E145727424DF508C0026D925 /* Products */,
 				A8D5FA647C86BE16962A9F2E /* Pods */,
 				B312682DFEFA3B2839EC0759 /* Frameworks */,
@@ -180,8 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				E145727324DF508C0026D925 /* Uni Duni Tê - Movies.app */,
-				E145728924DF508E0026D925 /* UDTMTests.xctest */,
-				E145729424DF508E0026D925 /* UDTMUITests.xctest */,
+				E100639725100B120071FB41 /* UDTMTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -199,15 +191,6 @@
 				E12F4EC824F2EE190084EAD6 /* SceneDelegate.swift */,
 			);
 			path = UDTM;
-			sourceTree = "<group>";
-		};
-		E145728C24DF508E0026D925 /* UDTMTests */ = {
-			isa = PBXGroup;
-			children = (
-				E145728D24DF508E0026D925 /* UDTMTests.swift */,
-				E145728F24DF508E0026D925 /* Info.plist */,
-			);
-			path = UDTMTests;
 			sourceTree = "<group>";
 		};
 		E145729724DF508E0026D925 /* UDTMUITests */ = {
@@ -255,6 +238,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E100639625100B120071FB41 /* UDTMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E100639E25100B120071FB41 /* Build configuration list for PBXNativeTarget "UDTMTests" */;
+			buildPhases = (
+				24B190527876FFB2E43A3B92 /* [CP] Check Pods Manifest.lock */,
+				E100639325100B120071FB41 /* Sources */,
+				E100639425100B120071FB41 /* Frameworks */,
+				E100639525100B120071FB41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E100639D25100B120071FB41 /* PBXTargetDependency */,
+			);
+			name = UDTMTests;
+			productName = UDTMTests;
+			productReference = E100639725100B120071FB41 /* UDTMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		E145727224DF508C0026D925 /* UDTM */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E145729D24DF508E0026D925 /* Build configuration list for PBXNativeTarget "UDTM" */;
@@ -276,63 +278,22 @@
 			productReference = E145727324DF508C0026D925 /* Uni Duni Tê - Movies.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E145728824DF508E0026D925 /* UDTMTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E14572A024DF508E0026D925 /* Build configuration list for PBXNativeTarget "UDTMTests" */;
-			buildPhases = (
-				99608BA47B4115ACD5490D35 /* [CP] Check Pods Manifest.lock */,
-				E145728524DF508E0026D925 /* Sources */,
-				E145728624DF508E0026D925 /* Frameworks */,
-				E145728724DF508E0026D925 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E145728B24DF508E0026D925 /* PBXTargetDependency */,
-			);
-			name = UDTMTests;
-			productName = UDTMTests;
-			productReference = E145728924DF508E0026D925 /* UDTMTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		E145729324DF508E0026D925 /* UDTMUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E14572A324DF508E0026D925 /* Build configuration list for PBXNativeTarget "UDTMUITests" */;
-			buildPhases = (
-				E145729024DF508E0026D925 /* Sources */,
-				E145729124DF508E0026D925 /* Frameworks */,
-				E145729224DF508E0026D925 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E145729624DF508E0026D925 /* PBXTargetDependency */,
-			);
-			name = UDTMUITests;
-			productName = UDTMUITests;
-			productReference = E145729424DF508E0026D925 /* UDTMUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		E145726B24DF508C0026D925 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1160;
+				LastSwiftUpdateCheck = 1170;
 				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = dias;
 				TargetAttributes = {
+					E100639625100B120071FB41 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = E145727224DF508C0026D925;
+					};
 					E145727224DF508C0026D925 = {
 						CreatedOnToolsVersion = 11.6;
-					};
-					E145728824DF508E0026D925 = {
-						CreatedOnToolsVersion = 11.6;
-						TestTargetID = E145727224DF508C0026D925;
-					};
-					E145729324DF508E0026D925 = {
-						CreatedOnToolsVersion = 11.6;
-						TestTargetID = E145727224DF508C0026D925;
 					};
 				};
 			};
@@ -350,13 +311,19 @@
 			projectRoot = "";
 			targets = (
 				E145727224DF508C0026D925 /* UDTM */,
-				E145728824DF508E0026D925 /* UDTMTests */,
-				E145729324DF508E0026D925 /* UDTMUITests */,
+				E100639625100B120071FB41 /* UDTMTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E100639525100B120071FB41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E145727124DF508C0026D925 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -367,23 +334,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E145728724DF508E0026D925 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E145729224DF508E0026D925 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		24B190527876FFB2E43A3B92 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UDTMTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		716DA20B17845F3B1386F269 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -400,28 +375,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-UDMTTargets-UDTM-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		99608BA47B4115ACD5490D35 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-UDTMTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -466,6 +419,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E100639325100B120071FB41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E100639A25100B120071FB41 /* UDTMTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E145726F24DF508C0026D925 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -477,34 +438,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E145728524DF508E0026D925 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E145728E24DF508E0026D925 /* UDTMTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E145729024DF508E0026D925 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E145729924DF508E0026D925 /* UDTMUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E145728B24DF508E0026D925 /* PBXTargetDependency */ = {
+		E100639D25100B120071FB41 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E145727224DF508C0026D925 /* UDTM */;
-			targetProxy = E145728A24DF508E0026D925 /* PBXContainerItemProxy */;
-		};
-		E145729624DF508E0026D925 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E145727224DF508C0026D925 /* UDTM */;
-			targetProxy = E145729524DF508E0026D925 /* PBXContainerItemProxy */;
+			targetProxy = E100639C25100B120071FB41 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -520,6 +460,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		E100639F25100B120071FB41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0CFA891E2C6AE40132C3D15 /* Pods-UDTMTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KYWC2RHW78;
+				INFOPLIST_FILE = UDTMTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.dias.UDTMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Uni Duni Tê - Movies.app/Uni Duni Tê - Movies";
+			};
+			name = Debug;
+		};
+		E10063A025100B120071FB41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13805479B963C0E74D3A499C /* Pods-UDTMTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KYWC2RHW78;
+				INFOPLIST_FILE = UDTMTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.dias.UDTMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Uni Duni Tê - Movies.app/Uni Duni Tê - Movies";
+			};
+			name = Release;
+		};
 		E145729B24DF508E0026D925 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -674,95 +658,18 @@
 			};
 			name = Release;
 		};
-		E14572A124DF508E0026D925 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0CFA891E2C6AE40132C3D15 /* Pods-UDTMTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KYWC2RHW78;
-				INFOPLIST_FILE = UDTMTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.dias.udtm.tests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UDTM.app/UDTM";
-			};
-			name = Debug;
-		};
-		E14572A224DF508E0026D925 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13805479B963C0E74D3A499C /* Pods-UDTMTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KYWC2RHW78;
-				INFOPLIST_FILE = UDTMTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.dias.udtm.tests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UDTM.app/UDTM";
-			};
-			name = Release;
-		};
-		E14572A424DF508E0026D925 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KYWC2RHW78;
-				INFOPLIST_FILE = UDTMUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.dias.udtm.uitests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = UDTM;
-			};
-			name = Debug;
-		};
-		E14572A524DF508E0026D925 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KYWC2RHW78;
-				INFOPLIST_FILE = UDTMUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.dias.udtm.uitests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = UDTM;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E100639E25100B120071FB41 /* Build configuration list for PBXNativeTarget "UDTMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E100639F25100B120071FB41 /* Debug */,
+				E10063A025100B120071FB41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E145726E24DF508C0026D925 /* Build configuration list for PBXProject "UDTM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -777,24 +684,6 @@
 			buildConfigurations = (
 				E145729E24DF508E0026D925 /* Debug */,
 				E145729F24DF508E0026D925 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E14572A024DF508E0026D925 /* Build configuration list for PBXNativeTarget "UDTMTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E14572A124DF508E0026D925 /* Debug */,
-				E14572A224DF508E0026D925 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E14572A324DF508E0026D925 /* Build configuration list for PBXNativeTarget "UDTMUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E14572A424DF508E0026D925 /* Debug */,
-				E14572A524DF508E0026D925 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

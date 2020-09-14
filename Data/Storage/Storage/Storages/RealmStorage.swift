@@ -14,7 +14,7 @@ public class RealmStorage: RealmStoring {
     public let group: String
     public let indentifier: String
 
-    var schemaVersion: UInt64 {
+    public var schemaVersion: UInt64 {
         return 0
     }
 

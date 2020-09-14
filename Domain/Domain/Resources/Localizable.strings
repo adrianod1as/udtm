@@ -55,8 +55,4 @@
 "Error.Code.scammer" = "E135";
 "Error.Code.disablingBlock" = "E140";
 "RegularExpression.Error.illegal" = "Illegal regular expression:";
-"Withdraw.Value.minimum" = "R$10,00";
-"Withdraw.Value.maximum" = "R$1.500,00";
-"Deposit.Value.minimum" = "R$20,00";
-"Deposit.Value.maximum" = "R$10.000,00";
 

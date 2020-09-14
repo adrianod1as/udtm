@@ -13,13 +13,13 @@ import Alamofire
 
 extension Error {
 
-    public func filter(withNetworkReachability reachability: NetworkReachabilityManager? = NetworkReachabilityManager()) -> Error {
+    public func filter(withNetworkReachability
+                        reachability: NetworkingReachability? = NetworkReachabilityManager()) -> Error {
         let genericError: InteractionError = .appFailure([.unexpected])
         if let reachability = reachability, !reachability.isReachable {
-            return InteractionError.noInternetConnection("")
+            return InteractionError.noInternetConnection(L10n.Error.Description.noInternetConnection)
         }
-        let isServerTrustEvaluationError = self.asAFError?.isServerTrustEvaluationError ?? false
-        guard !isServerTrustEvaluationError else {
+        if let isServerTrustEvaluationError = self.asAFError?.isServerTrustEvaluationError, isServerTrustEvaluationError {
             return InteractionError.failedRequest(L10n.Error.Description.pinnedCertificate)
         }
         return genericError

@@ -9,6 +9,23 @@
 /* Begin PBXBuildFile section */
 		1D37F418C633D12421D4A703 /* Pods_Domain_DomainTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84E6010860A3B52B6A491BD /* Pods_Domain_DomainTests.framework */; };
 		560FEDE101EFBC7DC13B2E80 /* Pods_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4CC90B70D0F1F1AE161510 /* Pods_Domain.framework */; };
+		E101F1E92509865C00D9C950 /* XCTestCase+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E101F1E82509865C00D9C950 /* XCTestCase+Ext.swift */; };
+		E101F1EF25098A4A00D9C950 /* EnumExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E101F1EE25098A4A00D9C950 /* EnumExtensionsTests.swift */; };
+		E101F204250ACFBE00D9C950 /* Enforcer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E101F203250ACFBE00D9C950 /* Enforcer.swift */; };
+		E101F206250ACFDA00D9C950 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E101F205250ACFDA00D9C950 /* Validation.swift */; };
+		E101F20C250AF2E100D9C950 /* Validation+Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E101F20B250AF2E100D9C950 /* Validation+Collection.swift */; };
+		E101F20E250C051D00D9C950 /* InteractionErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E101F20D250C051D00D9C950 /* InteractionErrorTests.swift */; };
+		E101F210250C0F3E00D9C950 /* ResultExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E101F20F250C0F3E00D9C950 /* ResultExtensionsTests.swift */; };
+		E101F212250C121200D9C950 /* ValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E101F211250C121200D9C950 /* ValidationTests.swift */; };
+		E101F214250C13E500D9C950 /* EncodableExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E101F213250C13E500D9C950 /* EncodableExtensionsTests.swift */; };
+		E1064C8B25007BC60054B091 /* AuthenticateCredentialsUseCaseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1064C8A25007BC60054B091 /* AuthenticateCredentialsUseCaseable.swift */; };
+		E1078A6D25080ADF00E99E22 /* AuthenticateCredentialsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1078A6C25080ADF00E99E22 /* AuthenticateCredentialsUseCase.swift */; };
+		E1078A732509567900E99E22 /* RequestToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1078A722509567900E99E22 /* RequestToken.swift */; };
+		E1078A752509579200E99E22 /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1078A742509579200E99E22 /* UserSession.swift */; };
+		E12F4ECB24F304710084EAD6 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12F4ECA24F304710084EAD6 /* Account.swift */; };
+		E12F4ECD24F30B730084EAD6 /* AuthenticateUserPermissionUseCaseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12F4ECC24F30B730084EAD6 /* AuthenticateUserPermissionUseCaseable.swift */; };
+		E12F4ECF24F30C660084EAD6 /* AuthenticateUserPermissionUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12F4ECE24F30C660084EAD6 /* AuthenticateUserPermissionUseCase.swift */; };
+		E12F4ED124F30CAE0084EAD6 /* AuthenticationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12F4ED024F30CAE0084EAD6 /* AuthenticationRepository.swift */; };
 		E144428D24E04D9600008203 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E144428324E04D9600008203 /* Domain.framework */; };
 		E144429224E04D9600008203 /* DomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E144429124E04D9600008203 /* DomainTests.swift */; };
 		E144429424E04D9600008203 /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = E144428624E04D9600008203 /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -38,6 +55,25 @@
 		E14443DF24E04E0C00008203 /* Numbers+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E144433824E04E0B00008203 /* Numbers+Ext.swift */; };
 		E14443E024E04E0C00008203 /* SwiftyJSON+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E144433924E04E0B00008203 /* SwiftyJSON+Ext.swift */; };
 		E14443E124E04E0C00008203 /* Array+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E144433A24E04E0B00008203 /* Array+Ext.swift */; };
+		E18A1D112500739000FC04F0 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18A1D102500739000FC04F0 /* Credentials.swift */; };
+		E1D04390250D2A7C006F559C /* CredentialsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D0438F250D2A7C006F559C /* CredentialsTests.swift */; };
+		E1D04392250D2AB1006F559C /* Credentials+Fakeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D04391250D2AB1006F559C /* Credentials+Fakeable.swift */; };
+		E1D04394250D2EC5006F559C /* AuthenticationRepositorySpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D04393250D2EC5006F559C /* AuthenticationRepositorySpy.swift */; };
+		E1D04397250D2F7C006F559C /* AuthenticateUserPermissionUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D04396250D2F7C006F559C /* AuthenticateUserPermissionUseCaseTests.swift */; };
+		E1D04399250D314A006F559C /* AuthenticateCredentialsUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D04398250D314A006F559C /* AuthenticateCredentialsUseCaseTests.swift */; };
+		E1D0439B250D320D006F559C /* StringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D0439A250D320D006F559C /* StringExtensionsTests.swift */; };
+		E1D0439D250D328A006F559C /* NumberExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D0439C250D328A006F559C /* NumberExtensionsTests.swift */; };
+		E1D0439F250D32A7006F559C /* RegexExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D0439E250D32A7006F559C /* RegexExtensionsTests.swift */; };
+		E1D043A1250D32CE006F559C /* DateExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D043A0250D32CE006F559C /* DateExtensionsTests.swift */; };
+		E1D043A3250D32E9006F559C /* SwiftyJSONExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D043A2250D32E9006F559C /* SwiftyJSONExtensionsTests.swift */; };
+		E1D043A5250D333A006F559C /* FakeryExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D043A4250D333A006F559C /* FakeryExtensionsTests.swift */; };
+		E1D043A7250D3881006F559C /* AppFlowStoppingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D043A6250D3881006F559C /* AppFlowStoppingTests.swift */; };
+		E1D043A9250D38A7006F559C /* ValidatableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D043A8250D38A7006F559C /* ValidatableTests.swift */; };
+		E1D043AD250D38E9006F559C /* ErrorStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D043AC250D38E9006F559C /* ErrorStub.swift */; };
+		E1D043AF250D390F006F559C /* ModelStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D043AE250D390F006F559C /* ModelStub.swift */; };
+		E1D043B4250D5CFE006F559C /* Account+Fakeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D043B3250D5CFE006F559C /* Account+Fakeable.swift */; };
+		E1D043B6250D5D22006F559C /* UserSession+Fakeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D043B5250D5D22006F559C /* UserSession+Fakeable.swift */; };
+		E1D043B8250D5D30006F559C /* RequesToken+Fakeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D043B7250D5D30006F559C /* RequesToken+Fakeable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +92,23 @@
 		C1EC024FE2762378B2C8F008 /* Pods-Domain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.debug.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.debug.xcconfig"; sourceTree = "<group>"; };
 		C2C3ABB06D1386A8FFC98DD4 /* Pods-Domain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.release.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.release.xcconfig"; sourceTree = "<group>"; };
 		C84E6010860A3B52B6A491BD /* Pods_Domain_DomainTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Domain_DomainTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E101F1E82509865C00D9C950 /* XCTestCase+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Ext.swift"; sourceTree = "<group>"; };
+		E101F1EE25098A4A00D9C950 /* EnumExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumExtensionsTests.swift; sourceTree = "<group>"; };
+		E101F203250ACFBE00D9C950 /* Enforcer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enforcer.swift; sourceTree = "<group>"; };
+		E101F205250ACFDA00D9C950 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		E101F20B250AF2E100D9C950 /* Validation+Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Validation+Collection.swift"; sourceTree = "<group>"; };
+		E101F20D250C051D00D9C950 /* InteractionErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionErrorTests.swift; sourceTree = "<group>"; };
+		E101F20F250C0F3E00D9C950 /* ResultExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultExtensionsTests.swift; sourceTree = "<group>"; };
+		E101F211250C121200D9C950 /* ValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationTests.swift; sourceTree = "<group>"; };
+		E101F213250C13E500D9C950 /* EncodableExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableExtensionsTests.swift; sourceTree = "<group>"; };
+		E1064C8A25007BC60054B091 /* AuthenticateCredentialsUseCaseable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateCredentialsUseCaseable.swift; sourceTree = "<group>"; };
+		E1078A6C25080ADF00E99E22 /* AuthenticateCredentialsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateCredentialsUseCase.swift; sourceTree = "<group>"; };
+		E1078A722509567900E99E22 /* RequestToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestToken.swift; sourceTree = "<group>"; };
+		E1078A742509579200E99E22 /* UserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
+		E12F4ECA24F304710084EAD6 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		E12F4ECC24F30B730084EAD6 /* AuthenticateUserPermissionUseCaseable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateUserPermissionUseCaseable.swift; sourceTree = "<group>"; };
+		E12F4ECE24F30C660084EAD6 /* AuthenticateUserPermissionUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateUserPermissionUseCase.swift; sourceTree = "<group>"; };
+		E12F4ED024F30CAE0084EAD6 /* AuthenticationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRepository.swift; sourceTree = "<group>"; };
 		E144428324E04D9600008203 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E144428624E04D9600008203 /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
 		E144428724E04D9600008203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -88,6 +141,25 @@
 		E144433824E04E0B00008203 /* Numbers+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Numbers+Ext.swift"; sourceTree = "<group>"; };
 		E144433924E04E0B00008203 /* SwiftyJSON+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftyJSON+Ext.swift"; sourceTree = "<group>"; };
 		E144433A24E04E0B00008203 /* Array+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Ext.swift"; sourceTree = "<group>"; };
+		E18A1D102500739000FC04F0 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		E1D0438F250D2A7C006F559C /* CredentialsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsTests.swift; sourceTree = "<group>"; };
+		E1D04391250D2AB1006F559C /* Credentials+Fakeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Credentials+Fakeable.swift"; sourceTree = "<group>"; };
+		E1D04393250D2EC5006F559C /* AuthenticationRepositorySpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRepositorySpy.swift; sourceTree = "<group>"; };
+		E1D04396250D2F7C006F559C /* AuthenticateUserPermissionUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateUserPermissionUseCaseTests.swift; sourceTree = "<group>"; };
+		E1D04398250D314A006F559C /* AuthenticateCredentialsUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateCredentialsUseCaseTests.swift; sourceTree = "<group>"; };
+		E1D0439A250D320D006F559C /* StringExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionsTests.swift; sourceTree = "<group>"; };
+		E1D0439C250D328A006F559C /* NumberExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberExtensionsTests.swift; sourceTree = "<group>"; };
+		E1D0439E250D32A7006F559C /* RegexExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexExtensionsTests.swift; sourceTree = "<group>"; };
+		E1D043A0250D32CE006F559C /* DateExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensionsTests.swift; sourceTree = "<group>"; };
+		E1D043A2250D32E9006F559C /* SwiftyJSONExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJSONExtensionsTests.swift; sourceTree = "<group>"; };
+		E1D043A4250D333A006F559C /* FakeryExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeryExtensionsTests.swift; sourceTree = "<group>"; };
+		E1D043A6250D3881006F559C /* AppFlowStoppingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowStoppingTests.swift; sourceTree = "<group>"; };
+		E1D043A8250D38A7006F559C /* ValidatableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatableTests.swift; sourceTree = "<group>"; };
+		E1D043AC250D38E9006F559C /* ErrorStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorStub.swift; sourceTree = "<group>"; };
+		E1D043AE250D390F006F559C /* ModelStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelStub.swift; sourceTree = "<group>"; };
+		E1D043B3250D5CFE006F559C /* Account+Fakeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+Fakeable.swift"; sourceTree = "<group>"; };
+		E1D043B5250D5D22006F559C /* UserSession+Fakeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserSession+Fakeable.swift"; sourceTree = "<group>"; };
+		E1D043B7250D5D30006F559C /* RequesToken+Fakeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RequesToken+Fakeable.swift"; sourceTree = "<group>"; };
 		FE07C264BCEEC6CBD8219285 /* Pods-Domain-DomainTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain-DomainTests.debug.xcconfig"; path = "Target Support Files/Pods-Domain-DomainTests/Pods-Domain-DomainTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,6 +205,77 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E101F1E62509863E00D9C950 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E101F1E72509864B00D9C950 /* Extensions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E101F1E72509864B00D9C950 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E101F1E82509865C00D9C950 /* XCTestCase+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E101F1EB2509868700D9C950 /* TestCases */ = {
+			isa = PBXGroup;
+			children = (
+				E144429124E04D9600008203 /* DomainTests.swift */,
+				E1D04395250D2F72006F559C /* UseCases */,
+				E1D0438D250D2A4E006F559C /* Validator */,
+				E1D0438E250D2A5A006F559C /* Models */,
+				E101F1EC250989A000D9C950 /* Helpers */,
+			);
+			path = TestCases;
+			sourceTree = "<group>";
+		};
+		E101F1EC250989A000D9C950 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E101F1ED25098A3500D9C950 /* Extensions */,
+				E1D043A6250D3881006F559C /* AppFlowStoppingTests.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E101F1ED25098A3500D9C950 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E101F213250C13E500D9C950 /* EncodableExtensionsTests.swift */,
+				E101F1EE25098A4A00D9C950 /* EnumExtensionsTests.swift */,
+				E101F20F250C0F3E00D9C950 /* ResultExtensionsTests.swift */,
+				E1D0439A250D320D006F559C /* StringExtensionsTests.swift */,
+				E1D0439C250D328A006F559C /* NumberExtensionsTests.swift */,
+				E1D0439E250D32A7006F559C /* RegexExtensionsTests.swift */,
+				E1D043A0250D32CE006F559C /* DateExtensionsTests.swift */,
+				E1D043A2250D32E9006F559C /* SwiftyJSONExtensionsTests.swift */,
+				E1D043A4250D333A006F559C /* FakeryExtensionsTests.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E101F1F0250A95C500D9C950 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		E101F200250ABCF900D9C950 /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				E144432124E04E0B00008203 /* Validatable.swift */,
+				E101F203250ACFBE00D9C950 /* Enforcer.swift */,
+				E101F205250ACFDA00D9C950 /* Validation.swift */,
+				E101F20B250AF2E100D9C950 /* Validation+Collection.swift */,
+			);
+			path = Validator;
+			sourceTree = "<group>";
+		};
 		E144427924E04D9600008203 = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +299,7 @@
 		E144428524E04D9600008203 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				E101F200250ABCF900D9C950 /* Validator */,
 				E144432424E04E0B00008203 /* Helpers */,
 				E144433B24E04E0B00008203 /* UseCases */,
 				E14442B224E04E0B00008203 /* Models */,
@@ -170,8 +314,11 @@
 		E144429024E04D9600008203 /* DomainTests */ = {
 			isa = PBXGroup;
 			children = (
-				E144429124E04D9600008203 /* DomainTests.swift */,
+				E1D043AB250D38D6006F559C /* Models */,
+				E101F1EB2509868700D9C950 /* TestCases */,
+				E101F1E62509863E00D9C950 /* Helpers */,
 				E144429324E04D9600008203 /* Info.plist */,
+				E1D043AA250D38CD006F559C /* Repositories */,
 			);
 			path = DomainTests;
 			sourceTree = "<group>";
@@ -180,6 +327,7 @@
 			isa = PBXGroup;
 			children = (
 				E14442AE24E04E0A00008203 /* SignOutRepository.swift */,
+				E12F4ED024F30CAE0084EAD6 /* AuthenticationRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -195,6 +343,7 @@
 		E14442B224E04E0B00008203 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E101F1F0250A95C500D9C950 /* Sources */,
 				E14442B324E04E0B00008203 /* Responses */,
 				E14442DE24E04E0B00008203 /* Fakes */,
 				E144430024E04E0B00008203 /* Requests */,
@@ -208,6 +357,9 @@
 			children = (
 				E14442BC24E04E0B00008203 /* LocalizedRecord.swift */,
 				E14442DA24E04E0B00008203 /* Localized.swift */,
+				E12F4ECA24F304710084EAD6 /* Account.swift */,
+				E1078A722509567900E99E22 /* RequestToken.swift */,
+				E1078A742509579200E99E22 /* UserSession.swift */,
 			);
 			path = Responses;
 			sourceTree = "<group>";
@@ -215,6 +367,10 @@
 		E14442DE24E04E0B00008203 /* Fakes */ = {
 			isa = PBXGroup;
 			children = (
+				E1D04391250D2AB1006F559C /* Credentials+Fakeable.swift */,
+				E1D043B3250D5CFE006F559C /* Account+Fakeable.swift */,
+				E1D043B5250D5D22006F559C /* UserSession+Fakeable.swift */,
+				E1D043B7250D5D30006F559C /* RequesToken+Fakeable.swift */,
 			);
 			path = Fakes;
 			sourceTree = "<group>";
@@ -222,6 +378,7 @@
 		E144430024E04E0B00008203 /* Requests */ = {
 			isa = PBXGroup;
 			children = (
+				E18A1D102500739000FC04F0 /* Credentials.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -231,7 +388,6 @@
 			children = (
 				E144431F24E04E0B00008203 /* AppFailure.swift */,
 				E144432024E04E0B00008203 /* Fakeable.swift */,
-				E144432124E04E0B00008203 /* Validatable.swift */,
 				E144432224E04E0B00008203 /* InteractionError.swift */,
 				E144432324E04E0B00008203 /* DomainConvertibleType.swift */,
 			);
@@ -297,6 +453,10 @@
 		E144433B24E04E0B00008203 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				E12F4ECC24F30B730084EAD6 /* AuthenticateUserPermissionUseCaseable.swift */,
+				E12F4ECE24F30C660084EAD6 /* AuthenticateUserPermissionUseCase.swift */,
+				E1064C8A25007BC60054B091 /* AuthenticateCredentialsUseCaseable.swift */,
+				E1078A6C25080ADF00E99E22 /* AuthenticateCredentialsUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -307,6 +467,50 @@
 				E144428724E04D9600008203 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E1D0438D250D2A4E006F559C /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				E101F211250C121200D9C950 /* ValidationTests.swift */,
+				E1D043A8250D38A7006F559C /* ValidatableTests.swift */,
+			);
+			path = Validator;
+			sourceTree = "<group>";
+		};
+		E1D0438E250D2A5A006F559C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E101F20D250C051D00D9C950 /* InteractionErrorTests.swift */,
+				E1D0438F250D2A7C006F559C /* CredentialsTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E1D04395250D2F72006F559C /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				E1D04396250D2F7C006F559C /* AuthenticateUserPermissionUseCaseTests.swift */,
+				E1D04398250D314A006F559C /* AuthenticateCredentialsUseCaseTests.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		E1D043AA250D38CD006F559C /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				E1D04393250D2EC5006F559C /* AuthenticationRepositorySpy.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		E1D043AB250D38D6006F559C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E1D043AC250D38E9006F559C /* ErrorStub.swift */,
+				E1D043AE250D390F006F559C /* ModelStub.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -486,30 +690,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E12F4ECF24F30C660084EAD6 /* AuthenticateUserPermissionUseCase.swift in Sources */,
+				E12F4ED124F30CAE0084EAD6 /* AuthenticationRepository.swift in Sources */,
+				E1064C8B25007BC60054B091 /* AuthenticateCredentialsUseCaseable.swift in Sources */,
 				E14443D824E04E0C00008203 /* Enum+Ext.swift in Sources */,
 				E14443D524E04E0C00008203 /* Regex+Ext.swift in Sources */,
+				E1078A6D25080ADF00E99E22 /* AuthenticateCredentialsUseCase.swift in Sources */,
+				E101F20C250AF2E100D9C950 /* Validation+Collection.swift in Sources */,
 				E14443E124E04E0C00008203 /* Array+Ext.swift in Sources */,
+				E12F4ECB24F304710084EAD6 /* Account.swift in Sources */,
 				E14443CD24E04E0C00008203 /* Validatable.swift in Sources */,
 				E14443CC24E04E0C00008203 /* Fakeable.swift in Sources */,
+				E1D04392250D2AB1006F559C /* Credentials+Fakeable.swift in Sources */,
 				E14443D024E04E0C00008203 /* SignOutSceneCoordinating.swift in Sources */,
+				E12F4ECD24F30B730084EAD6 /* AuthenticateUserPermissionUseCaseable.swift in Sources */,
 				E14443CF24E04E0C00008203 /* DomainConvertibleType.swift in Sources */,
+				E101F206250ACFDA00D9C950 /* Validation.swift in Sources */,
 				E144436B24E04E0B00008203 /* LocalizedRecord.swift in Sources */,
+				E18A1D112500739000FC04F0 /* Credentials.swift in Sources */,
 				E14443E024E04E0C00008203 /* SwiftyJSON+Ext.swift in Sources */,
 				E14443CB24E04E0C00008203 /* AppFailure.swift in Sources */,
 				E14443DB24E04E0C00008203 /* Array+Fakery.swift in Sources */,
+				E1078A752509579200E99E22 /* UserSession.swift in Sources */,
 				E14443DC24E04E0C00008203 /* Encodable+Extensions.swift in Sources */,
 				E14443DD24E04E0C00008203 /* Result+Ext.swift in Sources */,
 				E14443DE24E04E0C00008203 /* Locale+Ext.swift in Sources */,
 				E14443D724E04E0C00008203 /* SwiftDate+Extensions.swift in Sources */,
+				E1D043B8250D5D30006F559C /* RequesToken+Fakeable.swift in Sources */,
 				E14443DF24E04E0C00008203 /* Numbers+Ext.swift in Sources */,
 				E14443D924E04E0C00008203 /* KeyedEncodingContainer+Ext.swift in Sources */,
 				E14443CE24E04E0C00008203 /* InteractionError.swift in Sources */,
 				E14443D624E04E0C00008203 /* String+Extensions.swift in Sources */,
+				E1D043B6250D5D22006F559C /* UserSession+Fakeable.swift in Sources */,
 				E14443D124E04E0C00008203 /* AppFlowStopping.swift in Sources */,
+				E101F204250ACFBE00D9C950 /* Enforcer.swift in Sources */,
 				E14443D224E04E0C00008203 /* SwiftGenStrings.swift in Sources */,
+				E1D043B4250D5CFE006F559C /* Account+Fakeable.swift in Sources */,
 				E14443D324E04E0C00008203 /* Biometrics.swift in Sources */,
 				E144438924E04E0C00008203 /* Localized.swift in Sources */,
 				E144436024E04E0B00008203 /* SignOutRepository.swift in Sources */,
+				E1078A732509567900E99E22 /* RequestToken.swift in Sources */,
 				E14443DA24E04E0C00008203 /* Fakery+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -518,7 +738,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1D0439B250D320D006F559C /* StringExtensionsTests.swift in Sources */,
+				E101F1E92509865C00D9C950 /* XCTestCase+Ext.swift in Sources */,
+				E1D043AD250D38E9006F559C /* ErrorStub.swift in Sources */,
+				E101F1EF25098A4A00D9C950 /* EnumExtensionsTests.swift in Sources */,
+				E1D043A7250D3881006F559C /* AppFlowStoppingTests.swift in Sources */,
+				E1D04390250D2A7C006F559C /* CredentialsTests.swift in Sources */,
 				E144429224E04D9600008203 /* DomainTests.swift in Sources */,
+				E1D043A1250D32CE006F559C /* DateExtensionsTests.swift in Sources */,
+				E101F20E250C051D00D9C950 /* InteractionErrorTests.swift in Sources */,
+				E1D04394250D2EC5006F559C /* AuthenticationRepositorySpy.swift in Sources */,
+				E101F214250C13E500D9C950 /* EncodableExtensionsTests.swift in Sources */,
+				E101F212250C121200D9C950 /* ValidationTests.swift in Sources */,
+				E1D0439F250D32A7006F559C /* RegexExtensionsTests.swift in Sources */,
+				E1D0439D250D328A006F559C /* NumberExtensionsTests.swift in Sources */,
+				E1D043A5250D333A006F559C /* FakeryExtensionsTests.swift in Sources */,
+				E1D04397250D2F7C006F559C /* AuthenticateUserPermissionUseCaseTests.swift in Sources */,
+				E1D043A3250D32E9006F559C /* SwiftyJSONExtensionsTests.swift in Sources */,
+				E1D04399250D314A006F559C /* AuthenticateCredentialsUseCaseTests.swift in Sources */,
+				E1D043AF250D390F006F559C /* ModelStub.swift in Sources */,
+				E1D043A9250D38A7006F559C /* ValidatableTests.swift in Sources */,
+				E101F210250C0F3E00D9C950 /* ResultExtensionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -710,7 +950,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KYWC2RHW78;
 				INFOPLIST_FILE = DomainTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -730,7 +970,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KYWC2RHW78;
 				INFOPLIST_FILE = DomainTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

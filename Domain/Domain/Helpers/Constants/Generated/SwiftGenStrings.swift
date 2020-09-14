@@ -11,15 +11,6 @@ import Foundation
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 public enum L10n {
 
-  public enum Deposit {
-    public enum Value {
-      /// R$10.000,00
-      public static let maximum = L10n.tr("Localizable", "Deposit.Value.maximum")
-      /// R$20,00
-      public static let minimum = L10n.tr("Localizable", "Deposit.Value.minimum")
-    }
-  }
-
   public enum Error {
     public enum Code {
       /// E140
@@ -165,15 +156,6 @@ public enum L10n {
     public static let zero = L10n.tr("Localizable", "Symbol.zero")
     /// R$0,00
     public static let zeroCurrency = L10n.tr("Localizable", "Symbol.zeroCurrency")
-  }
-
-  public enum Withdraw {
-    public enum Value {
-      /// R$1.500,00
-      public static let maximum = L10n.tr("Localizable", "Withdraw.Value.maximum")
-      /// R$10,00
-      public static let minimum = L10n.tr("Localizable", "Withdraw.Value.minimum")
-    }
   }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
