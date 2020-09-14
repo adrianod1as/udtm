@@ -39,11 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8E73C63F84E89E75F1D2C3A6 /* Pods-AppData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppData.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-AppData/Pods-AppData.debug.xcconfig"; sourceTree = "<group>"; };
+		00EB875E8EE3310CC6C464E2 /* Pods-AppData-AppDataTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppData-AppDataTests.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-AppData-AppDataTests/Pods-AppData-AppDataTests.release.xcconfig"; sourceTree = "<group>"; };
+		0394F290918721553361BD6D /* Pods-AppData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppData.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-AppData/Pods-AppData.debug.xcconfig"; sourceTree = "<group>"; };
+		51A1712EEB245FEC4EB8322B /* Pods-AppData-AppDataTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppData-AppDataTests.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-AppData-AppDataTests/Pods-AppData-AppDataTests.debug.xcconfig"; sourceTree = "<group>"; };
+		523E665E2FBD69C5CA8AE5FC /* Pods-AppData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppData.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-AppData/Pods-AppData.release.xcconfig"; sourceTree = "<group>"; };
 		A62B738666314F24FAF8EC4D /* Pods_AppData_AppDataTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppData_AppDataTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9EBCCE1B931A3406F322028 /* Pods_AppData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA3F2904857337D2208B74EB /* Pods-AppData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppData.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-AppData/Pods-AppData.release.xcconfig"; sourceTree = "<group>"; };
-		C20D12729269A60CFB81CA4E /* Pods-AppData-AppDataTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppData-AppDataTests.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-AppData-AppDataTests/Pods-AppData-AppDataTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E12F4ED224F30D7F0084EAD6 /* AuthenticationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRepository.swift; sourceTree = "<group>"; };
 		E12F4ED524F30E280084EAD6 /* SessionRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionRemoteDataSource.swift; sourceTree = "<group>"; };
 		E12F4ED724F30E780084EAD6 /* AccountLocalDatSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountLocalDatSource.swift; sourceTree = "<group>"; };
@@ -64,7 +65,6 @@
 		E1E6169D250D618B0082901D /* AccountLocalDatSourceFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountLocalDatSourceFake.swift; sourceTree = "<group>"; };
 		E1E6169F250D61D30082901D /* SessionRemoteDataSourceFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionRemoteDataSourceFake.swift; sourceTree = "<group>"; };
 		E1E616A1250D62E60082901D /* AccountRemoteDataSourceFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRemoteDataSourceFake.swift; sourceTree = "<group>"; };
-		F0BE4470F6D9B59519316ECC /* Pods-AppData-AppDataTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppData-AppDataTests.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-AppData-AppDataTests/Pods-AppData-AppDataTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,10 +129,10 @@
 		E139A2010067B6ED84B9A1D4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8E73C63F84E89E75F1D2C3A6 /* Pods-AppData.debug.xcconfig */,
-				AA3F2904857337D2208B74EB /* Pods-AppData.release.xcconfig */,
-				C20D12729269A60CFB81CA4E /* Pods-AppData-AppDataTests.debug.xcconfig */,
-				F0BE4470F6D9B59519316ECC /* Pods-AppData-AppDataTests.release.xcconfig */,
+				0394F290918721553361BD6D /* Pods-AppData.debug.xcconfig */,
+				523E665E2FBD69C5CA8AE5FC /* Pods-AppData.release.xcconfig */,
+				51A1712EEB245FEC4EB8322B /* Pods-AppData-AppDataTests.debug.xcconfig */,
+				00EB875E8EE3310CC6C464E2 /* Pods-AppData-AppDataTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../Pods;
@@ -583,7 +583,7 @@
 		};
 		E144441424E0555900008203 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8E73C63F84E89E75F1D2C3A6 /* Pods-AppData.debug.xcconfig */;
+			baseConfigurationReference = 0394F290918721553361BD6D /* Pods-AppData.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -608,7 +608,7 @@
 		};
 		E144441524E0555900008203 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA3F2904857337D2208B74EB /* Pods-AppData.release.xcconfig */;
+			baseConfigurationReference = 523E665E2FBD69C5CA8AE5FC /* Pods-AppData.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -633,7 +633,7 @@
 		};
 		E144441724E0555900008203 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C20D12729269A60CFB81CA4E /* Pods-AppData-AppDataTests.debug.xcconfig */;
+			baseConfigurationReference = 51A1712EEB245FEC4EB8322B /* Pods-AppData-AppDataTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KYWC2RHW78;
@@ -652,7 +652,7 @@
 		};
 		E144441824E0555900008203 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F0BE4470F6D9B59519316ECC /* Pods-AppData-AppDataTests.release.xcconfig */;
+			baseConfigurationReference = 00EB875E8EE3310CC6C464E2 /* Pods-AppData-AppDataTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KYWC2RHW78;
