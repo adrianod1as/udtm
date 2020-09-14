@@ -68,4 +68,3 @@ class NumberExtensionsTests: XCTestCase {
         }
     }
 }
-

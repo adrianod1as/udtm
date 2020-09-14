@@ -9,7 +9,7 @@
 import XCTest
 @testable import Domain
 
-class AuthenticateUserPermissionUseCaseTestsTests: XCTestCase {
+class AuthenticateUserPermissionUseCaseTests: XCTestCase {
 
     private var sut: AuthenticateUserPermissionUseCase!
     private var spy: AuthenticationRepositorySpy!
@@ -38,5 +38,3 @@ class AuthenticateUserPermissionUseCaseTestsTests: XCTestCase {
         XCTAssertFalse(spy.authenticateUserPermissionCalled)
     }
 }
-
-

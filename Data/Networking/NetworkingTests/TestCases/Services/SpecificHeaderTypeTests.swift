@@ -27,4 +27,3 @@ class SpecificHeaderTypeTests: XCTestCase {
         XCTAssertEqual(sut.key, sut.rawValue)
     }
 }
-

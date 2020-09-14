@@ -6,7 +6,6 @@
 //  Copyright © 2020 dias. All rights reserved.
 //
 
-
 import XCTest
 @testable import Domain
 @testable import Networking
@@ -16,7 +15,7 @@ class SessionRemoteDataSourceTests: XCTestCase {
     private var sut: SessionRemoteDataSource!
     private let requestTokenStub = RequestToken.getFakedItem()
     private let sessionStub = UserSession.getFakedItem()
-    private let headersStub = ["key" : "value"]
+    private let headersStub = ["key": "value"]
     private let tokenErrorStub = InteractionError.failedRequest("Token não autenticado pelo usuário.")
     private var dispatcherFake: DispacherFake!
 

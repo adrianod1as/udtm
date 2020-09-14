@@ -7,7 +7,7 @@
 //
 
 public class AuthenticateCredentialsUseCase {
-    
+
     private let repository: AuthenticationRepository
 
     public init(repository: AuthenticationRepository) {

@@ -25,7 +25,7 @@ class SessionRemoteDataSourceFake: SessionRemoteDataSource {
     }
 
     func createSession(forRequestToken requestToken: String,
-                       checkingPermissionFromHeaders headers: [String : String],
+                       checkingPermissionFromHeaders headers: [String: String],
                        completion: @escaping GenericCompletion<UserSession>) {
         createSession(forAuthenticatedRequestToken: requestToken, completion: completion)
     }

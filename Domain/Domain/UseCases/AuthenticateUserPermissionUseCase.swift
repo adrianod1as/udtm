@@ -23,6 +23,7 @@ extension AuthenticateUserPermissionUseCase: AuthenticateUserPermissionUseCaseab
             completion(.failure(InteractionError.invalidInput("Lista vazia de headers")))
             return
         }
-        repository.authenticateUserPermission(forRequestToken: requestToken, headers: headers, shouldSaveSession: shouldSaveSession, completion: completion)
+        repository.authenticateUserPermission(forRequestToken: requestToken, headers: headers,
+                                              shouldSaveSession: shouldSaveSession, completion: completion)
     }
 }

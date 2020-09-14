@@ -44,4 +44,3 @@ class ValidatableTests: XCTestCase {
     }
 
 }
-

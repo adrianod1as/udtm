@@ -30,7 +30,7 @@ extension SessionRemoteDataSource: AppData.SessionRemoteDataSource {
     }
 
     public func createSession(forRequestToken requestToken: String,
-                              checkingPermissionFromHeaders headers: [String : String],
+                              checkingPermissionFromHeaders headers: [String: String],
                               completion: @escaping GenericCompletion<UserSession>) {
         guard headers.hasUserAuthenticatedToken else {
             completion(.failure(InteractionError.failedRequest("Token não autenticado pelo usuário.")))
@@ -51,7 +51,7 @@ extension SessionRemoteDataSource: AppData.SessionRemoteDataSource {
     }
 
     internal func createRequestToken(forCredentials credentials: Credentials,
-                                    completion: @escaping GenericCompletion<RequestToken>) {
+                                     completion: @escaping GenericCompletion<RequestToken>) {
         dispatcher.getDecodable(RequestToken.self,
                                 from: AuthenticationTarget.authenticateTokenWithCredentials(credentials),
                                 completion: completion)
@@ -64,4 +64,3 @@ extension Dictionary where Key == String, Value == String {
         return !self.isEmpty
     }
 }
-

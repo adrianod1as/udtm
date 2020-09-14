@@ -11,7 +11,6 @@ import XCTest
 
 class EncodableExtensionsTests: XCTestCase {
 
-
     override func setUp() {
         super.setUp()
     }

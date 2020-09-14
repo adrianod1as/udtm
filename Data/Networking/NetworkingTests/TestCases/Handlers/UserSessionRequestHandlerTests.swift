@@ -74,7 +74,7 @@ class UserSessionRequestHandlerTests: XCTestCase {
     func testHandleRequestExpiredUserSession() {
         sut.handleRequest(error: InteractionError.expiredUserSession("")) { result in
             guard let coordinator = self.sut.coordinator as? SignOutSceneCoordinatorSpy else {
-                XCTFail()
+                XCTFail("Should be possible to cast coordinator as SignOutSceneCoordinatorSpy")
                 return
             }
             XCTAssert(coordinator.didSignOutCalled)
@@ -115,4 +115,3 @@ class UserSessionRequestHandlerTests: XCTestCase {
     }
 
 }
-

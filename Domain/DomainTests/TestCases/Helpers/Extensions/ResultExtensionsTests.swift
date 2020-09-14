@@ -36,4 +36,3 @@ class ResultExtensionsTests: XCTestCase {
         XCTAssertNil(sut.success)
     }
 }
-

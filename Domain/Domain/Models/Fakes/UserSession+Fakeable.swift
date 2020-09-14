@@ -22,4 +22,3 @@ extension UserSession: Fakeable {
         UserSession(id: Faker.brazilian.number.randomInt().description)
     }
 }
-

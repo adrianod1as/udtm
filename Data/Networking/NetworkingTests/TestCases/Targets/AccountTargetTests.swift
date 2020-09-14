@@ -74,8 +74,7 @@ class AccountTargetTests: XCTestCase {
             XCTAssertNotNil(encodingA as? JSONEncoding)
             XCTAssertNotNil(encodingB as? JSONEncoding)
         default:
-            XCTFail()
+            XCTFail("Different tasks")
         }
     }
 }
-

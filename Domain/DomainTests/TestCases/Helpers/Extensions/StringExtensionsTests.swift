@@ -83,4 +83,3 @@ class StringExtensionsTests: XCTestCase {
         XCTAssertEqual(s04e01[nsRange], "Unauth")
     }
 }
-

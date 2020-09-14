@@ -29,4 +29,3 @@ class DispacherFake: Dispatcher {
         completion(.success(Response(statusCode: 200, data: responseData)))
     }
 }
-

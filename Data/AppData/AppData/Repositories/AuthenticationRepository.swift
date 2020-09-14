@@ -59,7 +59,7 @@ extension AuthenticationRepository: Domain.AuthenticationRepository {
     }
 
     public func authenticateUserPermission(forRequestToken requestToken: String,
-                                           headers: [String : String], shouldSaveSession: Bool,
+                                           headers: [String: String], shouldSaveSession: Bool,
                                            completion: @escaping GenericCompletion<Account>) {
         authRemoteDataSource.createSession(forRequestToken: requestToken,
                                           checkingPermissionFromHeaders: headers) { result in
@@ -73,7 +73,7 @@ extension AuthenticationRepository: Domain.AuthenticationRepository {
     }
 
     internal func getAccount(forSessionId sessionId: String, shouldSaveSession: Bool,
-                            completion: @escaping GenericCompletion<Account>) {
+                             completion: @escaping GenericCompletion<Account>) {
         accountRemoteDataSource.getAccount(forSession: sessionId) { result in
             switch result {
             case .success(let account):

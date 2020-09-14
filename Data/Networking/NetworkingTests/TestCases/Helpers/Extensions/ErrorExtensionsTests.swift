@@ -49,4 +49,3 @@ class AuthenticationRepositoryTests: XCTestCase {
     }
 
 }
-

@@ -18,7 +18,7 @@ class AuthenticationRepositorySpy: AuthenticationRepository {
         createRequestTokenCalled.toggle()
     }
 
-    func authenticateUserPermission(forRequestToken requestToken: String, headers: [String : String],
+    func authenticateUserPermission(forRequestToken requestToken: String, headers: [String: String],
                                     shouldSaveSession: Bool, completion: @escaping GenericCompletion<Account>) {
         authenticateUserPermissionCalled.toggle()
     }

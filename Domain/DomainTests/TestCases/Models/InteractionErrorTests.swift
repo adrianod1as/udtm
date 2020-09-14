@@ -50,4 +50,3 @@ class InteractionErrorTests: XCTestCase {
         XCTAssertEqual(sut.localizeds.code, stubLocalizeds.code)
     }
 }
-
