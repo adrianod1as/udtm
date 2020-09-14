@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76BAC12467F92ACADC5BF666 /* Pods_UDTMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C38BE4F72E3CB4690953A6 /* Pods_UDTMTests.framework */; };
 		9BC608885A3400F9558B0118 /* Pods_UDMTTargets_UDTM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FAB38A057B49883E3475191 /* Pods_UDMTTargets_UDTM.framework */; };
 		E100639A25100B120071FB41 /* UDTMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100639925100B120071FB41 /* UDTMTests.swift */; };
 		E12F4EB624F17D3A0084EAD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E12F4EB524F17D3A0084EAD6 /* Assets.xcassets */; };
@@ -98,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76BAC12467F92ACADC5BF666 /* Pods_UDTMTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +242,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E100639E25100B120071FB41 /* Build configuration list for PBXNativeTarget "UDTMTests" */;
 			buildPhases = (
+				24B190527876FFB2E43A3B92 /* [CP] Check Pods Manifest.lock */,
 				E100639325100B120071FB41 /* Sources */,
 				E100639425100B120071FB41 /* Frameworks */,
 				E100639525100B120071FB41 /* Resources */,
@@ -334,6 +337,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		24B190527876FFB2E43A3B92 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UDTMTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		716DA20B17845F3B1386F269 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -437,6 +462,7 @@
 /* Begin XCBuildConfiguration section */
 		E100639F25100B120071FB41 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0CFA891E2C6AE40132C3D15 /* Pods-UDTMTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -458,6 +484,7 @@
 		};
 		E10063A025100B120071FB41 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13805479B963C0E74D3A499C /* Pods-UDTMTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;

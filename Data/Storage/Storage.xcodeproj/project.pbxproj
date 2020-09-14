@@ -32,9 +32,7 @@
 		E144450A24E0732A00008203 /* UserDefaultsStoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14444CD24E0732900008203 /* UserDefaultsStoring.swift */; };
 		E144450C24E0732A00008203 /* SwiftGenStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14444D324E0732900008203 /* SwiftGenStrings.swift */; };
 		E144451B24E0791500008203 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E144451A24E0791500008203 /* Domain.framework */; };
-		E144451C24E0791500008203 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E144451A24E0791500008203 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E144451F24E079B700008203 /* AppData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E144451E24E079B700008203 /* AppData.framework */; };
-		E144452024E079B700008203 /* AppData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E144451E24E079B700008203 /* AppData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E1AA0ED424F3149400A78803 /* SessionLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AA0ED324F3149300A78803 /* SessionLocalDataSource.swift */; };
 		E1E616A4250D723D0082901D /* AuthCredentialsStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E616A3250D723D0082901D /* AuthCredentialsStorageTests.swift */; };
 /* End PBXBuildFile section */
@@ -48,21 +46,6 @@
 			remoteInfo = Storage;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		E144451D24E0791500008203 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				E144452024E079B700008203 /* AppData.framework in Embed Frameworks */,
-				E144451C24E0791500008203 /* Domain.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1C1AF47CAD25CBFFA2B0BA7D /* Pods-Storage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Storage.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-Storage/Pods-Storage.release.xcconfig"; sourceTree = "<group>"; };
@@ -318,7 +301,6 @@
 				E144445A24E0724C00008203 /* Sources */,
 				E144445B24E0724C00008203 /* Frameworks */,
 				E144445C24E0724C00008203 /* Resources */,
-				E144451D24E0791500008203 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
