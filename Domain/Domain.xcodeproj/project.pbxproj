@@ -87,11 +87,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5B3C1624FFAB38BC409152EF /* Pods-Domain-DomainTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain-DomainTests.release.xcconfig"; path = "Target Support Files/Pods-Domain-DomainTests/Pods-Domain-DomainTests.release.xcconfig"; sourceTree = "<group>"; };
+		2F0F22D59324D75813A48EE2 /* Pods-Domain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.debug.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.debug.xcconfig"; sourceTree = "<group>"; };
 		6F4CC90B70D0F1F1AE161510 /* Pods_Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C1EC024FE2762378B2C8F008 /* Pods-Domain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.debug.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.debug.xcconfig"; sourceTree = "<group>"; };
-		C2C3ABB06D1386A8FFC98DD4 /* Pods-Domain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.release.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.release.xcconfig"; sourceTree = "<group>"; };
+		7C1A420E8FFCE065601DBC15 /* Pods-Domain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.release.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.release.xcconfig"; sourceTree = "<group>"; };
 		C84E6010860A3B52B6A491BD /* Pods_Domain_DomainTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Domain_DomainTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D945A5572163A6D42264361F /* Pods-Domain-DomainTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain-DomainTests.debug.xcconfig"; path = "Target Support Files/Pods-Domain-DomainTests/Pods-Domain-DomainTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E0BCA3871A8439AE81F051BA /* Pods-Domain-DomainTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain-DomainTests.release.xcconfig"; path = "Target Support Files/Pods-Domain-DomainTests/Pods-Domain-DomainTests.release.xcconfig"; sourceTree = "<group>"; };
 		E101F1E82509865C00D9C950 /* XCTestCase+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Ext.swift"; sourceTree = "<group>"; };
 		E101F1EE25098A4A00D9C950 /* EnumExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumExtensionsTests.swift; sourceTree = "<group>"; };
 		E101F203250ACFBE00D9C950 /* Enforcer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enforcer.swift; sourceTree = "<group>"; };
@@ -160,7 +161,6 @@
 		E1D043B3250D5CFE006F559C /* Account+Fakeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+Fakeable.swift"; sourceTree = "<group>"; };
 		E1D043B5250D5D22006F559C /* UserSession+Fakeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserSession+Fakeable.swift"; sourceTree = "<group>"; };
 		E1D043B7250D5D30006F559C /* RequesToken+Fakeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RequesToken+Fakeable.swift"; sourceTree = "<group>"; };
-		FE07C264BCEEC6CBD8219285 /* Pods-Domain-DomainTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain-DomainTests.debug.xcconfig"; path = "Target Support Files/Pods-Domain-DomainTests/Pods-Domain-DomainTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,10 +187,10 @@
 		18BECE7B058A9CB9F392D01B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C1EC024FE2762378B2C8F008 /* Pods-Domain.debug.xcconfig */,
-				C2C3ABB06D1386A8FFC98DD4 /* Pods-Domain.release.xcconfig */,
-				FE07C264BCEEC6CBD8219285 /* Pods-Domain-DomainTests.debug.xcconfig */,
-				5B3C1624FFAB38BC409152EF /* Pods-Domain-DomainTests.release.xcconfig */,
+				2F0F22D59324D75813A48EE2 /* Pods-Domain.debug.xcconfig */,
+				7C1A420E8FFCE065601DBC15 /* Pods-Domain.release.xcconfig */,
+				D945A5572163A6D42264361F /* Pods-Domain-DomainTests.debug.xcconfig */,
+				E0BCA3871A8439AE81F051BA /* Pods-Domain-DomainTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../Pods;
@@ -895,7 +895,7 @@
 		};
 		E144429824E04D9600008203 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C1EC024FE2762378B2C8F008 /* Pods-Domain.debug.xcconfig */;
+			baseConfigurationReference = 2F0F22D59324D75813A48EE2 /* Pods-Domain.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -920,7 +920,7 @@
 		};
 		E144429924E04D9600008203 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C2C3ABB06D1386A8FFC98DD4 /* Pods-Domain.release.xcconfig */;
+			baseConfigurationReference = 7C1A420E8FFCE065601DBC15 /* Pods-Domain.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -945,7 +945,7 @@
 		};
 		E144429B24E04D9600008203 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE07C264BCEEC6CBD8219285 /* Pods-Domain-DomainTests.debug.xcconfig */;
+			baseConfigurationReference = D945A5572163A6D42264361F /* Pods-Domain-DomainTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KYWC2RHW78;
@@ -965,7 +965,7 @@
 		};
 		E144429C24E04D9600008203 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B3C1624FFAB38BC409152EF /* Pods-Domain-DomainTests.release.xcconfig */;
+			baseConfigurationReference = E0BCA3871A8439AE81F051BA /* Pods-Domain-DomainTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KYWC2RHW78;
