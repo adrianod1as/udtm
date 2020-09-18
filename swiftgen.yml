@@ -32,6 +32,10 @@ strings:
         output: Presentation/Common/Common/Helpers/Constants/Generated/SwiftGenStrings.swift
         params: 
           publicAccess: true
+  - inputs: Presentation/Auth/Auth/Resources/Localizable.strings
+    outputs:
+      - templateName: structured-swift5
+        output: Presentation/Auth/Auth/Helpers/Constants/Generated/SwiftGenStrings.swift
   - inputs: Data/Networking/Networking/Resources/Localizable.strings
     outputs:
       - templateName: structured-swift5

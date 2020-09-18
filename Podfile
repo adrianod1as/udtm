@@ -78,6 +78,14 @@ target 'Common' do
   target 'CommonTests'
 end
 
+target 'Auth' do
+  project 'Presentation/Auth/Auth'
+  sharedPods
+  presentationPods
+  diPods
+  target 'AuthTests'
+end
+
 target 'DI' do
   project 'DI/DI'
   sharedPods

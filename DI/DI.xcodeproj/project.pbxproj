@@ -17,6 +17,7 @@
 		E14A073E24E4B802006A5DC5 /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14A073D24E4B802006A5DC5 /* Networking.framework */; };
 		E14A074124E4B80C006A5DC5 /* AppData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14A074024E4B80C006A5DC5 /* AppData.framework */; };
 		E14A076924E4B98B006A5DC5 /* AppNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14A076824E4B98B006A5DC5 /* AppNavigation.framework */; };
+		E16728E92515357F00C7B88C /* Auth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16728E82515357F00C7B88C /* Auth.framework */; };
 		E195A1AC24E4C78200C513F9 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E195A1AB24E4C78200C513F9 /* Common.framework */; };
 		E1C9F24B24EE0D4E00DEE93E /* CoordinatorFactoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C9F24A24EE0D4E00DEE93E /* CoordinatorFactoryAssembly.swift */; };
 		E1C9F24F24EE0E5500DEE93E /* Resolver+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C9F24E24EE0E5500DEE93E /* Resolver+Ext.swift */; };
@@ -56,6 +57,7 @@
 		E14A073D24E4B802006A5DC5 /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E14A074024E4B80C006A5DC5 /* AppData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E14A076824E4B98B006A5DC5 /* AppNavigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppNavigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E16728E82515357F00C7B88C /* Auth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Auth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E195A1AB24E4C78200C513F9 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1C9F24A24EE0D4E00DEE93E /* CoordinatorFactoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoryAssembly.swift; sourceTree = "<group>"; };
 		E1C9F24E24EE0E5500DEE93E /* Resolver+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resolver+Ext.swift"; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				E14A073E24E4B802006A5DC5 /* Networking.framework in Frameworks */,
 				E14A074124E4B80C006A5DC5 /* AppData.framework in Frameworks */,
 				E14A073724E4B7F2006A5DC5 /* Domain.framework in Frameworks */,
+				E16728E92515357F00C7B88C /* Auth.framework in Frameworks */,
 				A79DAA007E86A52B0F7F02FF /* Pods_DI.framework in Frameworks */,
 				E195A1AC24E4C78200C513F9 /* Common.framework in Frameworks */,
 				E14A073B24E4B7FA006A5DC5 /* Storage.framework in Frameworks */,
@@ -113,6 +116,7 @@
 		D2863327F51B1A0F0239366C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E16728E82515357F00C7B88C /* Auth.framework */,
 				E195A1AB24E4C78200C513F9 /* Common.framework */,
 				E14A076824E4B98B006A5DC5 /* AppNavigation.framework */,
 				E14A074024E4B80C006A5DC5 /* AppData.framework */,
