@@ -21,6 +21,10 @@ public class SessionRemoteDataSource {
 
 extension SessionRemoteDataSource: AppData.SessionRemoteDataSource {
 
+    public func createGuestSession(completion: @escaping GenericCompletion<GuestSession>) {
+        dispatcher.getDecodable(GuestSession.self, from: AuthenticationTarget.guestSession, completion: completion)
+    }
+
     public func createSession(forAuthenticatedRequestToken requestToken: String, completion: @escaping GenericCompletion<UserSession>) {
         dispatcher.getDecodable(UserSession.self, from: AuthenticationTarget.createSessionForRequestToken(requestToken), completion: completion)
     }

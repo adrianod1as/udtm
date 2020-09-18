@@ -15,6 +15,7 @@ class SessionRemoteDataSourceTests: XCTestCase {
     private var sut: SessionRemoteDataSource!
     private let requestTokenStub = RequestToken.getFakedItem()
     private let sessionStub = UserSession.getFakedItem()
+    private let guestStub = GuestSession.getFakedItem()
     private let headersStub = ["key": "value"]
     private let tokenErrorStub = InteractionError.failedRequest("Token não autenticado pelo usuário.")
     private var dispatcherFake: DispacherFake!
@@ -29,7 +30,6 @@ class SessionRemoteDataSourceTests: XCTestCase {
     }
 
     func testCreateRequestToken() {
-
         dispatcherFake = DispacherFake(model: requestTokenStub)
         sut = SessionRemoteDataSource(dispatcher: dispatcherFake)
 
@@ -39,7 +39,6 @@ class SessionRemoteDataSourceTests: XCTestCase {
     }
 
     func testCreateSessionForAuthenticatedRequestToken() {
-
         dispatcherFake = DispacherFake(model: sessionStub)
         sut = SessionRemoteDataSource(dispatcher: dispatcherFake)
 
@@ -104,6 +103,15 @@ class SessionRemoteDataSourceTests: XCTestCase {
         sut = SessionRemoteDataSource(dispatcher: dispatcherFake)
         sut.createSession(forCredentials: Credentials.getFakedItem()) { result in
             XCTAssertNotNil(result.failure)
+        }
+    }
+
+    func testGuestSession() {
+        dispatcherFake = DispacherFake(model: guestStub)
+        sut = SessionRemoteDataSource(dispatcher: dispatcherFake)
+
+        sut.createGuestSession { result in
+            XCTAssertEqual(result.success?.id, self.guestStub.id)
         }
     }
 }
