@@ -14,4 +14,6 @@ public protocol AuthenticationRepository {
                                     completion: @escaping GenericCompletion<Account>)
     func authenticateCredentials(_ credentials: Credentials, shouldSaveSession: Bool,
                                  completion: @escaping GenericCompletion<Account>)
+    func authenticateAccount(_ account: Account, completion: @escaping GenericCompletion<Void>)
+    func guestSession(completion: @escaping GenericCompletion<Void>)
 }
