@@ -14,6 +14,7 @@ class SessionRemoteDataSourceFake: SessionRemoteDataSource {
     var createRequestTokenResult: Result<RequestToken, Error> = .success(RequestToken.getFakedItem())
     var createSessionForRequestTokenResult: Result<UserSession, Error> = .success(UserSession.getFakedItem())
     var createSessionForCredentialsTokenResult: Result<UserSession, Error> = .success(UserSession.getFakedItem())
+    var createGuestSession: Result<GuestSession, Error> = .success(GuestSession.getFakedItem())
 
     func createRequestToken(completion: @escaping GenericCompletion<RequestToken>) {
         completion(createRequestTokenResult)
@@ -32,5 +33,9 @@ class SessionRemoteDataSourceFake: SessionRemoteDataSource {
 
     func createSession(forCredentials credentials: Credentials, completion: @escaping GenericCompletion<UserSession>) {
         completion(createSessionForCredentialsTokenResult)
+    }
+
+    func createGuestSession(completion: @escaping GenericCompletion<GuestSession>) {
+        completion(createGuestSession)
     }
 }

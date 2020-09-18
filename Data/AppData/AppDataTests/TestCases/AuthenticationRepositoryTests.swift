@@ -101,6 +101,19 @@ class AuthenticationRepositoryTests: XCTestCase {
         }
     }
 
+    func testGuestSessionSuccess() {
+        sut.guestSession { result in
+            XCTAssertNotNil(result.success)
+        }
+    }
+
+    func testGuestSessionFailure() {
+        (sut.authRemoteDataSource as? SessionRemoteDataSourceFake)?.createGuestSession = .failure(stubError)
+        sut.guestSession { result in
+            XCTAssertNotNil(result.failure)
+        }
+    }
+
     func testSaveAccountSuccessSavingSession() {
         sut.save(account: Account.getFakedItem(),
                  forSessionId: UserSession.getFakedItem().id, shouldSaveSession: true) { result in
@@ -132,6 +145,19 @@ class AuthenticationRepositoryTests: XCTestCase {
     func testSaveSessionFailure() {
         (sut.authLocalDataSource as? SessionLocalDataSourceFake)?.saveSessionIdResult = .failure(stubError)
         sut.save(sessionId: UserSession.getFakedItem().id, forAccount: Account.getFakedItem()) { result in
+            XCTAssertNotNil(result.failure)
+        }
+    }
+
+    func testAuthenticateAccountSuccess() {
+        sut.authenticateAccount(Account.getFakedItem()) { result in
+            XCTAssertNotNil(result.success)
+        }
+    }
+
+    func testAuthenticateAccountFailure() {
+        (sut.authLocalDataSource as? SessionLocalDataSourceFake)?.getSessionIdResult = .failure(stubError)
+        sut.authenticateAccount(Account.getFakedItem()) { result in
             XCTAssertNotNil(result.failure)
         }
     }

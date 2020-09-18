@@ -28,6 +28,17 @@ public class AuthenticationRepository {
 
 extension AuthenticationRepository: Domain.AuthenticationRepository {
 
+    public func guestSession(completion: @escaping GenericCompletion<Void>) {
+        authRemoteDataSource.createGuestSession { result in
+            switch result {
+            case .success:
+                completion(.success(()))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
+
     public func createRequestToken(completion: @escaping GenericCompletion<RequestToken>) {
         authRemoteDataSource.createRequestToken(completion: completion)
     }
@@ -108,6 +119,17 @@ extension AuthenticationRepository: Domain.AuthenticationRepository {
             switch result {
             case .success:
                 completion(.success(account))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
+
+    public func authenticateAccount(_ account: Account, completion: @escaping GenericCompletion<Void>) {
+        authLocalDataSource.getSessionId(forAccountId: account.id) { result in
+            switch result {
+            case .success(let id):
+                self.authLocalDataSource.select(sessionId: id, completion: completion)
             case .failure(let error):
                 completion(.failure(error))
             }

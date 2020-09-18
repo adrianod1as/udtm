@@ -10,6 +10,7 @@ import Domain
 
 public protocol SessionRemoteDataSource: AnyObject {
 
+    func createGuestSession(completion: @escaping GenericCompletion<GuestSession>)
     func createRequestToken(completion: @escaping GenericCompletion<RequestToken>)
     func createSession(forAuthenticatedRequestToken requestToken: String,
                        completion: @escaping GenericCompletion<UserSession>)
