@@ -21,6 +21,26 @@ public class SessionRemoteDataSource {
 
 extension SessionRemoteDataSource: AppData.SessionRemoteDataSource {
 
+    public func createRequestTokenToBeAllowedByUser(completion: @escaping GenericCompletion<RequestTokenToBeAllowedByUser>) {
+        createRequestToken { result in
+            switch result {
+            case .success(let token):
+                self.createRequestTokenToBeAllowedByUser(with: token, completion: completion)
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
+
+    internal func createRequestTokenToBeAllowedByUser(with requesToken: RequestToken,
+                                                      completion: @escaping GenericCompletion<RequestTokenToBeAllowedByUser>) {
+        guard let requestTokenToBeAllowedByUser = requesToken.asRequestTokenToBeAllowedByUser else {
+            completion(.failure(InteractionError.failedRequest(L10n.Error.Description.Token.url)))
+            return
+        }
+        completion(.success(requestTokenToBeAllowedByUser))
+    }
+
     public func createGuestSession(completion: @escaping GenericCompletion<GuestSession>) {
         dispatcher.getDecodable(GuestSession.self, from: AuthenticationTarget.guestSession, completion: completion)
     }
@@ -37,7 +57,7 @@ extension SessionRemoteDataSource: AppData.SessionRemoteDataSource {
                               checkingPermissionFromHeaders headers: [String: String],
                               completion: @escaping GenericCompletion<UserSession>) {
         guard headers.hasUserAuthenticatedToken else {
-            completion(.failure(InteractionError.failedRequest("Token não autenticado pelo usuário.")))
+            completion(.failure(InteractionError.failedRequest(L10n.Error.Description.Token.authentication)))
             return
         }
         createSession(forAuthenticatedRequestToken: requestToken, completion: completion)
@@ -66,5 +86,15 @@ extension Dictionary where Key == String, Value == String {
 
     internal var hasUserAuthenticatedToken: Bool {
         return !self.isEmpty
+    }
+}
+
+extension RequestToken {
+
+    internal var asRequestTokenToBeAllowedByUser: RequestTokenToBeAllowedByUser? {
+        guard let url = URL(string: L10n.RequestToken.Permission.url(code)) else {
+            return nil
+        }
+        return (code, url)
     }
 }

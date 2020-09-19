@@ -17,7 +17,7 @@ class SessionRemoteDataSourceTests: XCTestCase {
     private let sessionStub = UserSession.getFakedItem()
     private let guestStub = GuestSession.getFakedItem()
     private let headersStub = ["key": "value"]
-    private let tokenErrorStub = InteractionError.failedRequest("Token não autenticado pelo usuário.")
+    private let tokenErrorStub = InteractionError.failedRequest(L10n.Error.Description.Token.authentication)
     private var dispatcherFake: DispacherFake!
 
     override func setUp() {
@@ -35,6 +35,42 @@ class SessionRemoteDataSourceTests: XCTestCase {
 
         sut.createRequestToken { result in
             XCTAssertEqual(result.success?.code, self.requestTokenStub.code)
+        }
+    }
+
+    func testCreateRequestTokenToBeAllowedByUserSuccess() {
+        dispatcherFake = DispacherFake(model: requestTokenStub)
+        sut = SessionRemoteDataSource(dispatcher: dispatcherFake)
+
+        sut.createRequestTokenToBeAllowedByUser { result in
+            XCTAssertEqual(result.success?.requestToken, self.requestTokenStub.code)
+        }
+    }
+
+    func testCreateRequestTokenToBeAllowedByUserFailure() {
+        dispatcherFake = DispacherFake(model: sessionStub)
+        sut = SessionRemoteDataSource(dispatcher: dispatcherFake)
+
+        sut.createRequestTokenToBeAllowedByUser { result in
+            XCTAssertNotNil(result.failure)
+        }
+    }
+
+    func testCreateRequestTokenToBeAllowedByUserWithTokenSuccess() {
+        dispatcherFake = DispacherFake(model: requestTokenStub)
+        sut = SessionRemoteDataSource(dispatcher: dispatcherFake)
+
+        sut.createRequestTokenToBeAllowedByUser(with: requestTokenStub) { result in
+            XCTAssertEqual(result.success?.requestToken, self.requestTokenStub.code)
+        }
+    }
+
+    func testCreateRequestTokenToBeAllowedByUserWithTokenFailure() {
+        dispatcherFake = DispacherFake(model: requestTokenStub)
+        sut = SessionRemoteDataSource(dispatcher: dispatcherFake)
+
+        sut.createRequestTokenToBeAllowedByUser(with: RequestToken(code: "😄", expiration: "")) { result in
+            XCTAssertNotNil(result.failure)
         }
     }
 
