@@ -70,6 +70,10 @@
 		E16729142515736600C7B88C /* AccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16729132515736600C7B88C /* AccountTests.swift */; };
 		E16729162515746200C7B88C /* GuestSession+Fakeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16729152515746200C7B88C /* GuestSession+Fakeable.swift */; };
 		E18A1D112500739000FC04F0 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18A1D102500739000FC04F0 /* Credentials.swift */; };
+		E19D6600251647FC008840A3 /* RequestTokenToBeAllowedUseCaseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19D65FF251647FC008840A3 /* RequestTokenToBeAllowedUseCaseable.swift */; };
+		E19D6602251648A4008840A3 /* RequestTokenToBeAllowedByUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19D6601251648A4008840A3 /* RequestTokenToBeAllowedByUser.swift */; };
+		E19D6604251648C5008840A3 /* RequestTokenToBeAllowedUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19D6603251648C5008840A3 /* RequestTokenToBeAllowedUseCase.swift */; };
+		E19D660D25165155008840A3 /* RequestTokenToBeAllowedUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19D660C25165155008840A3 /* RequestTokenToBeAllowedUseCaseTests.swift */; };
 		E1D04390250D2A7C006F559C /* CredentialsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D0438F250D2A7C006F559C /* CredentialsTests.swift */; };
 		E1D04392250D2AB1006F559C /* Credentials+Fakeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D04391250D2AB1006F559C /* Credentials+Fakeable.swift */; };
 		E1D04394250D2EC5006F559C /* AuthenticationRepositorySpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D04393250D2EC5006F559C /* AuthenticationRepositorySpy.swift */; };
@@ -171,6 +175,10 @@
 		E16729132515736600C7B88C /* AccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTests.swift; sourceTree = "<group>"; };
 		E16729152515746200C7B88C /* GuestSession+Fakeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GuestSession+Fakeable.swift"; sourceTree = "<group>"; };
 		E18A1D102500739000FC04F0 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		E19D65FF251647FC008840A3 /* RequestTokenToBeAllowedUseCaseable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTokenToBeAllowedUseCaseable.swift; sourceTree = "<group>"; };
+		E19D6601251648A4008840A3 /* RequestTokenToBeAllowedByUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTokenToBeAllowedByUser.swift; sourceTree = "<group>"; };
+		E19D6603251648C5008840A3 /* RequestTokenToBeAllowedUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTokenToBeAllowedUseCase.swift; sourceTree = "<group>"; };
+		E19D660C25165155008840A3 /* RequestTokenToBeAllowedUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTokenToBeAllowedUseCaseTests.swift; sourceTree = "<group>"; };
 		E1D0438F250D2A7C006F559C /* CredentialsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsTests.swift; sourceTree = "<group>"; };
 		E1D04391250D2AB1006F559C /* Credentials+Fakeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Credentials+Fakeable.swift"; sourceTree = "<group>"; };
 		E1D04393250D2EC5006F559C /* AuthenticationRepositorySpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRepositorySpy.swift; sourceTree = "<group>"; };
@@ -390,6 +398,7 @@
 				E1078A722509567900E99E22 /* RequestToken.swift */,
 				E1078A742509579200E99E22 /* UserSession.swift */,
 				E1672905251567F200C7B88C /* GuestSession.swift */,
+				E19D6601251648A4008840A3 /* RequestTokenToBeAllowedByUser.swift */,
 			);
 			path = Responses;
 			sourceTree = "<group>";
@@ -494,6 +503,8 @@
 				E1672903251566BE00C7B88C /* GuestSessionUseCase.swift */,
 				E167290725156AA800C7B88C /* AuthenticateAccountUseCaseable.swift */,
 				E167290925156AD800C7B88C /* AuthenticateAccountUseCase.swift */,
+				E19D65FF251647FC008840A3 /* RequestTokenToBeAllowedUseCaseable.swift */,
+				E19D6603251648C5008840A3 /* RequestTokenToBeAllowedUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -533,6 +544,7 @@
 				E167290B2515703900C7B88C /* AccountsRetrievingUseCaseTests.swift */,
 				E167290F2515712900C7B88C /* GuestSessionUseCaseTests.swift */,
 				E1672911251571A500C7B88C /* AuthenticateAccountUseCaseTests.swift */,
+				E19D660C25165155008840A3 /* RequestTokenToBeAllowedUseCaseTests.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -743,6 +755,7 @@
 				E14443E124E04E0C00008203 /* Array+Ext.swift in Sources */,
 				E167290825156AA800C7B88C /* AuthenticateAccountUseCaseable.swift in Sources */,
 				E12F4ECB24F304710084EAD6 /* Account.swift in Sources */,
+				E19D6604251648C5008840A3 /* RequestTokenToBeAllowedUseCase.swift in Sources */,
 				E16728FA25155EAA00C7B88C /* AccountsRetrievingUseCaseable.swift in Sources */,
 				E14443CD24E04E0C00008203 /* Validatable.swift in Sources */,
 				E14443CC24E04E0C00008203 /* Fakeable.swift in Sources */,
@@ -752,6 +765,7 @@
 				E14443D024E04E0C00008203 /* SignOutSceneCoordinating.swift in Sources */,
 				E12F4ECD24F30B730084EAD6 /* AuthenticateUserPermissionUseCaseable.swift in Sources */,
 				E14443CF24E04E0C00008203 /* DomainConvertibleType.swift in Sources */,
+				E19D6600251647FC008840A3 /* RequestTokenToBeAllowedUseCaseable.swift in Sources */,
 				E101F206250ACFDA00D9C950 /* Validation.swift in Sources */,
 				E144436B24E04E0B00008203 /* LocalizedRecord.swift in Sources */,
 				E18A1D112500739000FC04F0 /* Credentials.swift in Sources */,
@@ -767,6 +781,7 @@
 				E1672904251566BE00C7B88C /* GuestSessionUseCase.swift in Sources */,
 				E14443DF24E04E0C00008203 /* Numbers+Ext.swift in Sources */,
 				E14443D924E04E0C00008203 /* KeyedEncodingContainer+Ext.swift in Sources */,
+				E19D6602251648A4008840A3 /* RequestTokenToBeAllowedByUser.swift in Sources */,
 				E14443CE24E04E0C00008203 /* InteractionError.swift in Sources */,
 				E16728FE25155F7800C7B88C /* AccountsRepository.swift in Sources */,
 				E16728FC25155EF900C7B88C /* AccountsRetrievingUseCase.swift in Sources */,
@@ -806,6 +821,7 @@
 				E1D0439F250D32A7006F559C /* RegexExtensionsTests.swift in Sources */,
 				E1D0439D250D328A006F559C /* NumberExtensionsTests.swift in Sources */,
 				E1672912251571A500C7B88C /* AuthenticateAccountUseCaseTests.swift in Sources */,
+				E19D660D25165155008840A3 /* RequestTokenToBeAllowedUseCaseTests.swift in Sources */,
 				E1D043A5250D333A006F559C /* FakeryExtensionsTests.swift in Sources */,
 				E1D04397250D2F7C006F559C /* AuthenticateUserPermissionUseCaseTests.swift in Sources */,
 				E167290E2515707800C7B88C /* AccountsRepositorySpy.swift in Sources */,
