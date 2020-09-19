@@ -28,6 +28,10 @@ public class AuthenticationRepository {
 
 extension AuthenticationRepository: Domain.AuthenticationRepository {
 
+    public func createRequestTokenToBeAllowedByUser(completion: @escaping GenericCompletion<RequestTokenToBeAllowedByUser>) {
+        authRemoteDataSource.createRequestTokenToBeAllowedByUser(completion: completion)
+    }
+
     public func guestSession(completion: @escaping GenericCompletion<Void>) {
         authRemoteDataSource.createGuestSession { result in
             switch result {

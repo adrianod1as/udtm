@@ -12,6 +12,7 @@ public protocol SessionRemoteDataSource: AnyObject {
 
     func createGuestSession(completion: @escaping GenericCompletion<GuestSession>)
     func createRequestToken(completion: @escaping GenericCompletion<RequestToken>)
+    func createRequestTokenToBeAllowedByUser(completion: @escaping GenericCompletion<RequestTokenToBeAllowedByUser>)
     func createSession(forAuthenticatedRequestToken requestToken: String,
                        completion: @escaping GenericCompletion<UserSession>)
     func createSession(forRequestToken requestToken: String, checkingPermissionFromHeaders headers: [String: String],
