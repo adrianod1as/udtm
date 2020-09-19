@@ -6,7 +6,7 @@
 //  Copyright © 2020 dias. All rights reserved.
 //
 
-public protocol GuestSessionUseCaseableCaseable: AnyObject {
+public protocol GuestSessionUseCaseable: AnyObject {
 
     func execute(completion: @escaping GenericCompletion<Void>)
 }

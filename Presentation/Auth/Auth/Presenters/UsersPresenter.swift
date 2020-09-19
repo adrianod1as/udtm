@@ -13,9 +13,9 @@ protocol UsersPresenterHolding {
     var view: UsersViewable? { get set }
     var coordinator: UsersSceneCoordinating { get }
     var accountsRetrievingUseCase: AccountsRetrievingUseCaseable { get }
-    var guestUseCase: GuestSessionUseCaseableCaseable { get }
+    var guestUseCase: GuestSessionUseCaseable { get }
     var accountAuthenticationUseCase: AuthenticateAccountUseCaseable { get }
-    init(accountsUseCase: AccountsRetrievingUseCaseable, guestUseCase: GuestSessionUseCaseableCaseable,
+    init(accountsUseCase: AccountsRetrievingUseCaseable, guestUseCase: GuestSessionUseCaseable,
          accountAuthenticationUseCase: AuthenticateAccountUseCaseable, coordinator: UsersSceneCoordinating)
     func attach(view: UsersViewable)
 }
@@ -25,10 +25,10 @@ public class UsersPresenter: UsersPresenterHolding {
     internal var view: UsersViewable?
     internal let coordinator: UsersSceneCoordinating
     internal let accountsRetrievingUseCase: AccountsRetrievingUseCaseable
-    internal let guestUseCase: GuestSessionUseCaseableCaseable
+    internal let guestUseCase: GuestSessionUseCaseable
     internal let accountAuthenticationUseCase: AuthenticateAccountUseCaseable
 
-    required init(accountsUseCase: AccountsRetrievingUseCaseable, guestUseCase: GuestSessionUseCaseableCaseable,
+    required init(accountsUseCase: AccountsRetrievingUseCaseable, guestUseCase: GuestSessionUseCaseable,
                   accountAuthenticationUseCase: AuthenticateAccountUseCaseable, coordinator: UsersSceneCoordinating) {
         self.accountsRetrievingUseCase = accountsUseCase
         self.accountAuthenticationUseCase = accountAuthenticationUseCase
@@ -56,11 +56,14 @@ extension UsersPresenter: UsersPresentable {
     internal func handleAccount(_ result: Result<[Account], Error>){
         switch result {
         case .success(let accounts):
-            let registeredUsers = accounts.map({ LogableUser.registered($0) })
-            view?.show(users: LogableUser.standardUsers + registeredUsers)
+            view?.show(users: users(for: accounts))
         case .failure(let error):
             view?.show(error: error.localizedDescription)
         }
+    }
+
+    internal func users(for accounts: [Account]) -> [LogableUser] {
+        accounts.map({ LogableUser.registered($0) }) + LogableUser.standardUsers
     }
 
     public func select(user: LogableUser) {

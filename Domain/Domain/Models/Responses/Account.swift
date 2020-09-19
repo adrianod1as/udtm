@@ -62,3 +62,10 @@ extension Account: Validatable {
             .enforce()
     }
 }
+
+extension Account: Equatable {
+
+    public static func == (lhs: Account, rhs: Account) -> Bool {
+        return lhs.id == rhs.id && lhs.username == rhs.username
+    }
+}

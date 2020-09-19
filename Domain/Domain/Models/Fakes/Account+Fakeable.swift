@@ -15,7 +15,7 @@ extension Account: Fakeable {
     }
 
     public var uniquesId: [String] {
-        [id]
+        [id, username]
     }
 
     public static func getFakedItem() -> Account {

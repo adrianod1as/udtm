@@ -15,7 +15,7 @@ public class GuestSessionUseCase {
     }
 }
 
-extension GuestSessionUseCase: GuestSessionUseCaseableCaseable {
+extension GuestSessionUseCase: GuestSessionUseCaseable {
 
     public func execute(completion: @escaping GenericCompletion<Void>) {
         repository.guestSession(completion: completion)
