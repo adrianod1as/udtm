@@ -20,6 +20,10 @@
 		E16728F42515570F00C7B88C /* UsersViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16728F32515570F00C7B88C /* UsersViewable.swift */; };
 		E16728F62515575B00C7B88C /* UsersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16728F52515575B00C7B88C /* UsersPresenter.swift */; };
 		E16728F82515585D00C7B88C /* UsersSceneCoordinating.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16728F72515585D00C7B88C /* UsersSceneCoordinating.swift */; };
+		E16729182515A3AF00C7B88C /* LoginPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16729172515A3AF00C7B88C /* LoginPresentable.swift */; };
+		E167291A2515A4AE00C7B88C /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16729192515A4AE00C7B88C /* LoginPresenter.swift */; };
+		E167291C2515A4E300C7B88C /* LoginViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E167291B2515A4E300C7B88C /* LoginViewable.swift */; };
+		E167291E2515A56400C7B88C /* LoginSceneCoordinating.swift in Sources */ = {isa = PBXBuildFile; fileRef = E167291D2515A56400C7B88C /* LoginSceneCoordinating.swift */; };
 		EBE4C6432F1A3484CFCF6923 /* Pods_Auth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BA85EA016C296A90831BC0 /* Pods_Auth.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +58,10 @@
 		E16728F32515570F00C7B88C /* UsersViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewable.swift; sourceTree = "<group>"; };
 		E16728F52515575B00C7B88C /* UsersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersPresenter.swift; sourceTree = "<group>"; };
 		E16728F72515585D00C7B88C /* UsersSceneCoordinating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersSceneCoordinating.swift; sourceTree = "<group>"; };
+		E16729172515A3AF00C7B88C /* LoginPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresentable.swift; sourceTree = "<group>"; };
+		E16729192515A4AE00C7B88C /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		E167291B2515A4E300C7B88C /* LoginViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewable.swift; sourceTree = "<group>"; };
+		E167291D2515A56400C7B88C /* LoginSceneCoordinating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSceneCoordinating.swift; sourceTree = "<group>"; };
 		E8BA85EA016C296A90831BC0 /* Pods_Auth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Auth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -158,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				E16728F72515585D00C7B88C /* UsersSceneCoordinating.swift */,
+				E167291D2515A56400C7B88C /* LoginSceneCoordinating.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -192,6 +201,8 @@
 			children = (
 				E16728EF25154FD300C7B88C /* UsersPresentable.swift */,
 				E16728F52515575B00C7B88C /* UsersPresenter.swift */,
+				E16729172515A3AF00C7B88C /* LoginPresentable.swift */,
+				E16729192515A4AE00C7B88C /* LoginPresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -200,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				E16728F32515570F00C7B88C /* UsersViewable.swift */,
+				E167291B2515A4E300C7B88C /* LoginViewable.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -413,8 +425,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E167291C2515A4E300C7B88C /* LoginViewable.swift in Sources */,
+				E167291A2515A4AE00C7B88C /* LoginPresenter.swift in Sources */,
 				E16728F82515585D00C7B88C /* UsersSceneCoordinating.swift in Sources */,
 				E16728F62515575B00C7B88C /* UsersPresenter.swift in Sources */,
+				E16729182515A3AF00C7B88C /* LoginPresentable.swift in Sources */,
+				E167291E2515A56400C7B88C /* LoginSceneCoordinating.swift in Sources */,
 				E16728F22515517400C7B88C /* LogableUser.swift in Sources */,
 				E16728F025154FD300C7B88C /* UsersPresentable.swift in Sources */,
 				E16728DC2515351A00C7B88C /* SwiftGenStrings.swift in Sources */,
