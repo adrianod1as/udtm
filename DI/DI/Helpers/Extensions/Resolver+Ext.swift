@@ -12,7 +12,7 @@ public extension Resolver {
 
     func safelyResolve<Service>(_ serviceType: Service.Type) -> Service {
         guard let dependency = resolve(serviceType, name: nil) else {
-            preconditionFailure("\(serviceType) is nil")
+            preconditionFailure(L10n.Resolver.SafelyResolve.preconditionFailure(serviceType))
         }
         return dependency
     }

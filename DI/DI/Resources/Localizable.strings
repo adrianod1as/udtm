@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  DI
+
+  Created by Adriano Dias on 19/09/20.
+  Copyright © 2020 dias. All rights reserved.
+*/
+
+"Resolver.SafelyResolve.preconditionFailure" = "%@ is nil";

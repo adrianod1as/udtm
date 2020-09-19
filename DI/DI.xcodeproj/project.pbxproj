@@ -19,6 +19,8 @@
 		E14A076924E4B98B006A5DC5 /* AppNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14A076824E4B98B006A5DC5 /* AppNavigation.framework */; };
 		E16728E92515357F00C7B88C /* Auth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16728E82515357F00C7B88C /* Auth.framework */; };
 		E195A1AC24E4C78200C513F9 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E195A1AB24E4C78200C513F9 /* Common.framework */; };
+		E19D660725164B12008840A3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E19D660625164B12008840A3 /* Localizable.strings */; };
+		E19D660B25164C32008840A3 /* SwiftGenStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19D660A25164C32008840A3 /* SwiftGenStrings.swift */; };
 		E1C9F24B24EE0D4E00DEE93E /* CoordinatorFactoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C9F24A24EE0D4E00DEE93E /* CoordinatorFactoryAssembly.swift */; };
 		E1C9F24F24EE0E5500DEE93E /* Resolver+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C9F24E24EE0E5500DEE93E /* Resolver+Ext.swift */; };
 		E1C9F25E24EE15CB00DEE93E /* DomainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C9F25D24EE15CB00DEE93E /* DomainAssembly.swift */; };
@@ -59,6 +61,8 @@
 		E14A076824E4B98B006A5DC5 /* AppNavigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppNavigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E16728E82515357F00C7B88C /* Auth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Auth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E195A1AB24E4C78200C513F9 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E19D660625164B12008840A3 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		E19D660A25164C32008840A3 /* SwiftGenStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftGenStrings.swift; sourceTree = "<group>"; };
 		E1C9F24A24EE0D4E00DEE93E /* CoordinatorFactoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoryAssembly.swift; sourceTree = "<group>"; };
 		E1C9F24E24EE0E5500DEE93E /* Resolver+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resolver+Ext.swift"; sourceTree = "<group>"; };
 		E1C9F25D24EE15CB00DEE93E /* DomainAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainAssembly.swift; sourceTree = "<group>"; };
@@ -156,6 +160,7 @@
 				E1CE96CE24EE0625006DEA27 /* Factories */,
 				E1CE96CF24EE0644006DEA27 /* Assemblies */,
 				E1C9F24C24EE0E4300DEE93E /* Helpers */,
+				E19D660525164AFF008840A3 /* Resources */,
 				E14A074324E4B844006A5DC5 /* Supporting Files */,
 				E14A071F24E4B6E4006A5DC5 /* DI.h */,
 			);
@@ -179,9 +184,34 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E19D660525164AFF008840A3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E19D660625164B12008840A3 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E19D660825164BC3008840A3 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				E19D660925164BCA008840A3 /* Generated */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		E19D660925164BCA008840A3 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				E19D660A25164C32008840A3 /* SwiftGenStrings.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 		E1C9F24C24EE0E4300DEE93E /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				E19D660825164BC3008840A3 /* Constants */,
 				E1C9F24D24EE0E4900DEE93E /* Extensions */,
 			);
 			path = Helpers;
@@ -345,6 +375,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E19D660725164B12008840A3 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +466,7 @@
 				E1CE96C124EDF907006DEA27 /* DependencyInjector.swift in Sources */,
 				E1C9F26024EE16CC00DEE93E /* DataAssembly.swift in Sources */,
 				E1C9F24B24EE0D4E00DEE93E /* CoordinatorFactoryAssembly.swift in Sources */,
+				E19D660B25164C32008840A3 /* SwiftGenStrings.swift in Sources */,
 				E1CE96D224EE07EA006DEA27 /* CoordinatorFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
