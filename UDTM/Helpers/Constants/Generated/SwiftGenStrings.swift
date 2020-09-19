@@ -9,33 +9,44 @@ import Foundation
 
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
-public enum L10n {
+internal enum L10n {
 
-  public enum Headers {
-    public enum Keys {
-      /// accept
-      public static let accept = L10n.tr("Localizable", "Headers.Keys.Accept")
-      /// Authorization
-      public static let authorization = L10n.tr("Localizable", "Headers.Keys.Authorization")
-      /// Content-Type
-      public static let contentType = L10n.tr("Localizable", "Headers.Keys.ContentType")
-    }
-    public enum Values {
-      /// Bearer %@
-      public static func bearer(_ p1: Any) -> String {
-        return L10n.tr("Localizable", "Headers.Values.Bearer", String(describing: p1))
-      }
-      /// application/json
-      public static let jsonApplication = L10n.tr("Localizable", "Headers.Values.JsonApplication")
-      /// application/json;charset=utf-8
-      public static let jsonContentType = L10n.tr("Localizable", "Headers.Values.JsonContentType")
+  internal enum App {
+    /// group.br.com.dias.udtm
+    internal static let group = L10n.tr("Localizable", "App.group")
+    /// br.com.dias.udtm
+    internal static let identifier = L10n.tr("Localizable", "App.identifier")
+    internal enum Scene {
+      /// Default Configuration
+      internal static let name = L10n.tr("Localizable", "App.Scene.name")
     }
   }
 
-  public enum SpecificHeaders {
-    public enum Keys {
+  internal enum Headers {
+    internal enum Keys {
+      /// accept
+      internal static let accept = L10n.tr("Localizable", "Headers.Keys.Accept")
+      /// Authorization
+      internal static let authorization = L10n.tr("Localizable", "Headers.Keys.Authorization")
+      /// Content-Type
+      internal static let contentType = L10n.tr("Localizable", "Headers.Keys.ContentType")
+    }
+    internal enum Values {
+      /// Bearer %@
+      internal static func bearer(_ p1: Any) -> String {
+        return L10n.tr("Localizable", "Headers.Values.Bearer", String(describing: p1))
+      }
+      /// application/json
+      internal static let jsonApplication = L10n.tr("Localizable", "Headers.Values.JsonApplication")
+      /// application/json;charset=utf-8
+      internal static let jsonContentType = L10n.tr("Localizable", "Headers.Values.JsonContentType")
+    }
+  }
+
+  internal enum SpecificHeaders {
+    internal enum Keys {
       /// tmdb
-      public static let tmdb = L10n.tr("Localizable", "SpecificHeaders.Keys.tmdb")
+      internal static let tmdb = L10n.tr("Localizable", "SpecificHeaders.Keys.tmdb")
     }
   }
 }
