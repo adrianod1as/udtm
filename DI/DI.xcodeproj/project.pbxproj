@@ -21,8 +21,9 @@
 		E195A1AC24E4C78200C513F9 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E195A1AB24E4C78200C513F9 /* Common.framework */; };
 		E19D660725164B12008840A3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E19D660625164B12008840A3 /* Localizable.strings */; };
 		E19D660B25164C32008840A3 /* SwiftGenStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19D660A25164C32008840A3 /* SwiftGenStrings.swift */; };
+		E19D66402517EF6E008840A3 /* AuthFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19D663F2517EF6E008840A3 /* AuthFactory.swift */; };
+		E19D66512517FBA8008840A3 /* AuthFlowAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19D66502517FBA8008840A3 /* AuthFlowAssembly.swift */; };
 		E1C9F24B24EE0D4E00DEE93E /* CoordinatorFactoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C9F24A24EE0D4E00DEE93E /* CoordinatorFactoryAssembly.swift */; };
-		E1C9F24F24EE0E5500DEE93E /* Resolver+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C9F24E24EE0E5500DEE93E /* Resolver+Ext.swift */; };
 		E1C9F25E24EE15CB00DEE93E /* DomainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C9F25D24EE15CB00DEE93E /* DomainAssembly.swift */; };
 		E1C9F26024EE16CC00DEE93E /* DataAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C9F25F24EE16CC00DEE93E /* DataAssembly.swift */; };
 		E1C9F26324EE16F600DEE93E /* NetworkingAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C9F26224EE16F600DEE93E /* NetworkingAssembly.swift */; };
@@ -63,8 +64,9 @@
 		E195A1AB24E4C78200C513F9 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E19D660625164B12008840A3 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		E19D660A25164C32008840A3 /* SwiftGenStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftGenStrings.swift; sourceTree = "<group>"; };
+		E19D663F2517EF6E008840A3 /* AuthFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFactory.swift; sourceTree = "<group>"; };
+		E19D66502517FBA8008840A3 /* AuthFlowAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFlowAssembly.swift; sourceTree = "<group>"; };
 		E1C9F24A24EE0D4E00DEE93E /* CoordinatorFactoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoryAssembly.swift; sourceTree = "<group>"; };
-		E1C9F24E24EE0E5500DEE93E /* Resolver+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resolver+Ext.swift"; sourceTree = "<group>"; };
 		E1C9F25D24EE15CB00DEE93E /* DomainAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainAssembly.swift; sourceTree = "<group>"; };
 		E1C9F25F24EE16CC00DEE93E /* DataAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAssembly.swift; sourceTree = "<group>"; };
 		E1C9F26224EE16F600DEE93E /* NetworkingAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingAssembly.swift; sourceTree = "<group>"; };
@@ -208,6 +210,14 @@
 			path = Generated;
 			sourceTree = "<group>";
 		};
+		E19D66412517EF72008840A3 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				E19D663F2517EF6E008840A3 /* AuthFactory.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
 		E1C9F24C24EE0E4300DEE93E /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,7 +230,6 @@
 		E1C9F24D24EE0E4900DEE93E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				E1C9F24E24EE0E5500DEE93E /* Resolver+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -230,6 +239,7 @@
 			children = (
 				E1C9F24A24EE0D4E00DEE93E /* CoordinatorFactoryAssembly.swift */,
 				E1C9F26824EE1BED00DEE93E /* CoordinatorsAssembly.swift */,
+				E19D66502517FBA8008840A3 /* AuthFlowAssembly.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -257,6 +267,7 @@
 			children = (
 				E1CE96D024EE06B4006DEA27 /* Coordinators */,
 				E1CE96D724EE0C58006DEA27 /* DependencyManufacturing.swift */,
+				E19D66412517EF72008840A3 /* Presentation */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -460,9 +471,10 @@
 				E1CE96D824EE0C58006DEA27 /* DependencyManufacturing.swift in Sources */,
 				E1C9F25E24EE15CB00DEE93E /* DomainAssembly.swift in Sources */,
 				E1C9F26924EE1BED00DEE93E /* CoordinatorsAssembly.swift in Sources */,
+				E19D66512517FBA8008840A3 /* AuthFlowAssembly.swift in Sources */,
 				E1C9F26524EE176900DEE93E /* StorageAssembly.swift in Sources */,
-				E1C9F24F24EE0E5500DEE93E /* Resolver+Ext.swift in Sources */,
 				E1C9F26324EE16F600DEE93E /* NetworkingAssembly.swift in Sources */,
+				E19D66402517EF6E008840A3 /* AuthFactory.swift in Sources */,
 				E1CE96C124EDF907006DEA27 /* DependencyInjector.swift in Sources */,
 				E1C9F26024EE16CC00DEE93E /* DataAssembly.swift in Sources */,
 				E1C9F24B24EE0D4E00DEE93E /* CoordinatorFactoryAssembly.swift in Sources */,

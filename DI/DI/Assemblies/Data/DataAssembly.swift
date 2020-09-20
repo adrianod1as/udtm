@@ -12,5 +12,8 @@ import Domain
 
 class DataAssembly: Assembly {
 
-    func assemble(container: Container) {}
+    func assemble(container: Container) {
+        container.autoregister(Domain.AuthenticationRepository.self, initializer: AppData.AuthenticationRepository.init)
+        container.autoregister(Domain.AccountsRepository.self, initializer: AppData.AccountsRepository.init)
+    }
 }

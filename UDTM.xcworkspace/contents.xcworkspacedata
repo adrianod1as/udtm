@@ -14,10 +14,10 @@
       location = "container:"
       name = "Presentation">
       <FileRef
-         location = "group:Presentation/Auth/Auth.xcodeproj">
+         location = "group:Presentation/Common/Common.xcodeproj">
       </FileRef>
       <FileRef
-         location = "group:Presentation/Common/Common.xcodeproj">
+         location = "group:Presentation/Auth/Auth.xcodeproj">
       </FileRef>
    </Group>
    <FileRef

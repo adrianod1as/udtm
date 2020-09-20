@@ -7,6 +7,7 @@
 //
 
 import Swinject
+import Common
 import AppNavigation
 
 class CoordinatorFactoryAssembly: Assembly {
