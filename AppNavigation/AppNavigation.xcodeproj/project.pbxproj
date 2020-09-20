@@ -14,9 +14,8 @@
 		E14A075F24E4B8FF006A5DC5 /* AppNavigation.h in Headers */ = {isa = PBXBuildFile; fileRef = E14A075124E4B8FF006A5DC5 /* AppNavigation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E16728E52515357700C7B88C /* Auth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16728E42515357700C7B88C /* Auth.framework */; };
 		E195A1B024E4C79900C513F9 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E195A1AF24E4C79900C513F9 /* Common.framework */; };
+		E19D66482517F2E4008840A3 /* CoordinatorManufacturing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19D66472517F2E4008840A3 /* CoordinatorManufacturing.swift */; };
 		E1CE96C324EDF97F006DEA27 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CE96C224EDF97F006DEA27 /* AppCoordinator.swift */; };
-		E1CE96C524EDF9AD006DEA27 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CE96C424EDF9AD006DEA27 /* Coordinator.swift */; };
-		E1CE96D624EE087D006DEA27 /* CoordinatorManufacturing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CE96D524EE087D006DEA27 /* CoordinatorManufacturing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,9 +43,8 @@
 		E14A075E24E4B8FF006A5DC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E16728E42515357700C7B88C /* Auth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Auth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E195A1AF24E4C79900C513F9 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E19D66472517F2E4008840A3 /* CoordinatorManufacturing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorManufacturing.swift; sourceTree = "<group>"; };
 		E1CE96C224EDF97F006DEA27 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		E1CE96C424EDF9AD006DEA27 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		E1CE96D524EE087D006DEA27 /* CoordinatorManufacturing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorManufacturing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,8 +119,7 @@
 				E14A075124E4B8FF006A5DC5 /* AppNavigation.h */,
 				E14A075224E4B8FF006A5DC5 /* Info.plist */,
 				E1CE96C224EDF97F006DEA27 /* AppCoordinator.swift */,
-				E1CE96C424EDF9AD006DEA27 /* Coordinator.swift */,
-				E1CE96D524EE087D006DEA27 /* CoordinatorManufacturing.swift */,
+				E19D66472517F2E4008840A3 /* CoordinatorManufacturing.swift */,
 			);
 			path = AppNavigation;
 			sourceTree = "<group>";
@@ -313,9 +310,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1CE96D624EE087D006DEA27 /* CoordinatorManufacturing.swift in Sources */,
-				E1CE96C524EDF9AD006DEA27 /* Coordinator.swift in Sources */,
 				E1CE96C324EDF97F006DEA27 /* AppCoordinator.swift in Sources */,
+				E19D66482517F2E4008840A3 /* CoordinatorManufacturing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

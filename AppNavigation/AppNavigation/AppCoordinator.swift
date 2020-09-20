@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Common
+import Auth
 
 public class AppCoordinator: Coordinator {
 
@@ -16,13 +18,26 @@ public class AppCoordinator: Coordinator {
 
     public var navigationController: UINavigationController
 
-    private let coordinatorFactory: CoordinatorManufacturing
+    private let factory: CoordinatorManufacturing
 
-    public init(navigationController: UINavigationController, coordinatorFactory: CoordinatorManufacturing) {
+    public init(navigationController: UINavigationController, factory: CoordinatorManufacturing) {
         self.navigationController = navigationController
-        self.coordinatorFactory = coordinatorFactory
+        self.factory = factory
     }
 
     public func start() {
+        showAuthenticationFlow()
+    }
+
+    internal func showAuthenticationFlow() {
+        let coordinator = factory.makeAuthCoordinator()
+        coordinator.start()
+    }
+}
+
+extension AppCoordinator: AuthDepartingCoordinating {
+
+    public func showHome() {
+        #warning("TO-DO: implement navigation to Home")
     }
 }
