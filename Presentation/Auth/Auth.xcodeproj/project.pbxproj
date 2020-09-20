@@ -32,6 +32,11 @@
 		E19D661E251667B3008840A3 /* GuestSessionUseCaseableCaseableStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19D661D251667B3008840A3 /* GuestSessionUseCaseableCaseableStub.swift */; };
 		E19D662025166847008840A3 /* AuthenticateAccountUseCaseableStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19D661F25166847008840A3 /* AuthenticateAccountUseCaseableStub.swift */; };
 		E19D66222516C20D008840A3 /* LogableUserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19D66212516C20D008840A3 /* LogableUserTests.swift */; };
+		E19D66262517BEEE008840A3 /* LoginPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19D66252517BEEE008840A3 /* LoginPresenterTests.swift */; };
+		E19D66282517CCF8008840A3 /* AuthenticateUserPermissionUseCaseableStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19D66272517CCF8008840A3 /* AuthenticateUserPermissionUseCaseableStub.swift */; };
+		E19D662A2517CD3E008840A3 /* UserAuthorizationUseCaseableStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19D66292517CD3E008840A3 /* UserAuthorizationUseCaseableStub.swift */; };
+		E19D662E2517CE03008840A3 /* AuthenticateCredentialsUseCaseableStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19D662D2517CE03008840A3 /* AuthenticateCredentialsUseCaseableStub.swift */; };
+		E19D66302517CE40008840A3 /* LoginSceneCoordinatingSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19D662F2517CE40008840A3 /* LoginSceneCoordinatingSpy.swift */; };
 		EBE4C6432F1A3484CFCF6923 /* Pods_Auth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BA85EA016C296A90831BC0 /* Pods_Auth.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +83,11 @@
 		E19D661D251667B3008840A3 /* GuestSessionUseCaseableCaseableStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestSessionUseCaseableCaseableStub.swift; sourceTree = "<group>"; };
 		E19D661F25166847008840A3 /* AuthenticateAccountUseCaseableStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateAccountUseCaseableStub.swift; sourceTree = "<group>"; };
 		E19D66212516C20D008840A3 /* LogableUserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogableUserTests.swift; sourceTree = "<group>"; };
+		E19D66252517BEEE008840A3 /* LoginPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTests.swift; sourceTree = "<group>"; };
+		E19D66272517CCF8008840A3 /* AuthenticateUserPermissionUseCaseableStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateUserPermissionUseCaseableStub.swift; sourceTree = "<group>"; };
+		E19D66292517CD3E008840A3 /* UserAuthorizationUseCaseableStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthorizationUseCaseableStub.swift; sourceTree = "<group>"; };
+		E19D662D2517CE03008840A3 /* AuthenticateCredentialsUseCaseableStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateCredentialsUseCaseableStub.swift; sourceTree = "<group>"; };
+		E19D662F2517CE40008840A3 /* LoginSceneCoordinatingSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSceneCoordinatingSpy.swift; sourceTree = "<group>"; };
 		E8BA85EA016C296A90831BC0 /* Pods_Auth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Auth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -281,6 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				E19D660F2516636A008840A3 /* UsersPresenterTests.swift */,
+				E19D66252517BEEE008840A3 /* LoginPresenterTests.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -298,6 +309,7 @@
 			isa = PBXGroup;
 			children = (
 				E19D6618251665A7008840A3 /* UsersSceneCoordinatingSpy.swift */,
+				E19D662F2517CE40008840A3 /* LoginSceneCoordinatingSpy.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -308,6 +320,9 @@
 				E19D661B25166740008840A3 /* AccountsRetrievingUseCaseableStub.swift */,
 				E19D661D251667B3008840A3 /* GuestSessionUseCaseableCaseableStub.swift */,
 				E19D661F25166847008840A3 /* AuthenticateAccountUseCaseableStub.swift */,
+				E19D66272517CCF8008840A3 /* AuthenticateUserPermissionUseCaseableStub.swift */,
+				E19D66292517CD3E008840A3 /* UserAuthorizationUseCaseableStub.swift */,
+				E19D662D2517CE03008840A3 /* AuthenticateCredentialsUseCaseableStub.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -510,9 +525,14 @@
 				E16728C32515345500C7B88C /* AuthTests.swift in Sources */,
 				E19D662025166847008840A3 /* AuthenticateAccountUseCaseableStub.swift in Sources */,
 				E19D66102516636A008840A3 /* UsersPresenterTests.swift in Sources */,
+				E19D66302517CE40008840A3 /* LoginSceneCoordinatingSpy.swift in Sources */,
+				E19D662E2517CE03008840A3 /* AuthenticateCredentialsUseCaseableStub.swift in Sources */,
+				E19D66262517BEEE008840A3 /* LoginPresenterTests.swift in Sources */,
 				E19D66222516C20D008840A3 /* LogableUserTests.swift in Sources */,
 				E19D661E251667B3008840A3 /* GuestSessionUseCaseableCaseableStub.swift in Sources */,
 				E19D6614251663E7008840A3 /* UsersViewableSpy.swift in Sources */,
+				E19D662A2517CD3E008840A3 /* UserAuthorizationUseCaseableStub.swift in Sources */,
+				E19D66282517CCF8008840A3 /* AuthenticateUserPermissionUseCaseableStub.swift in Sources */,
 				E19D6619251665A7008840A3 /* UsersSceneCoordinatingSpy.swift in Sources */,
 				E19D66162516643B008840A3 /* LoginViewableSpy.swift in Sources */,
 			);

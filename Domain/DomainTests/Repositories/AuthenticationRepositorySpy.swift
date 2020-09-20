@@ -11,7 +11,7 @@
 class AuthenticationRepositorySpy: AuthenticationRepository {
 
     var createRequestTokenCalled = false
-    var createRequestTokenToBeAllowedByUserCalled = false
+    var createUserAuthorizationCalled = false
     var authenticateUserPermissionCalled = false
     var authenticateCredentialsCalled = false
     var authenticateAccountCalled = false
@@ -21,8 +21,8 @@ class AuthenticationRepositorySpy: AuthenticationRepository {
         createRequestTokenCalled.toggle()
     }
 
-    func createRequestTokenToBeAllowedByUser(completion: @escaping GenericCompletion<RequestTokenToBeAllowedByUser>) {
-        createRequestTokenToBeAllowedByUserCalled.toggle()
+    func createUserAuthorization(completion: @escaping GenericCompletion<UserAuthorization>) {
+        createUserAuthorizationCalled.toggle()
     }
 
     func authenticateUserPermission(forRequestToken requestToken: String, headers: [String: String],

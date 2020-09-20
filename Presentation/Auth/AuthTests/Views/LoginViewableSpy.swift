@@ -10,14 +10,30 @@
 
 class LoginViewableSpy: LoginViewable {
 
-    func showGeneral(error: String) {}
+    var showPasswordErrorCalled = false
+    var showUserErrorCalled = false
+    var showGeneralErrorCalled = false
+    var manageIsLoadingCalled = false
+    var showRequestTokenUrlCalled = false
 
-    func showUser(error: String) {}
+    func showGeneral(error: String) {
+        showGeneralErrorCalled.toggle()
+    }
 
-    func showPassword(error: String) {}
+    func showUser(error: String) {
+        showUserErrorCalled.toggle()
+    }
 
-    func showRequestToken(url: URL) {}
+    func showPassword(error: String) {
+        showPasswordErrorCalled.toggle()
+    }
 
-    func manage(isLoading: Bool) {}
+    func showRequestToken(url: URL) {
+        showRequestTokenUrlCalled.toggle()
+    }
+
+    func manage(isLoading: Bool) {
+        manageIsLoadingCalled.toggle()
+    }
 
 }

@@ -10,7 +10,7 @@ import XCTest
 @testable import Domain
 @testable import Auth
 
-class AuthenticateUserPermissionUseCaseTests: XCTestCase {
+class UsersPresenterTests: XCTestCase {
 
     private var sut: UsersPresenter!
     private var viewSpy: UsersViewable!

@@ -42,8 +42,8 @@ class AuthenticationRepositoryTests: XCTestCase {
         }
     }
 
-    func testCreateRequestTokenToBeAllowedByUser() {
-        sut.createRequestTokenToBeAllowedByUser { result in
+    func testCreateUserAuthorization() {
+        sut.createUserAuthorization { result in
             XCTAssertNotNil(result.success)
         }
     }

@@ -13,11 +13,11 @@ protocol LoginPresenterHolding {
     var view: LoginViewable? { get set }
     var coordinator: LoginSceneCoordinating { get }
     var userPermissionAuthenticationUseCase: AuthenticateUserPermissionUseCaseable { get }
-    var requestTokenUseCase: RequestTokenToBeAllowedUseCaseable { get }
+    var userAuthorizationUseCase: UserAuthorizationUseCaseable { get }
     var credentialsAuthenticationUseCase: AuthenticateCredentialsUseCaseable { get }
     var userAllowedRequestToken: String { get set }
     init(userPermissionAuthenticationUseCase: AuthenticateUserPermissionUseCaseable,
-         requestTokenUseCase: RequestTokenToBeAllowedUseCaseable,
+         userAuthorizationUseCase: UserAuthorizationUseCaseable,
          credentialsAuthenticationUseCase: AuthenticateCredentialsUseCaseable, coordinator: LoginSceneCoordinating)
     func attach(view: LoginViewable)
 }
@@ -27,17 +27,17 @@ public class LoginPresenter: LoginPresenterHolding {
     internal var view: LoginViewable?
     internal let coordinator: LoginSceneCoordinating
     internal let userPermissionAuthenticationUseCase: AuthenticateUserPermissionUseCaseable
-    internal let requestTokenUseCase: RequestTokenToBeAllowedUseCaseable
+    internal let userAuthorizationUseCase: UserAuthorizationUseCaseable
     internal let credentialsAuthenticationUseCase: AuthenticateCredentialsUseCaseable
     internal var userAllowedRequestToken = ""
 
     required init(userPermissionAuthenticationUseCase: AuthenticateUserPermissionUseCaseable,
-                  requestTokenUseCase: RequestTokenToBeAllowedUseCaseable,
+                  userAuthorizationUseCase: UserAuthorizationUseCaseable,
                   credentialsAuthenticationUseCase: AuthenticateCredentialsUseCaseable,
                   coordinator: LoginSceneCoordinating) {
         self.userPermissionAuthenticationUseCase = userPermissionAuthenticationUseCase
         self.credentialsAuthenticationUseCase = credentialsAuthenticationUseCase
-        self.requestTokenUseCase = requestTokenUseCase
+        self.userAuthorizationUseCase = userAuthorizationUseCase
         self.coordinator = coordinator
     }
 
@@ -83,14 +83,14 @@ extension LoginPresenter: LoginPresentable {
 
     public func requestToken() {
         view?.manage(isLoading: true)
-        requestTokenUseCase.execute { [weak self] result in
+        userAuthorizationUseCase.execute { [weak self] result in
             guard let self = self else { return }
             self.view?.manage(isLoading: false)
             self.handleRequesToken(result)
         }
     }
 
-    internal func handleRequesToken(_ result: Result<RequestTokenToBeAllowedByUser, Error>) {
+    internal func handleRequesToken(_ result: Result<UserAuthorization, Error>) {
         switch result {
         case .success(let requestTokenToBeAllowedByUser):
             userAllowedRequestToken = requestTokenToBeAllowedByUser.requestToken

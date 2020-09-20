@@ -38,38 +38,38 @@ class SessionRemoteDataSourceTests: XCTestCase {
         }
     }
 
-    func testCreateRequestTokenToBeAllowedByUserSuccess() {
+    func testCreateUserAuthorizationSuccess() {
         dispatcherFake = DispacherFake(model: requestTokenStub)
         sut = SessionRemoteDataSource(dispatcher: dispatcherFake)
 
-        sut.createRequestTokenToBeAllowedByUser { result in
+        sut.createUserAuthorization { result in
             XCTAssertEqual(result.success?.requestToken, self.requestTokenStub.code)
         }
     }
 
-    func testCreateRequestTokenToBeAllowedByUserFailure() {
+    func testCreateUserAuthorizationFailure() {
         dispatcherFake = DispacherFake(model: sessionStub)
         sut = SessionRemoteDataSource(dispatcher: dispatcherFake)
 
-        sut.createRequestTokenToBeAllowedByUser { result in
+        sut.createUserAuthorization { result in
             XCTAssertNotNil(result.failure)
         }
     }
 
-    func testCreateRequestTokenToBeAllowedByUserWithTokenSuccess() {
+    func testCreateUserAuthorizationWithTokenSuccess() {
         dispatcherFake = DispacherFake(model: requestTokenStub)
         sut = SessionRemoteDataSource(dispatcher: dispatcherFake)
 
-        sut.createRequestTokenToBeAllowedByUser(with: requestTokenStub) { result in
+        sut.createUserAuthorization(with: requestTokenStub) { result in
             XCTAssertEqual(result.success?.requestToken, self.requestTokenStub.code)
         }
     }
 
-    func testCreateRequestTokenToBeAllowedByUserWithTokenFailure() {
+    func testCreateUserAuthorizationWithTokenFailure() {
         dispatcherFake = DispacherFake(model: requestTokenStub)
         sut = SessionRemoteDataSource(dispatcher: dispatcherFake)
 
-        sut.createRequestTokenToBeAllowedByUser(with: RequestToken(code: "😄", expiration: "")) { result in
+        sut.createUserAuthorization(with: RequestToken(code: "😄", expiration: "")) { result in
             XCTAssertNotNil(result.failure)
         }
     }

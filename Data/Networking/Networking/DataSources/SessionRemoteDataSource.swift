@@ -21,20 +21,20 @@ public class SessionRemoteDataSource {
 
 extension SessionRemoteDataSource: AppData.SessionRemoteDataSource {
 
-    public func createRequestTokenToBeAllowedByUser(completion: @escaping GenericCompletion<RequestTokenToBeAllowedByUser>) {
+    public func createUserAuthorization(completion: @escaping GenericCompletion<UserAuthorization>) {
         createRequestToken { result in
             switch result {
             case .success(let token):
-                self.createRequestTokenToBeAllowedByUser(with: token, completion: completion)
+                self.createUserAuthorization(with: token, completion: completion)
             case .failure(let error):
                 completion(.failure(error))
             }
         }
     }
 
-    internal func createRequestTokenToBeAllowedByUser(with requesToken: RequestToken,
-                                                      completion: @escaping GenericCompletion<RequestTokenToBeAllowedByUser>) {
-        guard let requestTokenToBeAllowedByUser = requesToken.asRequestTokenToBeAllowedByUser else {
+    internal func createUserAuthorization(with requesToken: RequestToken,
+                                                      completion: @escaping GenericCompletion<UserAuthorization>) {
+        guard let requestTokenToBeAllowedByUser = requesToken.asUserAuthorization else {
             completion(.failure(InteractionError.failedRequest(L10n.Error.Description.Token.url)))
             return
         }
@@ -91,10 +91,10 @@ extension Dictionary where Key == String, Value == String {
 
 extension RequestToken {
 
-    internal var asRequestTokenToBeAllowedByUser: RequestTokenToBeAllowedByUser? {
+    internal var asUserAuthorization: UserAuthorization? {
         guard let url = URL(string: L10n.RequestToken.Permission.url(code)) else {
             return nil
         }
-        return (code, url)
+        return UserAuthorization(requestToken: code, allowingURL: url)
     }
 }

@@ -12,9 +12,8 @@
 class SessionRemoteDataSourceFake: SessionRemoteDataSource {
 
     var createRequestTokenResult: Result<RequestToken, Error> = .success(RequestToken.getFakedItem())
-    var createRequestTokenToBeAllowedByUser = Result<RequestTokenToBeAllowedByUser, Error>
-                                                .success((RequestToken.getFakedItem().code,
-                                                          URL(string: "https://www.apple.com/")!))
+    var createUserAuthorization = Result<UserAuthorization, Error>
+                                    .success(UserAuthorization.getFakedItem())
     var createSessionForRequestTokenResult: Result<UserSession, Error> = .success(UserSession.getFakedItem())
     var createSessionForCredentialsTokenResult: Result<UserSession, Error> = .success(UserSession.getFakedItem())
     var createGuestSession: Result<GuestSession, Error> = .success(GuestSession.getFakedItem())
@@ -42,8 +41,8 @@ class SessionRemoteDataSourceFake: SessionRemoteDataSource {
         completion(createGuestSession)
     }
 
-    func createRequestTokenToBeAllowedByUser(completion: @escaping GenericCompletion<RequestTokenToBeAllowedByUser>) {
-        completion(createRequestTokenToBeAllowedByUser)
+    func createUserAuthorization(completion: @escaping GenericCompletion<UserAuthorization>) {
+        completion(createUserAuthorization)
     }
 
 }

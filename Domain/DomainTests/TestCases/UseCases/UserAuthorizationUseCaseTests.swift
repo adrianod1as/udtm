@@ -1,5 +1,5 @@
 //
-//  RequestTokenToBeAllowedUseCaseTests.swift
+//  UserAuthorizationUseCaseTests.swift
 //  DomainTests
 //
 //  Created by Adriano Dias on 19/09/20.
@@ -9,16 +9,16 @@
 import XCTest
 @testable import Domain
 
-class RequestTokenToBeAllowedUseCaseTests: XCTestCase {
+class UserAuthorizationUseCaseTests: XCTestCase {
 
-    private var sut: RequestTokenToBeAllowedUseCase!
+    private var sut: UserAuthorizationUseCase!
     private var spy: AuthenticationRepositorySpy!
 
     override func setUp() {
         super.setUp()
 
         spy = AuthenticationRepositorySpy()
-        sut = RequestTokenToBeAllowedUseCase(repository: spy)
+        sut = UserAuthorizationUseCase(repository: spy)
     }
 
     override func tearDown() {
@@ -27,7 +27,7 @@ class RequestTokenToBeAllowedUseCaseTests: XCTestCase {
 
     func testSuccessfulExecution() {
         sut.execute { _ in }
-        XCTAssert(spy.createRequestTokenToBeAllowedByUserCalled)
+        XCTAssert(spy.createUserAuthorizationCalled)
     }
 }
 

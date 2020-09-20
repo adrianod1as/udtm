@@ -9,7 +9,7 @@
 public protocol AuthenticationRepository {
 
     func createRequestToken(completion: @escaping GenericCompletion<RequestToken>)
-    func createRequestTokenToBeAllowedByUser(completion: @escaping GenericCompletion<RequestTokenToBeAllowedByUser>)
+    func createUserAuthorization(completion: @escaping GenericCompletion<UserAuthorization>)
     func authenticateUserPermission(forRequestToken requestToken: String,
                                     headers: [String: String], shouldSaveSession: Bool,
                                     completion: @escaping GenericCompletion<Account>)
