@@ -8,7 +8,7 @@
 
 import Common
 
-protocol UsersViewable: Loadable {
+public protocol UsersViewable: Loadable {
 
     func show(users: [LogableUser])
     func show(error: String)

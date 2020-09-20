@@ -31,29 +31,31 @@ public class LoginPresenter: LoginPresenterHolding {
     internal let credentialsAuthenticationUseCase: AuthenticateCredentialsUseCaseable
     internal var userAllowedRequestToken = ""
 
-    required init(userPermissionAuthenticationUseCase: AuthenticateUserPermissionUseCaseable,
-                  userAuthorizationUseCase: UserAuthorizationUseCaseable,
-                  credentialsAuthenticationUseCase: AuthenticateCredentialsUseCaseable,
-                  coordinator: LoginSceneCoordinating) {
+    public required init(userPermissionAuthenticationUseCase: AuthenticateUserPermissionUseCaseable,
+                         userAuthorizationUseCase: UserAuthorizationUseCaseable,
+                         credentialsAuthenticationUseCase: AuthenticateCredentialsUseCaseable,
+                         coordinator: LoginSceneCoordinating) {
         self.userPermissionAuthenticationUseCase = userPermissionAuthenticationUseCase
         self.credentialsAuthenticationUseCase = credentialsAuthenticationUseCase
         self.userAuthorizationUseCase = userAuthorizationUseCase
         self.coordinator = coordinator
     }
 
-    func attach(view: LoginViewable) {
+    public func attach(view: LoginViewable) {
         self.view = view
     }
 
 }
 
-extension LoginPresenter: LoginPresentable {
+extension LoginPresenter: LoginViewPresenting {
 
     public func authenticate(user: String, password: String, savingSession: Bool) {
         let credentials = Credentials(username: user, password: password, requestToken: "")
         view?.manage(isLoading: true)
         credentialsAuthenticationUseCase.execute(credentials, shouldSaveSession: savingSession) { [weak self] result in
-            guard let self = self else { return }
+            guard let self = self else {
+                return
+            }
             self.view?.manage(isLoading: false)
             self.handleCredentialsAuthentication(result)
         }
@@ -84,7 +86,9 @@ extension LoginPresenter: LoginPresentable {
     public func requestToken() {
         view?.manage(isLoading: true)
         userAuthorizationUseCase.execute { [weak self] result in
-            guard let self = self else { return }
+            guard let self = self else {
+                return
+            }
             self.view?.manage(isLoading: false)
             self.handleRequesToken(result)
         }
@@ -100,11 +104,13 @@ extension LoginPresenter: LoginPresentable {
         }
     }
 
-    public func authenticate(headers: [String : String], savingSession: Bool) {
+    public func authenticate(headers: [String: String], savingSession: Bool) {
         view?.manage(isLoading: true)
         userPermissionAuthenticationUseCase.execute(userAllowedRequestToken,
                                                     headers, shouldSaveSession: savingSession) { [weak self] result in
-            guard let self = self else { return }
+            guard let self = self else {
+                return
+            }
             self.view?.manage(isLoading: false)
             self.handleUserPermissionAuthentication(result)
         }
@@ -118,5 +124,4 @@ extension LoginPresenter: LoginPresentable {
             view?.showGeneral(error: error.localizedDescription)
         }
     }
-    
 }

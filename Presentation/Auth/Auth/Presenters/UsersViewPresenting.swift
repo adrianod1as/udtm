@@ -6,7 +6,7 @@
 //  Copyright © 2020 dias. All rights reserved.
 //
 
-public protocol UsersPresentable: AnyObject {
+public protocol UsersViewPresenting: AnyObject {
 
     func getUsers()
     func select(user: LogableUser)

@@ -122,4 +122,3 @@ class LoginPresenterTests: XCTestCase {
         showGeneralErrorTesting()
     }
 }
-

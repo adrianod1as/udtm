@@ -10,7 +10,7 @@
 
 class AuthenticateUserPermissionUseCaseableStub: AuthenticateUserPermissionUseCaseable {
 
-    func execute(_ requestToken: String, _ headers: [String : String],
+    func execute(_ requestToken: String, _ headers: [String: String],
                  shouldSaveSession: Bool, completion: @escaping GenericCompletion<Account>) {
         completion(.success(Account.getFakedItem()))
     }

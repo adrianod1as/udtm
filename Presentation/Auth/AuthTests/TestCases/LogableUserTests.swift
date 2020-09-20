@@ -39,4 +39,3 @@ class LogableUserTests: XCTestCase {
 
     }
 }
-

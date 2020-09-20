@@ -6,7 +6,7 @@
 //  Copyright © 2020 dias. All rights reserved.
 //
 
-public protocol LoginPresentable: AnyObject {
+public protocol LoginViewPresenting: AnyObject {
 
     func authenticate(user: String, password: String, savingSession: Bool)
     func requestToken()

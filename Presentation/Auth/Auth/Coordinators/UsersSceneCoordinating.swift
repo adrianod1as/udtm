@@ -6,7 +6,7 @@
 //  Copyright © 2020 dias. All rights reserved.
 //
 
-protocol UsersSceneCoordinating {
+public protocol UsersSceneCoordinating {
 
     func showNewUser()
     func showHome()

@@ -6,7 +6,7 @@
 //  Copyright © 2020 dias. All rights reserved.
 //
 
-protocol LoginSceneCoordinating {
+public protocol LoginSceneCoordinating {
 
     func showHome()
 }

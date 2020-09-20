@@ -28,32 +28,36 @@ public class UsersPresenter: UsersPresenterHolding {
     internal let guestUseCase: GuestSessionUseCaseable
     internal let accountAuthenticationUseCase: AuthenticateAccountUseCaseable
 
-    required init(accountsUseCase: AccountsRetrievingUseCaseable, guestUseCase: GuestSessionUseCaseable,
-                  accountAuthenticationUseCase: AuthenticateAccountUseCaseable, coordinator: UsersSceneCoordinating) {
+    public required init(accountsUseCase: AccountsRetrievingUseCaseable,
+                         guestUseCase: GuestSessionUseCaseable,
+                         accountAuthenticationUseCase: AuthenticateAccountUseCaseable,
+                         coordinator: UsersSceneCoordinating) {
         self.accountsRetrievingUseCase = accountsUseCase
         self.accountAuthenticationUseCase = accountAuthenticationUseCase
         self.guestUseCase = guestUseCase
         self.coordinator = coordinator
     }
 
-    func attach(view: UsersViewable) {
+    public func attach(view: UsersViewable) {
         self.view = view
     }
 
 }
 
-extension UsersPresenter: UsersPresentable {
+extension UsersPresenter: UsersViewPresenting {
 
     public func getUsers() {
         view?.manage(isLoading: true)
         accountsRetrievingUseCase.execute { [weak self] result in
-            guard let self = self else { return }
+            guard let self = self else {
+                return
+            }
             self.view?.manage(isLoading: false)
             self.handleAccount(result)
         }
     }
 
-    internal func handleAccount(_ result: Result<[Account], Error>){
+    internal func handleAccount(_ result: Result<[Account], Error>) {
         switch result {
         case .success(let accounts):
             view?.show(users: users(for: accounts))
@@ -80,7 +84,9 @@ extension UsersPresenter: UsersPresentable {
     internal func signInAsGuest() {
         view?.manage(isLoading: true)
         guestUseCase.execute { [weak self] result in
-            guard let self = self else { return }
+            guard let self = self else {
+                return
+            }
             self.view?.manage(isLoading: false)
             self.handleSignIn(result)
         }
@@ -89,7 +95,9 @@ extension UsersPresenter: UsersPresentable {
     internal func signInAsRegisteredAccount(_ account: Account) {
         view?.manage(isLoading: true)
         accountAuthenticationUseCase.execute(account) { [weak self] result in
-            guard let self = self else { return }
+            guard let self = self else {
+                return
+            }
             self.view?.manage(isLoading: false)
             self.handleSignIn(result)
         }
