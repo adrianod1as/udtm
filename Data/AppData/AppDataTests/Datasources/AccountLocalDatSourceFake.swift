@@ -13,6 +13,7 @@ class AccountLocalDatSourceFake: AccountLocalDatSource {
 
     var saveAccountResult: Result<Void, Error> = .success(())
     var getAccountResult: Result<Account, Error> = .success(Account.getFakedItem())
+    var getAccountsResult: Result<[Account], Error> = .success(Account.getFakedArray(amount: 4))
 
     func save(account: Account, completion: @escaping GenericCompletion<Void>) {
         completion(saveAccountResult)
@@ -22,4 +23,7 @@ class AccountLocalDatSourceFake: AccountLocalDatSource {
         completion(getAccountResult)
     }
 
+    func getAccounts(completion: @escaping GenericCompletion<[Account]>) {
+        completion(getAccountsResult)
+    }
 }

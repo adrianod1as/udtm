@@ -12,4 +12,5 @@ public protocol AccountLocalDatSource: AnyObject {
 
     func save(account: Account, completion: @escaping GenericCompletion<Void>)
     func getAccount(for id: String, completion: @escaping GenericCompletion<Account>)
+    func getAccounts(completion: @escaping GenericCompletion<[Account]>)
 }
