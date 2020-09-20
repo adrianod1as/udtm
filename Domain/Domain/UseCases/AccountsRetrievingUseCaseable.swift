@@ -10,4 +10,3 @@ public protocol AccountsRetrievingUseCaseable: AnyObject {
 
     func execute(completion: @escaping GenericCompletion<[Account]>)
 }
-

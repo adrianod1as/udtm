@@ -38,4 +38,3 @@ class AuthenticateAccountUseCaseTests: XCTestCase {
         XCTAssertFalse(spy.authenticateAccountCalled)
     }
 }
-

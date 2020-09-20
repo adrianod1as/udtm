@@ -30,5 +30,3 @@ class UserAuthorizationUseCaseTests: XCTestCase {
         XCTAssert(spy.createUserAuthorizationCalled)
     }
 }
-
-
