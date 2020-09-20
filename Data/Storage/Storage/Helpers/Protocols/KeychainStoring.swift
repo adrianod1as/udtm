@@ -33,11 +33,11 @@ extension KeychainStoring {
     }
 
     public var keychain: Keychain {
-        if let group = accessGroup, let service = self.service {
+        if let group = accessGroup, !group.isEmpty, let service = self.service, !service.isEmpty {
             return Keychain(service: service, accessGroup: group)
-        } else if let group = accessGroup {
+        } else if let group = accessGroup, !group.isEmpty {
             return Keychain(accessGroup: group)
-        } else if let service = self.service {
+        } else if let service = self.service, !service.isEmpty {
             return Keychain(service: service)
         }
         return Keychain()

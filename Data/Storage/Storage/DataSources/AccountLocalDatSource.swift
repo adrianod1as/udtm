@@ -39,4 +39,9 @@ extension AccountLocalDatSource: AppData.AccountLocalDatSource {
         }
         completion(.success(account.asDomain()))
     }
+
+    public func getAccounts(completion: @escaping GenericCompletion<[Account]>) {
+        let accounts = Array(realmStorage.defaultRealm.objects(RMAccoount.self)).map({ $0.asDomain() })
+        completion(.success(accounts))
+    }
 }
