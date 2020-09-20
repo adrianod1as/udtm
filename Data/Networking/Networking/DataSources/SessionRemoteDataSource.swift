@@ -33,7 +33,7 @@ extension SessionRemoteDataSource: AppData.SessionRemoteDataSource {
     }
 
     internal func createUserAuthorization(with requesToken: RequestToken,
-                                                      completion: @escaping GenericCompletion<UserAuthorization>) {
+                                          completion: @escaping GenericCompletion<UserAuthorization>) {
         guard let requestTokenToBeAllowedByUser = requesToken.asUserAuthorization else {
             completion(.failure(InteractionError.failedRequest(L10n.Error.Description.Token.url)))
             return

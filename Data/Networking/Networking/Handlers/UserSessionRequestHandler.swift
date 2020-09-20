@@ -17,7 +17,7 @@ import OxeNetworking
 public class UserSessionRequestHandler: RequestHandler {
 
     public var environment: Environment
-    internal let coordinator: SignOutSceneCoordinating
+    internal weak var coordinator: SignOutSceneCoordinating?
     private let lock = NSLock()
     private var isRefreshing = false
     private var requestsToRetry: [(RetryResult) -> Void] = []
@@ -39,7 +39,7 @@ public class UserSessionRequestHandler: RequestHandler {
     }()
 
     // MARK: - Initialization
-    public init(environment: Environment, coordinator: SignOutSceneCoordinating) {
+    public init(environment: Environment, coordinator: SignOutSceneCoordinating?) {
         self.environment = environment
         self.coordinator = coordinator
     }
@@ -64,7 +64,7 @@ public class UserSessionRequestHandler: RequestHandler {
     }
 
     private func handleExpiredUserSession() {
-        coordinator.didSignOut()
+        coordinator?.didSignOut()
     }
 
     // MARK: - RequestAdapter
