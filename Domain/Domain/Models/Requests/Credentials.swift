@@ -76,3 +76,10 @@ extension Credentials: Validatable {
                         .enforce()
     }
 }
+
+extension Credentials: Equatable {
+
+    public static func == (lhs: Credentials, rhs: Credentials) -> Bool {
+        return lhs.username == rhs.username
+    }
+}

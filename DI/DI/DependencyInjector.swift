@@ -11,6 +11,7 @@ import Swinject
 import SwinjectAutoregistration
 import OxeNetworking
 import AppNavigation
+import Auth
 
 public class DependencyInjector {
 
@@ -23,7 +24,12 @@ public class DependencyInjector {
     public func build(completion: (_ assembler: Assembler, _ appCoordinator: AppCoordinator) -> Void) {
         let assembler = Assembler([
             CoordinatorFactoryAssembly(),
-            CoordinatorsAssembly(navigationController: UINavigationController())
+            CoordinatorsAssembly(navigationController: UINavigationController()),
+            AuthFlowAssembly(),
+            DomainAssembly(),
+            DataAssembly(),
+            NetworkingAssembly(environment: environment),
+            StorageAssembly()
         ])
         let appCoordinator = assembler.resolver.safelyResolve(AppCoordinator.self)
         completion(assembler, appCoordinator)

@@ -21,10 +21,20 @@ class NetworkingAssembly: Assembly {
     }
 
     func assemble(container: Container) {
+        assembleServices(for: container)
+        assembleDatasources(for: container)
+    }
+
+    func assembleServices(for container: Container) {
         container.register(Environment.self) { _ in self.environment }
-        container.autoregister(UserSessionRequestHandler.self, initializer: UserSessionRequestHandler.init)
-                    .implements(ResultHandler.self, RequestInterceptor.self, ErrorFilter.self)
+        container.register(UserSessionRequestHandler.self) { _ in
+            UserSessionRequestHandler(environment: self.environment, coordinator: nil)
+        }.implements(ResultHandler.self, RequestInterceptor.self, ErrorFilter.self)
         container.autoregister(Dispatcher.self, initializer: CommonMoyaDispatcher.init)
     }
 
+    func assembleDatasources(for containter: Container) {
+        containter.autoregister(AppData.SessionRemoteDataSource.self, initializer: Networking.SessionRemoteDataSource.init)
+        containter.autoregister(AppData.AccountRemoteDataSource.self, initializer: Networking.AccountRemoteDataSource.init)
+    }
 }

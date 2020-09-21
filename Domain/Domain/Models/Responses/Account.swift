@@ -34,3 +34,38 @@ public struct Account: Codable {
         self.username = username
     }
 }
+
+extension Account: Validatable {
+
+    public enum Failure: LocalizedError {
+        case id(String)
+
+        public var failureReason: String? {
+            return L10n.Error.Title.ops
+        }
+
+        public var errorDescription: String? {
+            switch self {
+            case .id(let message):
+                return message
+            }
+        }
+    }
+
+    var validations: [ValidationResult] {
+        return [idValidation]
+    }
+
+    var idValidation: ValidationResult {
+        return Enforcer(value: username,
+                        validations: [.nonEmpty(error: Failure.id(L10n.Error.Message.requiment))])
+            .enforce()
+    }
+}
+
+extension Account: Equatable {
+
+    public static func == (lhs: Account, rhs: Account) -> Bool {
+        return lhs.id == rhs.id && lhs.username == rhs.username
+    }
+}

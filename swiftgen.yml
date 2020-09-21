@@ -24,20 +24,24 @@ strings:
     outputs:
       - templateName: structured-swift5
         output: UDTM/Helpers/Constants/Generated/SwiftGenStrings.swift
-        params: 
-          publicAccess: true  
+  - inputs: DI/DI/Resources/Localizable.strings
+    outputs:
+      - templateName: structured-swift5
+        output: DI/DI/Helpers/Constants/Generated/SwiftGenStrings.swift
   - inputs: Presentation/Common/Common/Resources/Localizable.strings
     outputs:
       - templateName: structured-swift5
         output: Presentation/Common/Common/Helpers/Constants/Generated/SwiftGenStrings.swift
         params: 
           publicAccess: true
+  - inputs: Presentation/Auth/Auth/Resources/Localizable.strings
+    outputs:
+      - templateName: structured-swift5
+        output: Presentation/Auth/Auth/Helpers/Constants/Generated/SwiftGenStrings.swift
   - inputs: Data/Networking/Networking/Resources/Localizable.strings
     outputs:
       - templateName: structured-swift5
         output: Data/Networking/Networking/Helpers/Constants/Generated/SwiftGenStrings.swift
-        params: 
-          publicAccess: true 
   - inputs: Data/AppData/AppData/Resources/Localizable.strings
     outputs:
       - templateName: structured-swift5
@@ -48,8 +52,6 @@ strings:
     outputs:
       - templateName: structured-swift5
         output: Data/Storage/Storage/Helpers/Constants/Generated/SwiftGenStrings.swift
-        params: 
-          publicAccess: true
   - inputs: Domain/Domain/Resources/Localizable.strings
     outputs:
       - templateName: structured-swift5

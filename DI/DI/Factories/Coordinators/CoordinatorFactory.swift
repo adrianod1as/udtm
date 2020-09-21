@@ -7,9 +7,11 @@
 //
 
 import Swinject
+import Common
 import AppNavigation
+import Auth
 
-public class CoordinatorFactory: CoordinatorManufacturing, DependencyManufacturing {
+public class CoordinatorFactory: DependencyManufacturing {
 
     private let resolver: Resolver
 
@@ -17,4 +19,11 @@ public class CoordinatorFactory: CoordinatorManufacturing, DependencyManufacturi
         self.resolver = resolver
     }
 
+}
+
+extension CoordinatorFactory: CoordinatorManufacturing {
+
+    public func makeAuthCoordinator() -> AuthCoordinator {
+        resolver.safelyResolve(AuthCoordinator.self)
+    }
 }

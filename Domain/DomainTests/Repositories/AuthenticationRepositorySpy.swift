@@ -11,11 +11,18 @@
 class AuthenticationRepositorySpy: AuthenticationRepository {
 
     var createRequestTokenCalled = false
+    var createUserAuthorizationCalled = false
     var authenticateUserPermissionCalled = false
     var authenticateCredentialsCalled = false
+    var authenticateAccountCalled = false
+    var guestSessionCalled = false
 
     func createRequestToken(completion: @escaping GenericCompletion<RequestToken>) {
         createRequestTokenCalled.toggle()
+    }
+
+    func createUserAuthorization(completion: @escaping GenericCompletion<UserAuthorization>) {
+        createUserAuthorizationCalled.toggle()
     }
 
     func authenticateUserPermission(forRequestToken requestToken: String, headers: [String: String],
@@ -27,4 +34,13 @@ class AuthenticationRepositorySpy: AuthenticationRepository {
                                  completion: @escaping GenericCompletion<Account>) {
         authenticateCredentialsCalled.toggle()
     }
+
+    func guestSession(completion: @escaping GenericCompletion<Void>) {
+        guestSessionCalled.toggle()
+    }
+
+    func authenticateAccount(_ account: Account, completion: @escaping GenericCompletion<Void>) {
+        authenticateAccountCalled.toggle()
+    }
+
 }

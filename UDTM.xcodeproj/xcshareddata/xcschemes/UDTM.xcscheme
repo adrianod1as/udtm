@@ -86,6 +86,13 @@
             BlueprintName = "AppNavigation"
             ReferencedContainer = "container:AppNavigation/AppNavigation.xcodeproj">
          </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E16728B32515345400C7B88C"
+            BuildableName = "Auth.framework"
+            BlueprintName = "Auth"
+            ReferencedContainer = "container:Presentation/Auth/Auth.xcodeproj">
+         </BuildableReference>
       </CodeCoverageTargets>
       <Testables>
          <TestableReference
@@ -166,6 +173,16 @@
                BuildableName = "StorageTests.xctest"
                BlueprintName = "StorageTests"
                ReferencedContainer = "container:Data/Storage/Storage.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E16728BC2515345500C7B88C"
+               BuildableName = "AuthTests.xctest"
+               BlueprintName = "AuthTests"
+               ReferencedContainer = "container:Presentation/Auth/Auth.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>

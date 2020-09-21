@@ -2,12 +2,13 @@
 //  CoordinatorManufacturing.swift
 //  AppNavigation
 //
-//  Created by Adriano Dias on 19/08/20.
+//  Created by Adriano Dias on 20/09/20.
 //  Copyright © 2020 dias. All rights reserved.
 //
 
-import Foundation
+import Auth
 
 public protocol CoordinatorManufacturing {
 
+    func makeAuthCoordinator() -> AuthCoordinator
 }

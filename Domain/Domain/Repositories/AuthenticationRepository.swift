@@ -9,9 +9,12 @@
 public protocol AuthenticationRepository {
 
     func createRequestToken(completion: @escaping GenericCompletion<RequestToken>)
+    func createUserAuthorization(completion: @escaping GenericCompletion<UserAuthorization>)
     func authenticateUserPermission(forRequestToken requestToken: String,
                                     headers: [String: String], shouldSaveSession: Bool,
                                     completion: @escaping GenericCompletion<Account>)
     func authenticateCredentials(_ credentials: Credentials, shouldSaveSession: Bool,
                                  completion: @escaping GenericCompletion<Account>)
+    func authenticateAccount(_ account: Account, completion: @escaping GenericCompletion<Void>)
+    func guestSession(completion: @escaping GenericCompletion<Void>)
 }

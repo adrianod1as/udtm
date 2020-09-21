@@ -8,7 +8,7 @@
 
 import Foundation
 
-public protocol SignOutSceneCoordinating {
+public protocol SignOutSceneCoordinating: AnyObject {
 
     func didSignOut()
 }

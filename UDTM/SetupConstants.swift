@@ -14,11 +14,11 @@ import Keys
 struct SetupConstants {
 
     static let group: String = {
-        return "group.br.com.dias.udtm"
+        return L10n.App.group
     }()
 
     static let identifier: String = {
-        return "br.com.dias.udtm"
+        return L10n.App.identifier
     }()
 
     static let defaultEnvironmentType: EnvironmentType = {

@@ -7,7 +7,9 @@
 //
 
 import Swinject
+import Common
 import AppNavigation
+import Auth
 
 class CoordinatorsAssembly: Assembly {
 
@@ -19,12 +21,21 @@ class CoordinatorsAssembly: Assembly {
 
     func assemble(container: Container) {
         assembleAppCoordinator(container: container)
+        assembleAuthCoordinator(container: container)
     }
 
-    private func assembleAppCoordinator(container: Container) {
+    internal func assembleAppCoordinator(container: Container) {
         container.register(AppCoordinator.self) { resolver in
             return AppCoordinator(navigationController: self.navigationController,
-                                  coordinatorFactory: resolver.safelyResolve(CoordinatorManufacturing.self))
+                                  factory: resolver.safelyResolve(CoordinatorManufacturing.self))
+        }.implements(AuthDepartingCoordinating.self)
+    }
+
+    internal func assembleAuthCoordinator(container: Container) {
+        container.register(AuthCoordinator.self) { resolver in
+            return AuthCoordinator(navigationController: self.navigationController,
+                                   departingCoordinator: resolver.safelyResolve(AuthDepartingCoordinating.self),
+                                   factory: resolver.safelyResolve(AuthManufacturing.self))
         }
     }
 }

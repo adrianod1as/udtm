@@ -13,3 +13,6 @@
 "Headers.Values.JsonApplication" = "application/json";
 "Headers.Values.Bearer" = "Bearer %@";
 "Headers.Values.JsonContentType" = "application/json;charset=utf-8";
+"App.group" = "group.br.com.dias.udtm";
+"App.identifier" = "br.com.dias.udtm";
+"App.Scene.name" = "Default Configuration";

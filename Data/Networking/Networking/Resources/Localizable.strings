@@ -6,9 +6,9 @@
   Copyright © 2020 dias. All rights reserved.
 */
 
-"Error.Descriction.data" = "Não foi possível recuperar os dados.";
-"Error.Descriction.balance" = "Não foi possivel obter o saldo";
-"Error.Descriction.request" = "Não foi possível efetuar a requisição.";
+"Error.Description.data" = "Não foi possível recuperar os dados.";
+"Error.Description.balance" = "Não foi possivel obter o saldo";
+"Error.Description.request" = "Não foi possível efetuar a requisição.";
 "Error.Description.connectionProblem" = "Tivemos um problema de conexão, tente novamente mais tarde.";
 "Error.Description.noInternetConnection" = "Sem conexão com a Internet.";
 "Error.Description.expiredSession" = "Sessão Expirada.";
@@ -26,3 +26,6 @@
 "Header.Field.xauthorization" = "X-Authorization";
 "Header.Value.bearer" = "Bearer";
 "Error.Description.pinnedCertificate" = "Ocorreu um erro no certificado. Por favor, tente novamente mais tarde.";
+"Error.Description.Token.url" = "Não foi possível obter url de autenticação para o Token.";
+"Error.Description.Token.authentication" = "Token não autenticado pelo usuário.";
+"RequestToken.Permission.url" = "https://www.themoviedb.org/authenticate/%@";

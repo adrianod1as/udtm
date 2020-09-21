@@ -55,7 +55,26 @@
 		E14443DF24E04E0C00008203 /* Numbers+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E144433824E04E0B00008203 /* Numbers+Ext.swift */; };
 		E14443E024E04E0C00008203 /* SwiftyJSON+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E144433924E04E0B00008203 /* SwiftyJSON+Ext.swift */; };
 		E14443E124E04E0C00008203 /* Array+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E144433A24E04E0B00008203 /* Array+Ext.swift */; };
+		E16728FA25155EAA00C7B88C /* AccountsRetrievingUseCaseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16728F925155EAA00C7B88C /* AccountsRetrievingUseCaseable.swift */; };
+		E16728FC25155EF900C7B88C /* AccountsRetrievingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16728FB25155EF900C7B88C /* AccountsRetrievingUseCase.swift */; };
+		E16728FE25155F7800C7B88C /* AccountsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16728FD25155F7800C7B88C /* AccountsRepository.swift */; };
+		E16729022515669800C7B88C /* GuestSessionUseCaseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16729012515669800C7B88C /* GuestSessionUseCaseable.swift */; };
+		E1672904251566BE00C7B88C /* GuestSessionUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1672903251566BE00C7B88C /* GuestSessionUseCase.swift */; };
+		E1672906251567F200C7B88C /* GuestSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1672905251567F200C7B88C /* GuestSession.swift */; };
+		E167290825156AA800C7B88C /* AuthenticateAccountUseCaseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E167290725156AA800C7B88C /* AuthenticateAccountUseCaseable.swift */; };
+		E167290A25156AD800C7B88C /* AuthenticateAccountUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E167290925156AD800C7B88C /* AuthenticateAccountUseCase.swift */; };
+		E167290C2515703900C7B88C /* AccountsRetrievingUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E167290B2515703900C7B88C /* AccountsRetrievingUseCaseTests.swift */; };
+		E167290E2515707800C7B88C /* AccountsRepositorySpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E167290D2515707800C7B88C /* AccountsRepositorySpy.swift */; };
+		E16729102515712900C7B88C /* GuestSessionUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E167290F2515712900C7B88C /* GuestSessionUseCaseTests.swift */; };
+		E1672912251571A500C7B88C /* AuthenticateAccountUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1672911251571A500C7B88C /* AuthenticateAccountUseCaseTests.swift */; };
+		E16729142515736600C7B88C /* AccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16729132515736600C7B88C /* AccountTests.swift */; };
+		E16729162515746200C7B88C /* GuestSession+Fakeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16729152515746200C7B88C /* GuestSession+Fakeable.swift */; };
 		E18A1D112500739000FC04F0 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18A1D102500739000FC04F0 /* Credentials.swift */; };
+		E19D6600251647FC008840A3 /* UserAuthorizationUseCaseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19D65FF251647FC008840A3 /* UserAuthorizationUseCaseable.swift */; };
+		E19D6602251648A4008840A3 /* UserAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19D6601251648A4008840A3 /* UserAuthorization.swift */; };
+		E19D660D25165155008840A3 /* UserAuthorizationUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19D660C25165155008840A3 /* UserAuthorizationUseCaseTests.swift */; };
+		E19D66242517BD9E008840A3 /* UserAuthorizationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19D66232517BD9D008840A3 /* UserAuthorizationUseCase.swift */; };
+		E19D662C2517CD7B008840A3 /* UserAuthorization+Fakeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19D662B2517CD7B008840A3 /* UserAuthorization+Fakeable.swift */; };
 		E1D04390250D2A7C006F559C /* CredentialsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D0438F250D2A7C006F559C /* CredentialsTests.swift */; };
 		E1D04392250D2AB1006F559C /* Credentials+Fakeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D04391250D2AB1006F559C /* Credentials+Fakeable.swift */; };
 		E1D04394250D2EC5006F559C /* AuthenticationRepositorySpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D04393250D2EC5006F559C /* AuthenticationRepositorySpy.swift */; };
@@ -142,7 +161,26 @@
 		E144433824E04E0B00008203 /* Numbers+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Numbers+Ext.swift"; sourceTree = "<group>"; };
 		E144433924E04E0B00008203 /* SwiftyJSON+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftyJSON+Ext.swift"; sourceTree = "<group>"; };
 		E144433A24E04E0B00008203 /* Array+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Ext.swift"; sourceTree = "<group>"; };
+		E16728F925155EAA00C7B88C /* AccountsRetrievingUseCaseable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsRetrievingUseCaseable.swift; sourceTree = "<group>"; };
+		E16728FB25155EF900C7B88C /* AccountsRetrievingUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsRetrievingUseCase.swift; sourceTree = "<group>"; };
+		E16728FD25155F7800C7B88C /* AccountsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsRepository.swift; sourceTree = "<group>"; };
+		E16729012515669800C7B88C /* GuestSessionUseCaseable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestSessionUseCaseable.swift; sourceTree = "<group>"; };
+		E1672903251566BE00C7B88C /* GuestSessionUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestSessionUseCase.swift; sourceTree = "<group>"; };
+		E1672905251567F200C7B88C /* GuestSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestSession.swift; sourceTree = "<group>"; };
+		E167290725156AA800C7B88C /* AuthenticateAccountUseCaseable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateAccountUseCaseable.swift; sourceTree = "<group>"; };
+		E167290925156AD800C7B88C /* AuthenticateAccountUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateAccountUseCase.swift; sourceTree = "<group>"; };
+		E167290B2515703900C7B88C /* AccountsRetrievingUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsRetrievingUseCaseTests.swift; sourceTree = "<group>"; };
+		E167290D2515707800C7B88C /* AccountsRepositorySpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsRepositorySpy.swift; sourceTree = "<group>"; };
+		E167290F2515712900C7B88C /* GuestSessionUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestSessionUseCaseTests.swift; sourceTree = "<group>"; };
+		E1672911251571A500C7B88C /* AuthenticateAccountUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateAccountUseCaseTests.swift; sourceTree = "<group>"; };
+		E16729132515736600C7B88C /* AccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTests.swift; sourceTree = "<group>"; };
+		E16729152515746200C7B88C /* GuestSession+Fakeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GuestSession+Fakeable.swift"; sourceTree = "<group>"; };
 		E18A1D102500739000FC04F0 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		E19D65FF251647FC008840A3 /* UserAuthorizationUseCaseable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthorizationUseCaseable.swift; sourceTree = "<group>"; };
+		E19D6601251648A4008840A3 /* UserAuthorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthorization.swift; sourceTree = "<group>"; };
+		E19D660C25165155008840A3 /* UserAuthorizationUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthorizationUseCaseTests.swift; sourceTree = "<group>"; };
+		E19D66232517BD9D008840A3 /* UserAuthorizationUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAuthorizationUseCase.swift; sourceTree = "<group>"; };
+		E19D662B2517CD7B008840A3 /* UserAuthorization+Fakeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserAuthorization+Fakeable.swift"; sourceTree = "<group>"; };
 		E1D0438F250D2A7C006F559C /* CredentialsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsTests.swift; sourceTree = "<group>"; };
 		E1D04391250D2AB1006F559C /* Credentials+Fakeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Credentials+Fakeable.swift"; sourceTree = "<group>"; };
 		E1D04393250D2EC5006F559C /* AuthenticationRepositorySpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRepositorySpy.swift; sourceTree = "<group>"; };
@@ -328,6 +366,7 @@
 			children = (
 				E14442AE24E04E0A00008203 /* SignOutRepository.swift */,
 				E12F4ED024F30CAE0084EAD6 /* AuthenticationRepository.swift */,
+				E16728FD25155F7800C7B88C /* AccountsRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -360,6 +399,8 @@
 				E12F4ECA24F304710084EAD6 /* Account.swift */,
 				E1078A722509567900E99E22 /* RequestToken.swift */,
 				E1078A742509579200E99E22 /* UserSession.swift */,
+				E1672905251567F200C7B88C /* GuestSession.swift */,
+				E19D6601251648A4008840A3 /* UserAuthorization.swift */,
 			);
 			path = Responses;
 			sourceTree = "<group>";
@@ -371,6 +412,8 @@
 				E1D043B3250D5CFE006F559C /* Account+Fakeable.swift */,
 				E1D043B5250D5D22006F559C /* UserSession+Fakeable.swift */,
 				E1D043B7250D5D30006F559C /* RequesToken+Fakeable.swift */,
+				E16729152515746200C7B88C /* GuestSession+Fakeable.swift */,
+				E19D662B2517CD7B008840A3 /* UserAuthorization+Fakeable.swift */,
 			);
 			path = Fakes;
 			sourceTree = "<group>";
@@ -457,6 +500,14 @@
 				E12F4ECE24F30C660084EAD6 /* AuthenticateUserPermissionUseCase.swift */,
 				E1064C8A25007BC60054B091 /* AuthenticateCredentialsUseCaseable.swift */,
 				E1078A6C25080ADF00E99E22 /* AuthenticateCredentialsUseCase.swift */,
+				E16728F925155EAA00C7B88C /* AccountsRetrievingUseCaseable.swift */,
+				E16728FB25155EF900C7B88C /* AccountsRetrievingUseCase.swift */,
+				E16729012515669800C7B88C /* GuestSessionUseCaseable.swift */,
+				E1672903251566BE00C7B88C /* GuestSessionUseCase.swift */,
+				E167290725156AA800C7B88C /* AuthenticateAccountUseCaseable.swift */,
+				E167290925156AD800C7B88C /* AuthenticateAccountUseCase.swift */,
+				E19D65FF251647FC008840A3 /* UserAuthorizationUseCaseable.swift */,
+				E19D66232517BD9D008840A3 /* UserAuthorizationUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -483,6 +534,7 @@
 			children = (
 				E101F20D250C051D00D9C950 /* InteractionErrorTests.swift */,
 				E1D0438F250D2A7C006F559C /* CredentialsTests.swift */,
+				E16729132515736600C7B88C /* AccountTests.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -492,6 +544,10 @@
 			children = (
 				E1D04396250D2F7C006F559C /* AuthenticateUserPermissionUseCaseTests.swift */,
 				E1D04398250D314A006F559C /* AuthenticateCredentialsUseCaseTests.swift */,
+				E167290B2515703900C7B88C /* AccountsRetrievingUseCaseTests.swift */,
+				E167290F2515712900C7B88C /* GuestSessionUseCaseTests.swift */,
+				E1672911251571A500C7B88C /* AuthenticateAccountUseCaseTests.swift */,
+				E19D660C25165155008840A3 /* UserAuthorizationUseCaseTests.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -500,6 +556,7 @@
 			isa = PBXGroup;
 			children = (
 				E1D04393250D2EC5006F559C /* AuthenticationRepositorySpy.swift */,
+				E167290D2515707800C7B88C /* AccountsRepositorySpy.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -690,6 +747,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E167290A25156AD800C7B88C /* AuthenticateAccountUseCase.swift in Sources */,
 				E12F4ECF24F30C660084EAD6 /* AuthenticateUserPermissionUseCase.swift in Sources */,
 				E12F4ED124F30CAE0084EAD6 /* AuthenticationRepository.swift in Sources */,
 				E1064C8B25007BC60054B091 /* AuthenticateCredentialsUseCaseable.swift in Sources */,
@@ -697,14 +755,21 @@
 				E14443D524E04E0C00008203 /* Regex+Ext.swift in Sources */,
 				E1078A6D25080ADF00E99E22 /* AuthenticateCredentialsUseCase.swift in Sources */,
 				E101F20C250AF2E100D9C950 /* Validation+Collection.swift in Sources */,
+				E19D66242517BD9E008840A3 /* UserAuthorizationUseCase.swift in Sources */,
 				E14443E124E04E0C00008203 /* Array+Ext.swift in Sources */,
+				E167290825156AA800C7B88C /* AuthenticateAccountUseCaseable.swift in Sources */,
 				E12F4ECB24F304710084EAD6 /* Account.swift in Sources */,
+				E16728FA25155EAA00C7B88C /* AccountsRetrievingUseCaseable.swift in Sources */,
 				E14443CD24E04E0C00008203 /* Validatable.swift in Sources */,
 				E14443CC24E04E0C00008203 /* Fakeable.swift in Sources */,
+				E16729022515669800C7B88C /* GuestSessionUseCaseable.swift in Sources */,
+				E1672906251567F200C7B88C /* GuestSession.swift in Sources */,
 				E1D04392250D2AB1006F559C /* Credentials+Fakeable.swift in Sources */,
+				E19D662C2517CD7B008840A3 /* UserAuthorization+Fakeable.swift in Sources */,
 				E14443D024E04E0C00008203 /* SignOutSceneCoordinating.swift in Sources */,
 				E12F4ECD24F30B730084EAD6 /* AuthenticateUserPermissionUseCaseable.swift in Sources */,
 				E14443CF24E04E0C00008203 /* DomainConvertibleType.swift in Sources */,
+				E19D6600251647FC008840A3 /* UserAuthorizationUseCaseable.swift in Sources */,
 				E101F206250ACFDA00D9C950 /* Validation.swift in Sources */,
 				E144436B24E04E0B00008203 /* LocalizedRecord.swift in Sources */,
 				E18A1D112500739000FC04F0 /* Credentials.swift in Sources */,
@@ -717,9 +782,13 @@
 				E14443DE24E04E0C00008203 /* Locale+Ext.swift in Sources */,
 				E14443D724E04E0C00008203 /* SwiftDate+Extensions.swift in Sources */,
 				E1D043B8250D5D30006F559C /* RequesToken+Fakeable.swift in Sources */,
+				E1672904251566BE00C7B88C /* GuestSessionUseCase.swift in Sources */,
 				E14443DF24E04E0C00008203 /* Numbers+Ext.swift in Sources */,
 				E14443D924E04E0C00008203 /* KeyedEncodingContainer+Ext.swift in Sources */,
+				E19D6602251648A4008840A3 /* UserAuthorization.swift in Sources */,
 				E14443CE24E04E0C00008203 /* InteractionError.swift in Sources */,
+				E16728FE25155F7800C7B88C /* AccountsRepository.swift in Sources */,
+				E16728FC25155EF900C7B88C /* AccountsRetrievingUseCase.swift in Sources */,
 				E14443D624E04E0C00008203 /* String+Extensions.swift in Sources */,
 				E1D043B6250D5D22006F559C /* UserSession+Fakeable.swift in Sources */,
 				E14443D124E04E0C00008203 /* AppFlowStopping.swift in Sources */,
@@ -727,6 +796,7 @@
 				E14443D224E04E0C00008203 /* SwiftGenStrings.swift in Sources */,
 				E1D043B4250D5CFE006F559C /* Account+Fakeable.swift in Sources */,
 				E14443D324E04E0C00008203 /* Biometrics.swift in Sources */,
+				E16729162515746200C7B88C /* GuestSession+Fakeable.swift in Sources */,
 				E144438924E04E0C00008203 /* Localized.swift in Sources */,
 				E144436024E04E0B00008203 /* SignOutRepository.swift in Sources */,
 				E1078A732509567900E99E22 /* RequestToken.swift in Sources */,
@@ -739,6 +809,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1D0439B250D320D006F559C /* StringExtensionsTests.swift in Sources */,
+				E16729102515712900C7B88C /* GuestSessionUseCaseTests.swift in Sources */,
 				E101F1E92509865C00D9C950 /* XCTestCase+Ext.swift in Sources */,
 				E1D043AD250D38E9006F559C /* ErrorStub.swift in Sources */,
 				E101F1EF25098A4A00D9C950 /* EnumExtensionsTests.swift in Sources */,
@@ -748,13 +819,18 @@
 				E1D043A1250D32CE006F559C /* DateExtensionsTests.swift in Sources */,
 				E101F20E250C051D00D9C950 /* InteractionErrorTests.swift in Sources */,
 				E1D04394250D2EC5006F559C /* AuthenticationRepositorySpy.swift in Sources */,
+				E167290C2515703900C7B88C /* AccountsRetrievingUseCaseTests.swift in Sources */,
 				E101F214250C13E500D9C950 /* EncodableExtensionsTests.swift in Sources */,
 				E101F212250C121200D9C950 /* ValidationTests.swift in Sources */,
 				E1D0439F250D32A7006F559C /* RegexExtensionsTests.swift in Sources */,
 				E1D0439D250D328A006F559C /* NumberExtensionsTests.swift in Sources */,
+				E1672912251571A500C7B88C /* AuthenticateAccountUseCaseTests.swift in Sources */,
+				E19D660D25165155008840A3 /* UserAuthorizationUseCaseTests.swift in Sources */,
 				E1D043A5250D333A006F559C /* FakeryExtensionsTests.swift in Sources */,
 				E1D04397250D2F7C006F559C /* AuthenticateUserPermissionUseCaseTests.swift in Sources */,
+				E167290E2515707800C7B88C /* AccountsRepositorySpy.swift in Sources */,
 				E1D043A3250D32E9006F559C /* SwiftyJSONExtensionsTests.swift in Sources */,
+				E16729142515736600C7B88C /* AccountTests.swift in Sources */,
 				E1D04399250D314A006F559C /* AuthenticateCredentialsUseCaseTests.swift in Sources */,
 				E1D043AF250D390F006F559C /* ModelStub.swift in Sources */,
 				E1D043A9250D38A7006F559C /* ValidatableTests.swift in Sources */,
