@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,14 +15,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="movies-search" translatesAutoresizingMaskIntoConstraints="NO" id="D0S-t8-m0O">
+                            <imageView clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="movies-search" translatesAutoresizingMaskIntoConstraints="NO" id="D0S-t8-m0O">
                                 <rect key="frame" x="80" y="310" width="286" height="286"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="D0S-t8-m0O" secondAttribute="height" id="TOk-IA-fWv"/>
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <color key="backgroundColor" red="0.015686274509803921" green="0.074509803921568626" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D0S-t8-m0O" secondAttribute="trailing" constant="48" id="PWz-y2-Ew7"/>
                             <constraint firstItem="D0S-t8-m0O" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="WYM-cC-Bh4"/>
@@ -38,6 +37,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="movies-search" width="512" height="512"/>
+        <image name="movies-search" width="486" height="486"/>
     </resources>
 </document>

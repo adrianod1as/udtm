@@ -21,6 +21,6 @@ extension Account: Fakeable {
     public static func getFakedItem() -> Account {
         let faker = Faker.brazilian
         return Account(id: faker.number.randomInt().description,
-                       name: faker.name.givenName(), username: faker.internet.username())
+                       name: faker.name.givenName(), username: faker.internet.username(), avatar: Gravatar(hash: ""))
     }
 }

@@ -11,26 +11,26 @@
 		E100639A25100B120071FB41 /* UDTMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100639925100B120071FB41 /* UDTMTests.swift */; };
 		E12F4EB624F17D3A0084EAD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E12F4EB524F17D3A0084EAD6 /* Assets.xcassets */; };
 		E12F4EC924F2EE190084EAD6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12F4EC824F2EE190084EAD6 /* SceneDelegate.swift */; };
-		E144450E24E078EA00008203 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E144450D24E078EA00008203 /* Domain.framework */; };
-		E144450F24E078EA00008203 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E144450D24E078EA00008203 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E144451224E078F200008203 /* AppData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E144451124E078F200008203 /* AppData.framework */; };
-		E144451324E078F200008203 /* AppData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E144451124E078F200008203 /* AppData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E144451524E078FC00008203 /* Storage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E144451424E078FC00008203 /* Storage.framework */; };
-		E144451624E078FC00008203 /* Storage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E144451424E078FC00008203 /* Storage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E144451824E0790500008203 /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E144451724E0790500008203 /* Networking.framework */; };
-		E144451924E0790500008203 /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E144451724E0790500008203 /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E145727724DF508C0026D925 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E145727624DF508C0026D925 /* AppDelegate.swift */; };
 		E145728324DF508E0026D925 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E145728124DF508E0026D925 /* LaunchScreen.storyboard */; };
-		E14A076D24E4B99A006A5DC5 /* DI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14A076C24E4B99A006A5DC5 /* DI.framework */; };
-		E14A076E24E4B99A006A5DC5 /* DI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E14A076C24E4B99A006A5DC5 /* DI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E14A077024E4B9A1006A5DC5 /* AppNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14A076F24E4B9A1006A5DC5 /* AppNavigation.framework */; };
-		E14A077124E4B9A1006A5DC5 /* AppNavigation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E14A076F24E4B9A1006A5DC5 /* AppNavigation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E16728ED2515359200C7B88C /* Auth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16728EC2515359200C7B88C /* Auth.framework */; };
-		E16728EE2515359200C7B88C /* Auth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E16728EC2515359200C7B88C /* Auth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E180EC7A24E8A9D200308069 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E180EC7924E8A9D200308069 /* Localizable.strings */; };
 		E180EC7F24E8A9FE00308069 /* SwiftGenStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E180EC7E24E8A9FE00308069 /* SwiftGenStrings.swift */; };
-		E195A1B424E4C7C300C513F9 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E195A1B324E4C7C300C513F9 /* Common.framework */; };
-		E195A1B524E4C7C300C513F9 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E195A1B324E4C7C300C513F9 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E197D0B9251B77C000A0AD8C /* AppData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E144451124E078F200008203 /* AppData.framework */; };
+		E197D0BA251B77C000A0AD8C /* AppData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E144451124E078F200008203 /* AppData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E197D0BB251B77C000A0AD8C /* AppNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14A076F24E4B9A1006A5DC5 /* AppNavigation.framework */; };
+		E197D0BC251B77C000A0AD8C /* AppNavigation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E14A076F24E4B9A1006A5DC5 /* AppNavigation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E197D0BD251B77C000A0AD8C /* Auth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16728EC2515359200C7B88C /* Auth.framework */; };
+		E197D0BE251B77C000A0AD8C /* Auth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E16728EC2515359200C7B88C /* Auth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E197D0BF251B77C000A0AD8C /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E195A1B324E4C7C300C513F9 /* Common.framework */; };
+		E197D0C0251B77C000A0AD8C /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E195A1B324E4C7C300C513F9 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E197D0C1251B77C000A0AD8C /* DI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14A076C24E4B99A006A5DC5 /* DI.framework */; };
+		E197D0C2251B77C000A0AD8C /* DI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E14A076C24E4B99A006A5DC5 /* DI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E197D0C3251B77C000A0AD8C /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E144450D24E078EA00008203 /* Domain.framework */; };
+		E197D0C4251B77C000A0AD8C /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E144450D24E078EA00008203 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E197D0C5251B77C000A0AD8C /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E144451724E0790500008203 /* Networking.framework */; };
+		E197D0C6251B77C000A0AD8C /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E144451724E0790500008203 /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E197D0C7251B77C000A0AD8C /* Storage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E144451424E078FC00008203 /* Storage.framework */; };
+		E197D0C8251B77C000A0AD8C /* Storage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E144451424E078FC00008203 /* Storage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E1C9F26724EE19A300DEE93E /* SetupConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C9F26624EE19A300DEE93E /* SetupConstants.swift */; };
 		F6611523B966B7585A555037 /* Pods_UDMTTargets_UDTM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F430A6FB22145E0DCFBC4EA /* Pods_UDMTTargets_UDTM.framework */; };
 /* End PBXBuildFile section */
@@ -46,20 +46,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		E144451024E078EA00008203 /* Embed Frameworks */ = {
+		E197D0C9251B77C000A0AD8C /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E14A077124E4B9A1006A5DC5 /* AppNavigation.framework in Embed Frameworks */,
-				E14A076E24E4B99A006A5DC5 /* DI.framework in Embed Frameworks */,
-				E144451924E0790500008203 /* Networking.framework in Embed Frameworks */,
-				E144451324E078F200008203 /* AppData.framework in Embed Frameworks */,
-				E16728EE2515359200C7B88C /* Auth.framework in Embed Frameworks */,
-				E144450F24E078EA00008203 /* Domain.framework in Embed Frameworks */,
-				E195A1B524E4C7C300C513F9 /* Common.framework in Embed Frameworks */,
-				E144451624E078FC00008203 /* Storage.framework in Embed Frameworks */,
+				E197D0C4251B77C000A0AD8C /* Domain.framework in Embed Frameworks */,
+				E197D0C2251B77C000A0AD8C /* DI.framework in Embed Frameworks */,
+				E197D0C8251B77C000A0AD8C /* Storage.framework in Embed Frameworks */,
+				E197D0BC251B77C000A0AD8C /* AppNavigation.framework in Embed Frameworks */,
+				E197D0C0251B77C000A0AD8C /* Common.framework in Embed Frameworks */,
+				E197D0BE251B77C000A0AD8C /* Auth.framework in Embed Frameworks */,
+				E197D0BA251B77C000A0AD8C /* AppData.framework in Embed Frameworks */,
+				E197D0C6251B77C000A0AD8C /* Networking.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,7 +83,7 @@
 		E144451124E078F200008203 /* AppData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E144451424E078FC00008203 /* Storage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Storage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E144451724E0790500008203 /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E145727324DF508C0026D925 /* Uni Duni Tê - Movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Uni Duni Tê - Movies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E145727324DF508C0026D925 /* The Searcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Searcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E145727624DF508C0026D925 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E145728224DF508E0026D925 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E145728424DF508E0026D925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -111,15 +111,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E144450E24E078EA00008203 /* Domain.framework in Frameworks */,
-				E144451524E078FC00008203 /* Storage.framework in Frameworks */,
-				E14A076D24E4B99A006A5DC5 /* DI.framework in Frameworks */,
-				E144451824E0790500008203 /* Networking.framework in Frameworks */,
-				E195A1B424E4C7C300C513F9 /* Common.framework in Frameworks */,
-				E144451224E078F200008203 /* AppData.framework in Frameworks */,
-				E14A077024E4B9A1006A5DC5 /* AppNavigation.framework in Frameworks */,
-				E16728ED2515359200C7B88C /* Auth.framework in Frameworks */,
+				E197D0C5251B77C000A0AD8C /* Networking.framework in Frameworks */,
+				E197D0BD251B77C000A0AD8C /* Auth.framework in Frameworks */,
+				E197D0BB251B77C000A0AD8C /* AppNavigation.framework in Frameworks */,
+				E197D0BF251B77C000A0AD8C /* Common.framework in Frameworks */,
+				E197D0C1251B77C000A0AD8C /* DI.framework in Frameworks */,
+				E197D0C7251B77C000A0AD8C /* Storage.framework in Frameworks */,
+				E197D0B9251B77C000A0AD8C /* AppData.framework in Frameworks */,
 				F6611523B966B7585A555037 /* Pods_UDMTTargets_UDTM.framework in Frameworks */,
+				E197D0C3251B77C000A0AD8C /* Domain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,7 +178,7 @@
 		E145727424DF508C0026D925 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E145727324DF508C0026D925 /* Uni Duni Tê - Movies.app */,
+				E145727324DF508C0026D925 /* The Searcher.app */,
 				E100639725100B120071FB41 /* UDTMTests.xctest */,
 			);
 			name = Products;
@@ -271,9 +271,9 @@
 				E145726F24DF508C0026D925 /* Sources */,
 				E145727024DF508C0026D925 /* Frameworks */,
 				E145727124DF508C0026D925 /* Resources */,
-				E144451024E078EA00008203 /* Embed Frameworks */,
 				E180EC7724E8A7D300308069 /* swiftlint */,
 				7F58CBCDB968F1DA0C8FBC73 /* [CP] Embed Pods Frameworks */,
+				E197D0C9251B77C000A0AD8C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -281,7 +281,7 @@
 			);
 			name = UDTM;
 			productName = UDTM;
-			productReference = E145727324DF508C0026D925 /* Uni Duni Tê - Movies.app */;
+			productReference = E145727324DF508C0026D925 /* The Searcher.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -638,7 +638,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.dias.udtm;
-				PRODUCT_NAME = "Uni Duni Tê - Movies";
+				PRODUCT_NAME = "The Searcher";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -658,7 +658,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.dias.udtm;
-				PRODUCT_NAME = "Uni Duni Tê - Movies";
+				PRODUCT_NAME = "The Searcher";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

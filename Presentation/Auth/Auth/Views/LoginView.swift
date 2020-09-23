@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Common
 
 protocol LoginViewDelegate: AnyObject {
 
@@ -29,6 +30,6 @@ public class LoginView: UIView {
     }
 
     private func setupView() {
-
+        backgroundColor = ColorName.blackPearl
     }
 }

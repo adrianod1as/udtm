@@ -16,21 +16,28 @@ import Auth
 public class DependencyInjector {
 
     private let environment: Environment
+    private let group: String
+    private let identifier: String
 
-    public init(environment: Environment) {
-        self.environment = environment
-    }
-
-    public func build(completion: (_ assembler: Assembler, _ appCoordinator: AppCoordinator) -> Void) {
-        let assembler = Assembler([
+    private lazy var assembler: Assembler = {
+        Assembler([
             CoordinatorFactoryAssembly(),
             CoordinatorsAssembly(navigationController: UINavigationController()),
             AuthFlowAssembly(),
             DomainAssembly(),
             DataAssembly(),
             NetworkingAssembly(environment: environment),
-            StorageAssembly()
+            StorageAssembly(service: identifier, accessGroup: group)
         ])
+    }()
+
+    public init(environment: Environment, group: String, identifier: String) {
+        self.environment = environment
+        self.group = group
+        self.identifier = identifier
+    }
+
+    public func build(completion: (_ assembler: Assembler, _ appCoordinator: AppCoordinator) -> Void) {
         let appCoordinator = assembler.resolver.safelyResolve(AppCoordinator.self)
         completion(assembler, appCoordinator)
     }
