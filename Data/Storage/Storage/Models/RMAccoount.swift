@@ -15,6 +15,6 @@ class RMAccoount: Object, Codable {
     @objc dynamic var username = ""
 
     override static func primaryKey() -> String? {
-        return CodingKeys.id.description
+        return "id"
     }
 }

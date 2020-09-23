@@ -20,7 +20,7 @@ class EncodableExtensionsTests: XCTestCase {
     }
 
     func testData() {
-        let sut = Account(id: "String", name: "String", username: "String")
+        let sut = Account(id: "String", name: "String", username: "String", avatar: Gravatar(hash: ""))
         XCTAssertNotNil(sut.data)
     }
 

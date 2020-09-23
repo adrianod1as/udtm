@@ -127,10 +127,18 @@
 		E14A075B24E4B8FF006A5DC5 /* AppNavigationTests */ = {
 			isa = PBXGroup;
 			children = (
-				E14A075C24E4B8FF006A5DC5 /* AppNavigationTests.swift */,
+				E19D665B2518129C008840A3 /* TestCases */,
 				E14A075E24E4B8FF006A5DC5 /* Info.plist */,
 			);
 			path = AppNavigationTests;
+			sourceTree = "<group>";
+		};
+		E19D665B2518129C008840A3 /* TestCases */ = {
+			isa = PBXGroup;
+			children = (
+				E14A075C24E4B8FF006A5DC5 /* AppNavigationTests.swift */,
+			);
+			path = TestCases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

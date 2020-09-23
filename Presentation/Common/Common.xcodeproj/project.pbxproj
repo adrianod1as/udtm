@@ -9,11 +9,24 @@
 /* Begin PBXBuildFile section */
 		9A82359A21B9DB20D60A1F53 /* Pods_Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1852D88167A2E224D0F69714 /* Pods_Common.framework */; };
 		A6EF26ED1781B6B32EFAB0F7 /* Pods_Common_CommonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90FAEC7C7409D6B2FB869B4 /* Pods_Common_CommonTests.framework */; };
+		E12C78C3251B6EC100810DDE /* UINavigationController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12C78C2251B6EC100810DDE /* UINavigationController+Ext.swift */; };
+		E139E474251AD583001457F0 /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E139E473251AD583001457F0 /* UIImageView+Ext.swift */; };
+		E139E476251AE9DD001457F0 /* UIScreen+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E139E475251AE9DD001457F0 /* UIScreen+Ext.swift */; };
 		E1672900251561BE00C7B88C /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16728FF251561BE00C7B88C /* Loadable.swift */; };
 		E180EC8424E8AA1500308069 /* SwiftGenFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E180EC8024E8AA1500308069 /* SwiftGenFonts.swift */; };
 		E180EC8524E8AA1500308069 /* SwiftGenColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E180EC8124E8AA1500308069 /* SwiftGenColors.swift */; };
 		E180EC8624E8AA1500308069 /* SwiftGenAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E180EC8224E8AA1500308069 /* SwiftGenAssets.swift */; };
 		E180EC8724E8AA1500308069 /* SwiftGenStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E180EC8324E8AA1500308069 /* SwiftGenStrings.swift */; };
+		E189EC29251B95E400DD2854 /* Rubik-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E189EC1F251B95E400DD2854 /* Rubik-MediumItalic.ttf */; };
+		E189EC2A251B95E400DD2854 /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E189EC20251B95E400DD2854 /* Rubik-Bold.ttf */; };
+		E189EC2B251B95E400DD2854 /* Rubik-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E189EC21251B95E400DD2854 /* Rubik-Light.ttf */; };
+		E189EC2C251B95E400DD2854 /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E189EC22251B95E400DD2854 /* Rubik-Medium.ttf */; };
+		E189EC2D251B95E400DD2854 /* Rubik-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E189EC23251B95E400DD2854 /* Rubik-Black.ttf */; };
+		E189EC2E251B95E400DD2854 /* Rubik-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E189EC24251B95E400DD2854 /* Rubik-Italic.ttf */; };
+		E189EC2F251B95E400DD2854 /* Rubik-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E189EC25251B95E400DD2854 /* Rubik-LightItalic.ttf */; };
+		E189EC30251B95E400DD2854 /* Rubik-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E189EC26251B95E400DD2854 /* Rubik-BlackItalic.ttf */; };
+		E189EC31251B95E400DD2854 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E189EC27251B95E400DD2854 /* Rubik-Regular.ttf */; };
+		E189EC32251B95E400DD2854 /* Rubik-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E189EC28251B95E400DD2854 /* Rubik-BoldItalic.ttf */; };
 		E195A19A24E4C6AB00C513F9 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E195A19024E4C6AB00C513F9 /* Common.framework */; };
 		E195A19F24E4C6AC00C513F9 /* CommonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E195A19E24E4C6AB00C513F9 /* CommonTests.swift */; };
 		E195A1A124E4C6AC00C513F9 /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = E195A19324E4C6AB00C513F9 /* Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +36,7 @@
 		E195A2D724E4D95300C513F9 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E195A2D624E4D95300C513F9 /* Domain.framework */; };
 		E19D66342517DA04008840A3 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19D66332517DA04008840A3 /* Coordinator.swift */; };
 		E19D664D2517F68E008840A3 /* Resolver+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19D664C2517F68E008840A3 /* Resolver+Ext.swift */; };
+		E1BC8F51251A4EA2006A4777 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BC8F50251A4EA2006A4777 /* UIView+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,11 +55,24 @@
 		4C8C3D2CA0220236CE06710E /* Pods-Common.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Common.release.xcconfig"; path = "Target Support Files/Pods-Common/Pods-Common.release.xcconfig"; sourceTree = "<group>"; };
 		97ABB9280BF54070E04FA671 /* Pods-Common.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Common.debug.xcconfig"; path = "Target Support Files/Pods-Common/Pods-Common.debug.xcconfig"; sourceTree = "<group>"; };
 		C90FAEC7C7409D6B2FB869B4 /* Pods_Common_CommonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Common_CommonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E12C78C2251B6EC100810DDE /* UINavigationController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Ext.swift"; sourceTree = "<group>"; };
+		E139E473251AD583001457F0 /* UIImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
+		E139E475251AE9DD001457F0 /* UIScreen+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Ext.swift"; sourceTree = "<group>"; };
 		E16728FF251561BE00C7B88C /* Loadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
 		E180EC8024E8AA1500308069 /* SwiftGenFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftGenFonts.swift; sourceTree = "<group>"; };
 		E180EC8124E8AA1500308069 /* SwiftGenColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftGenColors.swift; sourceTree = "<group>"; };
 		E180EC8224E8AA1500308069 /* SwiftGenAssets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftGenAssets.swift; sourceTree = "<group>"; };
 		E180EC8324E8AA1500308069 /* SwiftGenStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftGenStrings.swift; sourceTree = "<group>"; };
+		E189EC1F251B95E400DD2854 /* Rubik-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-MediumItalic.ttf"; sourceTree = "<group>"; };
+		E189EC20251B95E400DD2854 /* Rubik-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Bold.ttf"; sourceTree = "<group>"; };
+		E189EC21251B95E400DD2854 /* Rubik-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Light.ttf"; sourceTree = "<group>"; };
+		E189EC22251B95E400DD2854 /* Rubik-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Medium.ttf"; sourceTree = "<group>"; };
+		E189EC23251B95E400DD2854 /* Rubik-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Black.ttf"; sourceTree = "<group>"; };
+		E189EC24251B95E400DD2854 /* Rubik-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Italic.ttf"; sourceTree = "<group>"; };
+		E189EC25251B95E400DD2854 /* Rubik-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-LightItalic.ttf"; sourceTree = "<group>"; };
+		E189EC26251B95E400DD2854 /* Rubik-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-BlackItalic.ttf"; sourceTree = "<group>"; };
+		E189EC27251B95E400DD2854 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
+		E189EC28251B95E400DD2854 /* Rubik-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-BoldItalic.ttf"; sourceTree = "<group>"; };
 		E195A19024E4C6AB00C513F9 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E195A19324E4C6AB00C513F9 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		E195A19424E4C6AB00C513F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,6 +85,7 @@
 		E195A2D624E4D95300C513F9 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E19D66332517DA04008840A3 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		E19D664C2517F68E008840A3 /* Resolver+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resolver+Ext.swift"; sourceTree = "<group>"; };
+		E1BC8F50251A4EA2006A4777 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		F23D1EDB667B8F31C5D0DB9F /* Pods-Common-CommonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Common-CommonTests.release.xcconfig"; path = "Target Support Files/Pods-Common-CommonTests/Pods-Common-CommonTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +121,23 @@
 			);
 			name = Pods;
 			path = ../../Pods;
+			sourceTree = "<group>";
+		};
+		E189EC1E251B95E400DD2854 /* Rubik */ = {
+			isa = PBXGroup;
+			children = (
+				E189EC1F251B95E400DD2854 /* Rubik-MediumItalic.ttf */,
+				E189EC20251B95E400DD2854 /* Rubik-Bold.ttf */,
+				E189EC21251B95E400DD2854 /* Rubik-Light.ttf */,
+				E189EC22251B95E400DD2854 /* Rubik-Medium.ttf */,
+				E189EC23251B95E400DD2854 /* Rubik-Black.ttf */,
+				E189EC24251B95E400DD2854 /* Rubik-Italic.ttf */,
+				E189EC25251B95E400DD2854 /* Rubik-LightItalic.ttf */,
+				E189EC26251B95E400DD2854 /* Rubik-BlackItalic.ttf */,
+				E189EC27251B95E400DD2854 /* Rubik-Regular.ttf */,
+				E189EC28251B95E400DD2854 /* Rubik-BoldItalic.ttf */,
+			);
+			path = Rubik;
 			sourceTree = "<group>";
 		};
 		E195A18624E4C6AB00C513F9 = {
@@ -220,6 +265,10 @@
 			isa = PBXGroup;
 			children = (
 				E19D664C2517F68E008840A3 /* Resolver+Ext.swift */,
+				E1BC8F50251A4EA2006A4777 /* UIView+Ext.swift */,
+				E139E473251AD583001457F0 /* UIImageView+Ext.swift */,
+				E139E475251AE9DD001457F0 /* UIScreen+Ext.swift */,
+				E12C78C2251B6EC100810DDE /* UINavigationController+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -252,6 +301,7 @@
 		E195A20F24E4C87900C513F9 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				E189EC1E251B95E400DD2854 /* Rubik */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -370,8 +420,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				E195A29A24E4C87A00C513F9 /* Localizable.strings in Resources */,
+				E189EC31251B95E400DD2854 /* Rubik-Regular.ttf in Resources */,
+				E189EC2F251B95E400DD2854 /* Rubik-LightItalic.ttf in Resources */,
+				E189EC2B251B95E400DD2854 /* Rubik-Light.ttf in Resources */,
+				E189EC2D251B95E400DD2854 /* Rubik-Black.ttf in Resources */,
 				E195A2A624E4C87A00C513F9 /* colors.json in Resources */,
+				E189EC30251B95E400DD2854 /* Rubik-BlackItalic.ttf in Resources */,
 				E195A29B24E4C87A00C513F9 /* Common.xcassets in Resources */,
+				E189EC2E251B95E400DD2854 /* Rubik-Italic.ttf in Resources */,
+				E189EC29251B95E400DD2854 /* Rubik-MediumItalic.ttf in Resources */,
+				E189EC2A251B95E400DD2854 /* Rubik-Bold.ttf in Resources */,
+				E189EC32251B95E400DD2854 /* Rubik-BoldItalic.ttf in Resources */,
+				E189EC2C251B95E400DD2854 /* Rubik-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,11 +513,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E12C78C3251B6EC100810DDE /* UINavigationController+Ext.swift in Sources */,
+				E1BC8F51251A4EA2006A4777 /* UIView+Ext.swift in Sources */,
 				E19D664D2517F68E008840A3 /* Resolver+Ext.swift in Sources */,
 				E180EC8624E8AA1500308069 /* SwiftGenAssets.swift in Sources */,
+				E139E474251AD583001457F0 /* UIImageView+Ext.swift in Sources */,
 				E180EC8724E8AA1500308069 /* SwiftGenStrings.swift in Sources */,
 				E19D66342517DA04008840A3 /* Coordinator.swift in Sources */,
 				E180EC8524E8AA1500308069 /* SwiftGenColors.swift in Sources */,
+				E139E476251AE9DD001457F0 /* UIScreen+Ext.swift in Sources */,
 				E180EC8424E8AA1500308069 /* SwiftGenFonts.swift in Sources */,
 				E1672900251561BE00C7B88C /* Loadable.swift in Sources */,
 			);

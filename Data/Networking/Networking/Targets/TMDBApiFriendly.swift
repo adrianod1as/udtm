@@ -22,7 +22,7 @@ extension TMDBApiFriendly {
     }
 
     public var specificHeaderTypes: [HeaderSpecifying] {
-        return []
+        return [SpecificHeaderType.tmdb]
     }
 
     public var keyPathForData: String? {

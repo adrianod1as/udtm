@@ -7,14 +7,35 @@
 //
 
 import UIKit
+import Common
 
-protocol UsersViewDelegate: AnyObject {
+protocol UsersViewDelegate: AnyObject, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
 }
 
 public class UsersView: UIView {
 
-    weak var delegate: UsersViewDelegate?
+    private lazy var collectionLayout: UICollectionViewFlowLayout = {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .vertical
+        return layout
+    }()
+
+    lazy var collectionView: UICollectionView = {
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: collectionLayout)
+        collectionView.backgroundColor = ColorName.blackPearl
+        collectionView.register(UsersCell.self, forCellWithReuseIdentifier: UsersCell.identifier)
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        collectionView.contentInset = UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16)
+        return collectionView
+    }()
+
+    weak var delegate: UsersViewDelegate? {
+        didSet {
+            collectionView.delegate = delegate
+            collectionView.dataSource = delegate
+        }
+    }
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -29,6 +50,11 @@ public class UsersView: UIView {
     }
 
     private func setupView() {
-        backgroundColor = .red
+        addSubview(collectionView)
+
+        collectionView.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
+        collectionView.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
+        collectionView.topAnchor.constraint(equalTo: topAnchor).isActive = true
+        collectionView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
     }
 }

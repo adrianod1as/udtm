@@ -9,6 +9,7 @@
 import UIKit
 import Swinject
 import DI
+import AlamofireNetworkActivityLogger
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -16,7 +17,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var assembler: Assembler?
 
     private lazy var dependencyInjector: DependencyInjector = {
-        return DependencyInjector(environment: SetupConstants.environment)
+        return DependencyInjector(environment: SetupConstants.environment,
+                                  group: SetupConstants.group, identifier: SetupConstants.identifier)
     }()
 
     private func setupWindow(navigationController: UINavigationController, scene: UIWindowScene) {
@@ -31,11 +33,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else {
             return
         }
+        setupLogger()
         dependencyInjector.build { assembler, appCoordinator in
             self.assembler = assembler
             setupWindow(navigationController: appCoordinator.navigationController, scene: windowScene)
             appCoordinator.start()
         }
 
+    }
+
+    internal func setupLogger() {
+        NetworkActivityLogger.shared.startLogging()
+        NetworkActivityLogger.shared.level = .debug
     }
 }

@@ -128,6 +128,19 @@ public enum L10n {
     }
   }
 
+  public enum Gravatar {
+    public enum ImageRequest {
+      /// https://www.gravatar.com/avatar/%@
+      public static func url(_ p1: Any) -> String {
+        return L10n.tr("Localizable", "Gravatar.ImageRequest.url", String(describing: p1))
+      }
+    }
+    public enum Sample {
+      /// 205e460b479e2e5b48aec07710c08d50
+      public static let hash = L10n.tr("Localizable", "Gravatar.Sample.hash")
+    }
+  }
+
   public enum RegularExpression {
     public enum Error {
       /// Illegal regular expression:

@@ -55,4 +55,6 @@
 "Error.Code.scammer" = "E135";
 "Error.Code.disablingBlock" = "E140";
 "RegularExpression.Error.illegal" = "Illegal regular expression:";
+"Gravatar.Sample.hash" = "205e460b479e2e5b48aec07710c08d50";
+"Gravatar.ImageRequest.url" = "https://www.gravatar.com/avatar/%@";
 
