@@ -42,7 +42,6 @@ struct SetupConstants {
 
     static let environment: Environment = {
         return Environment(type: defaultEnvironmentType, fixturesType: defaultFixturesType,
-                           commonHeaders: commonHeaders, specificHeaders: specificHeaders,
-                           serverTrustManager: Certificates.serverTrustManager)
+                           commonHeaders: commonHeaders, specificHeaders: specificHeaders)
     }()
 }

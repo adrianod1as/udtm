@@ -21,17 +21,18 @@
     "username": "travisbell"
 }
 */
-
 public struct Account: Codable {
 
     public let id: String
     public let name: String
     public let username: String
+    public let avatar: Gravatar
 
-    public init(id: String, name: String, username: String) {
+    public init(id: String, name: String, username: String, avatar: Gravatar) {
         self.id = id
         self.name = name
         self.username = username
+        self.avatar = avatar
     }
 }
 

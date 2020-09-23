@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Common
 import Domain
 
 public enum LogableUser {
@@ -24,6 +25,37 @@ public enum LogableUser {
             return "New User"
         case .guest:
             return "Guest"
+        }
+    }
+
+    var avatarURL: URL? {
+        switch self {
+        case .registered(let account):
+            return account.avatar.asUrl
+        default:
+            return nil
+        }
+    }
+
+    var avatarIcon: UIImage? {
+        switch self {
+        case .guest:
+            return Asset.incognito.image
+        case .new:
+            return Asset.newUser.image
+        default:
+            return nil
+        }
+    }
+
+    var backgroundColor: UIColor {
+        switch self {
+        case .new:
+            return ColorName.golden
+        case .guest:
+            return ColorName.paynesGrey
+        default:
+            return .clear
         }
     }
 }

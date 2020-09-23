@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E145727224DF508C0026D925"
-               BuildableName = "Uni Duni Te&#x302; - Movies.app"
+               BuildableName = "The Searcher.app"
                BlueprintName = "UDTM"
                ReferencedContainer = "container:UDTM.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E145727224DF508C0026D925"
-            BuildableName = "Uni Duni Te&#x302; - Movies.app"
+            BuildableName = "The Searcher.app"
             BlueprintName = "UDTM"
             ReferencedContainer = "container:UDTM.xcodeproj">
          </BuildableReference>
@@ -202,7 +202,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E145727224DF508C0026D925"
-            BuildableName = "Uni Duni Te&#x302; - Movies.app"
+            BuildableName = "The Searcher.app"
             BlueprintName = "UDTM"
             ReferencedContainer = "container:UDTM.xcodeproj">
          </BuildableReference>
@@ -219,7 +219,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E145727224DF508C0026D925"
-            BuildableName = "Uni Duni Te&#x302; - Movies.app"
+            BuildableName = "The Searcher.app"
             BlueprintName = "UDTM"
             ReferencedContainer = "container:UDTM.xcodeproj">
          </BuildableReference>
