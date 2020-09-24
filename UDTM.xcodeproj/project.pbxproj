@@ -32,6 +32,8 @@
 		E197D0C7251B77C000A0AD8C /* Storage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E144451424E078FC00008203 /* Storage.framework */; };
 		E197D0C8251B77C000A0AD8C /* Storage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E144451424E078FC00008203 /* Storage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E1C9F26724EE19A300DEE93E /* SetupConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C9F26624EE19A300DEE93E /* SetupConstants.swift */; };
+		E1D43541251D48FD004BCC44 /* Home.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D43540251D48FD004BCC44 /* Home.framework */; };
+		E1D43542251D48FD004BCC44 /* Home.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E1D43540251D48FD004BCC44 /* Home.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F6611523B966B7585A555037 /* Pods_UDMTTargets_UDTM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F430A6FB22145E0DCFBC4EA /* Pods_UDMTTargets_UDTM.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +62,7 @@
 				E197D0BE251B77C000A0AD8C /* Auth.framework in Embed Frameworks */,
 				E197D0BA251B77C000A0AD8C /* AppData.framework in Embed Frameworks */,
 				E197D0C6251B77C000A0AD8C /* Networking.framework in Embed Frameworks */,
+				E1D43542251D48FD004BCC44 /* Home.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,6 +99,7 @@
 		E180EC7E24E8A9FE00308069 /* SwiftGenStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftGenStrings.swift; sourceTree = "<group>"; };
 		E195A1B324E4C7C300C513F9 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1C9F26624EE19A300DEE93E /* SetupConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupConstants.swift; sourceTree = "<group>"; };
+		E1D43540251D48FD004BCC44 /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,7 @@
 				E197D0C5251B77C000A0AD8C /* Networking.framework in Frameworks */,
 				E197D0BD251B77C000A0AD8C /* Auth.framework in Frameworks */,
 				E197D0BB251B77C000A0AD8C /* AppNavigation.framework in Frameworks */,
+				E1D43541251D48FD004BCC44 /* Home.framework in Frameworks */,
 				E197D0BF251B77C000A0AD8C /* Common.framework in Frameworks */,
 				E197D0C1251B77C000A0AD8C /* DI.framework in Frameworks */,
 				E197D0C7251B77C000A0AD8C /* Storage.framework in Frameworks */,
@@ -140,6 +145,7 @@
 		B312682DFEFA3B2839EC0759 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E1D43540251D48FD004BCC44 /* Home.framework */,
 				E16728EC2515359200C7B88C /* Auth.framework */,
 				E195A1B324E4C7C300C513F9 /* Common.framework */,
 				E14A076F24E4B9A1006A5DC5 /* AppNavigation.framework */,

@@ -86,6 +86,14 @@ target 'Auth' do
   target 'AuthTests'
 end
 
+target 'Home' do
+  project 'Presentation/Home/Home'
+  sharedPods
+  presentationPods
+  diPods
+  target 'HomeTests'
+end
+
 target 'DI' do
   project 'DI/DI'
   sharedPods
@@ -141,3 +149,10 @@ target 'Storage' do
   end
 end
 
+post_install do |pi|
+  pi.pods_project.targets.each do |t|
+    t.build_configurations.each do |config|
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+    end
+  end
+end

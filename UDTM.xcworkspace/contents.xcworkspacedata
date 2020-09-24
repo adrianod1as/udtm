@@ -19,6 +19,9 @@
       <FileRef
          location = "group:Presentation/Auth/Auth.xcodeproj">
       </FileRef>
+      <FileRef
+         location = "group:Presentation/Home/Home.xcodeproj">
+      </FileRef>
    </Group>
    <FileRef
       location = "group:Domain/Domain.xcodeproj">
