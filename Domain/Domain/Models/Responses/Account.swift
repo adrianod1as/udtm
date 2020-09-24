@@ -23,12 +23,12 @@
 */
 public struct Account: Codable {
 
-    public let id: String
+    public let id: Int
     public let name: String
     public let username: String
     public let avatar: Gravatar
 
-    public init(id: String, name: String, username: String, avatar: Gravatar) {
+    public init(id: Int, name: String, username: String, avatar: Gravatar) {
         self.id = id
         self.name = name
         self.username = username
@@ -60,7 +60,7 @@ extension Account: Validatable {
     var idValidation: ValidationResult {
         return Enforcer(value: username,
                         validations: [.nonEmpty(error: Failure.id(L10n.Error.Message.requiment))])
-            .enforce()
+                .enforce()
     }
 }
 

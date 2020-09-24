@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import SwiftMessages
+import Common
 
-public class UsersViewController: UIViewController {
+public class UsersViewController: UIViewController, UDTAnimatorViewable {
 
     // MARK: Properties
     private lazy var usersView = UsersView()
@@ -75,7 +77,7 @@ extension UsersViewController: UsersViewDelegate {
     public func collectionView(_ collectionView: UICollectionView,
                                layout collectionViewLayout: UICollectionViewLayout,
                                minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
+        return 16
     }
 
     public func collectionView(_ collectionView: UICollectionView,
@@ -99,9 +101,7 @@ extension UsersViewController: UsersViewable {
     }
 
     public func show(error: String) {
-    }
-
-    public func manage(isLoading: Bool) {
+        SwiftMessages.show(error: error)
     }
 
 }

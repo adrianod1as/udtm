@@ -8,11 +8,12 @@
 
 import RealmSwift
 
-class RMAccoount: Object, Codable {
+class RMAccoount: Object {
 
-    @objc dynamic var id = ""
+    @objc dynamic var id: Int = 0
     @objc dynamic var name = ""
     @objc dynamic var username = ""
+    @objc dynamic var avatar = ""
 
     override static func primaryKey() -> String? {
         return "id"

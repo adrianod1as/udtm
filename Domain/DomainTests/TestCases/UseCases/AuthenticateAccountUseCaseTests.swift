@@ -31,7 +31,7 @@ class AuthenticateAccountUseCaseTests: XCTestCase {
     }
 
     func testFailedExecution() {
-        sut.execute(Account(id: "", name: "", username: "", avatar: Gravatar(hash: ""))) { result in
+        sut.execute(Account(id: 0, name: "", username: "", avatar: Gravatar(hash: ""))) { result in
             XCTAssertNotNil(result.failure)
             XCTAssertNil(result.success)
         }

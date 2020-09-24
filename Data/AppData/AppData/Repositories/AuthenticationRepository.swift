@@ -119,7 +119,7 @@ extension AuthenticationRepository: Domain.AuthenticationRepository {
 
     internal func save(sessionId: String, forAccount account: Account,
                        completion: @escaping GenericCompletion<Account>) {
-        authLocalDataSource.save(sessionId: sessionId, forAccountId: account.id) { result in
+        authLocalDataSource.save(sessionId: sessionId, forAccountId: account.id.description) { result in
             switch result {
             case .success:
                 completion(.success(account))
@@ -130,7 +130,7 @@ extension AuthenticationRepository: Domain.AuthenticationRepository {
     }
 
     public func authenticateAccount(_ account: Account, completion: @escaping GenericCompletion<Void>) {
-        authLocalDataSource.getSessionId(forAccountId: account.id) { result in
+        authLocalDataSource.getSessionId(forAccountId: account.id.description) { result in
             switch result {
             case .success(let id):
                 self.authLocalDataSource.select(sessionId: id, completion: completion)

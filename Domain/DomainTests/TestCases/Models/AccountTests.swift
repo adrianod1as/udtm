@@ -17,7 +17,7 @@ class AccountTests: XCTestCase {
     override func setUp() {
         super.setUp()
 
-        sut = Account(id: "", name: "", username: "", avatar: Gravatar(hash: ""))
+        sut = Account(id: 0, name: "", username: "", avatar: Gravatar(hash: ""))
     }
 
     override func tearDown() {

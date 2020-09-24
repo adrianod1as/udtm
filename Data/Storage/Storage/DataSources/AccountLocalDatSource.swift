@@ -24,7 +24,9 @@ extension AccountLocalDatSource: AppData.AccountLocalDatSource {
         let realm = realmStorage.defaultRealm
         do {
             try realm.write {
-                realm.create(RMAccoount.self, value: account.rawObject ?? [:], update: .modified)
+                var value = account.rawObject ?? [:]
+                value["avatar"] = account.avatar.hash
+                realm.create(RMAccoount.self, value: value, update: .modified)
                 completion(.success(()))
             }
         } catch {
@@ -37,11 +39,11 @@ extension AccountLocalDatSource: AppData.AccountLocalDatSource {
             completion(.failure(InteractionError.failedRequest("")))
             return
         }
-        completion(.success(account.asDomain()))
+        completion(.success(account.asDomain))
     }
 
     public func getAccounts(completion: @escaping GenericCompletion<[Account]>) {
-        let accounts = Array(realmStorage.defaultRealm.objects(RMAccoount.self)).map({ $0.asDomain() })
+        let accounts = Array(realmStorage.defaultRealm.objects(RMAccoount.self)).map({ $0.asDomain })
         completion(.success(accounts))
     }
 }

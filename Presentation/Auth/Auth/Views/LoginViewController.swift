@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import Common
 import SwiftMessages
 
-public class LoginViewController: UIViewController {
+public class LoginViewController: UIViewController, UDTAnimatorViewable {
 
     // MARK: Properties
     private lazy var loginView = LoginView()
@@ -66,11 +67,7 @@ extension LoginViewController: LoginViewDelegate {
 extension LoginViewController: LoginViewable {
 
     public func showGeneral(error: String) {
-        let alert = MessageView.viewFromNib(layout: .cardView)
-        alert.configureTheme(.error)
-        alert.configureContent(title: "", body: error)
-        alert.button?.isHidden = true
-        SwiftMessages.show(view: alert)
+        SwiftMessages.show(error: error)
     }
 
     public func showUser(error: String) {
@@ -82,10 +79,6 @@ extension LoginViewController: LoginViewable {
     }
 
     public func showRequestToken(url: URL) {
-
-    }
-
-    public func manage(isLoading: Bool) {
 
     }
 }

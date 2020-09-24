@@ -15,12 +15,12 @@ extension Account: Fakeable {
     }
 
     public var uniquesId: [String] {
-        [id, username]
+        [id.description, username]
     }
 
     public static func getFakedItem() -> Account {
         let faker = Faker.brazilian
-        return Account(id: faker.number.randomInt().description,
+        return Account(id: faker.number.randomInt(),
                        name: faker.name.givenName(), username: faker.internet.username(), avatar: Gravatar(hash: ""))
     }
 }

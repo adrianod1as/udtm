@@ -8,9 +8,19 @@
 
 import Foundation
 
-public protocol DomainConvertibleType {
+public protocol DomainConvertible {
 
     associatedtype DomainType
 
-    func asDomain() -> DomainType
+    var asDomain: DomainType { get }
+}
+
+extension DomainConvertible where DomainType: Decodable, Self: Encodable {
+
+    var asDomain: DomainType {
+        guard let data = self.data, let model = data.decode(DomainType.self) else {
+            fatalError()
+        }
+        return model
+    }
 }

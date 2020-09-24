@@ -44,7 +44,7 @@ extension KeychainStoring {
     }
 
     internal func biometricKeychain(prompt: String?) -> Keychain {
-        var keychain = self.keychain.accessibility(.whenPasscodeSetThisDeviceOnly, authenticationPolicy: .biometryAny)
+        var keychain = self.keychain.accessibility(.whenPasscodeSetThisDeviceOnly, authenticationPolicy: .userPresence)
         if let prompt = prompt, !prompt.isEmpty {
             keychain = keychain.authenticationPrompt(prompt)
         }
