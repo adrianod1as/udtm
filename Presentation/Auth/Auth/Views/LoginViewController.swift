@@ -7,11 +7,12 @@
 //
 
 import UIKit
+import SwiftMessages
 
 public class LoginViewController: UIViewController {
 
     // MARK: Properties
-    private lazy var usersView = LoginView()
+    private lazy var loginView = LoginView()
     private let presenter: LoginViewPresenting
 
     // MARK: Init
@@ -26,8 +27,33 @@ public class LoginViewController: UIViewController {
 
     // MARK: Life cycle
     public override func loadView() {
-        view = usersView
-        usersView.delegate = self
+        view = loginView
+        loginView.delegate = self
+    }
+
+    public override func viewDidLoad() {
+        super.viewDidLoad()
+
+        setupUI()
+    }
+}
+
+// MARK: UI
+extension LoginViewController {
+
+    private func setupUI() {
+        loginView.btnLogin.addTarget(self, action: #selector(login), for: .touchUpInside)
+    }
+}
+
+// MARK: Actions
+extension LoginViewController {
+
+    @objc private func login() {
+        view.endEditing(true)
+        presenter.authenticate(user: loginView.txtUsername.text ?? "",
+                               password: loginView.txtPassword.text ?? "",
+                               savingSession: loginView.swtSavingSession.isOn)
     }
 }
 
@@ -40,15 +66,19 @@ extension LoginViewController: LoginViewDelegate {
 extension LoginViewController: LoginViewable {
 
     public func showGeneral(error: String) {
-
+        let alert = MessageView.viewFromNib(layout: .cardView)
+        alert.configureTheme(.error)
+        alert.configureContent(title: "", body: error)
+        alert.button?.isHidden = true
+        SwiftMessages.show(view: alert)
     }
 
     public func showUser(error: String) {
-
+        loginView.txtUsername.set(error: error)
     }
 
     public func showPassword(error: String) {
-
+        loginView.txtPassword.set(error: error)
     }
 
     public func showRequestToken(url: URL) {

@@ -31,7 +31,6 @@ def presentationPods
   pod 'SwiftMessages'
   pod 'SwiftRichString'
   pod 'NVActivityIndicatorView/Extended'
-  pod 'AnimatedField'
 end
 
 def diPods

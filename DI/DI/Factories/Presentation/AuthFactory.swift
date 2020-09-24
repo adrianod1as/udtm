@@ -8,6 +8,7 @@
 
 import Auth
 import Swinject
+import Common
 
 class AuthFactory {
 
@@ -22,7 +23,7 @@ extension AuthFactory: AuthManufacturing {
 
     public func makeUsersViewController() -> UsersViewController {
         guard let presenter = resolver.resolve(UsersViewPresenting.self) as? UsersPresenter else {
-            preconditionFailure("UsersViewPresenting is nil")
+            preconditionFailure(Common.L10n.Resolver.SafelyResolve.preconditionFailure(UsersViewPresenting.self))
         }
         let viewController = UsersViewController(presenter: presenter)
         presenter.attach(view: viewController)
@@ -31,7 +32,7 @@ extension AuthFactory: AuthManufacturing {
 
     public func makeLoginViewController() -> LoginViewController {
         guard let presenter = resolver.resolve(LoginViewPresenting.self) as? LoginPresenter else {
-            preconditionFailure("LoginViewPresenting is nil")
+            preconditionFailure(Common.L10n.Resolver.SafelyResolve.preconditionFailure(LoginViewPresenting.self))
         }
         let viewController = LoginViewController(presenter: presenter)
         presenter.attach(view: viewController)

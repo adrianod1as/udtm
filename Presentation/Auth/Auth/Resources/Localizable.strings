@@ -1,7 +1,17 @@
 /* 
   Localizable.strings
-  Common
+  Auth
 
   Created by Adriano Dias on 12/08/20.
   Copyright © 2020 dias. All rights reserved.
 */
+
+"LogableUser.New.title" = "New User";
+"LogableUser.Guest.title" = "Guest";
+"UsersViewController.title" = "Who's searching?";
+"LoginView.Username.title" = "Username";
+"LoginView.Username.placeholder" = "Type your username";
+"LoginView.Password.title" = "Password";
+"LoginView.Password.placeholder" = "Type your password";
+"LoginView.Login.title" = "Login";
+"LoginView.Switch.title" = "Save session with biometry";

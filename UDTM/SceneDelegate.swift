@@ -10,6 +10,7 @@ import UIKit
 import Swinject
 import DI
 import AlamofireNetworkActivityLogger
+import IQKeyboardManagerSwift
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -34,6 +35,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             return
         }
         setupLogger()
+        setupKeyboardManger()
         dependencyInjector.build { assembler, appCoordinator in
             self.assembler = assembler
             setupWindow(navigationController: appCoordinator.navigationController, scene: windowScene)
@@ -42,8 +44,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     }
 
-    internal func setupLogger() {
+    private func setupLogger() {
         NetworkActivityLogger.shared.startLogging()
         NetworkActivityLogger.shared.level = .debug
+    }
+
+    private func setupKeyboardManger() {
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.shouldShowToolbarPlaceholder = false
+        IQKeyboardManager.shared.toolbarPreviousNextAllowedClasses = [IQPreviousNextView.self]
+        IQKeyboardManager.shared.layoutIfNeededOnUpdate = true
     }
 }

@@ -22,9 +22,9 @@ public enum LogableUser {
         case .registered(let account):
             return account.username
         case .new:
-            return "New User"
+            return L10n.LogableUser.New.title
         case .guest:
-            return "Guest"
+            return L10n.LogableUser.Guest.title
         }
     }
 

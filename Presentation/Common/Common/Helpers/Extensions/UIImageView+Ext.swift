@@ -12,7 +12,7 @@ public extension UIImageView {
 
     func set(concontentsOf url: URL?, completion: (() -> Void)?) {
         guard let url = url else {
-            assertionFailure("URL shouldn't be nil")
+            assertionFailure(L10n.Resolver.SafelyResolve.preconditionFailure(URL.self))
             return
         }
         DispatchQueue.global(qos: .userInitiated).async {

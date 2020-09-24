@@ -45,7 +45,7 @@ extension AccountTarget: TMDBApiFriendly {
     public var task: Task {
         switch self {
         case .accountDetails(let id):
-            return .requestParameters(parameters: ["session_id": id], encoding: JSONEncoding.default)
+            return .requestParameters(parameters: ["session_id": id], encoding: URLEncoding.default)
         }
     }
 }

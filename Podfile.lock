@@ -2,7 +2,6 @@ PODS:
   - Alamofire (5.0.5)
   - AlamofireNetworkActivityLogger (3.0.0):
     - Alamofire (~> 5.0.0-rc.2)
-  - AnimatedField (2.4.4)
   - Disk (0.6.4)
   - Fakery (4.1.2)
   - Firebase/Analytics (6.33.0):
@@ -134,7 +133,6 @@ PODS:
 
 DEPENDENCIES:
   - AlamofireNetworkActivityLogger (~> 3.0)
-  - AnimatedField
   - Disk
   - Fakery (from `https://github.com/vadymmarkov/Fakery`, branch `master`)
   - Firebase/Analytics
@@ -161,7 +159,6 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - AlamofireNetworkActivityLogger
-    - AnimatedField
     - Disk
     - Firebase
     - FirebaseAnalytics
@@ -226,7 +223,6 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Alamofire: df2f8f826963b08b9a870791ad48e07a10090b2e
   AlamofireNetworkActivityLogger: 94e8a7d454a4a9800cef1d0c1d3699754493684b
-  AnimatedField: af48a2d59a50b33b30446267f7f2af274296203c
   Disk: dcee5c2e98fb72f9a924cde8da8435b08244a80e
   Fakery: eae1f41e41c7fef040b247a3817ca6a64bfcf6c3
   Firebase: 8db6f2d1b2c5e2984efba4949a145875a8f65fe5
@@ -263,6 +259,6 @@ SPEC CHECKSUMS:
   SwinjectStoryboard: f0d5b1c16459949d6ff1cbb6610107946b18e1f8
   UIGradient: 2364e9ebac232686db220713b4d42a68222fffb2
 
-PODFILE CHECKSUM: 9c5f8944746df8ccdb5044d5c8492bb547fbf121
+PODFILE CHECKSUM: ede716d8b92b8d35657bdd5d75cda84780c133a4
 
 COCOAPODS: 1.9.3
