@@ -26,11 +26,12 @@ end
 def presentationPods
   pod 'UIGradient', '~> 1.3.1'
   pod 'SwiftGen', '~> 6.0'
-  pod 'InputMask', '4.3'
+  pod 'InputMask'
   pod 'IQKeyboardManagerSwift', :git => 'https://github.com/hackiftekhar/IQKeyboardManager', :branch => 'master'
   pod 'SwiftMessages'
   pod 'SwiftRichString'
   pod 'NVActivityIndicatorView/Extended'
+  pod 'AnimatedField'
 end
 
 def diPods
