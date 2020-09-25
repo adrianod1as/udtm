@@ -44,6 +44,7 @@
 		E1D4336B251CD6F5004BCC44 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D4336A251CD6F5004BCC44 /* String+Ext.swift */; };
 		E1D433B9251D0960004BCC44 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D433B8251D0960004BCC44 /* UIViewController+Ext.swift */; };
 		E1D433BD251D09F6004BCC44 /* SwiftMessages+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D433BC251D09F6004BCC44 /* SwiftMessages+Ext.swift */; };
+		E1D435FC251D69C6004BCC44 /* UDTTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D435FB251D69C6004BCC44 /* UDTTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		E1D4336A251CD6F5004BCC44 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		E1D433B8251D0960004BCC44 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		E1D433BC251D09F6004BCC44 /* SwiftMessages+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftMessages+Ext.swift"; sourceTree = "<group>"; };
+		E1D435FB251D69C6004BCC44 /* UDTTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDTTabBarController.swift; sourceTree = "<group>"; };
 		F23D1EDB667B8F31C5D0DB9F /* Pods-Common-CommonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Common-CommonTests.release.xcconfig"; path = "Target Support Files/Pods-Common-CommonTests/Pods-Common-CommonTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -330,6 +332,7 @@
 				E1D4335A251CC554004BCC44 /* UDTButton.swift */,
 				E1D43362251CD4CF004BCC44 /* PaddingTextField.swift */,
 				E1D43366251CD4F5004BCC44 /* FormTextField.swift */,
+				E1D435FB251D69C6004BCC44 /* UDTTabBarController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -543,6 +546,7 @@
 				E180EC8624E8AA1500308069 /* SwiftGenAssets.swift in Sources */,
 				E139E474251AD583001457F0 /* UIImageView+Ext.swift in Sources */,
 				E180EC8724E8AA1500308069 /* SwiftGenStrings.swift in Sources */,
+				E1D435FC251D69C6004BCC44 /* UDTTabBarController.swift in Sources */,
 				E1D4335F251CC6C4004BCC44 /* UIColor+Ext.swift in Sources */,
 				E19D66342517DA04008840A3 /* Coordinator.swift in Sources */,
 				E1D4335B251CC554004BCC44 /* UDTButton.swift in Sources */,

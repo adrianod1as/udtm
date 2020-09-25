@@ -10,6 +10,7 @@ import Swinject
 import Common
 import AppNavigation
 import Auth
+import Home
 
 class CoordinatorsAssembly: Assembly {
 
@@ -22,13 +23,14 @@ class CoordinatorsAssembly: Assembly {
     func assemble(container: Container) {
         assembleAppCoordinator(container: container)
         assembleAuthCoordinator(container: container)
+        assembleHomeCoordinator(container: container)
     }
 
     internal func assembleAppCoordinator(container: Container) {
         container.register(AppCoordinator.self) { resolver in
             return AppCoordinator(navigationController: self.navigationController,
                                   factory: resolver.safelyResolve(CoordinatorManufacturing.self))
-        }.implements(AuthDepartingCoordinating.self)
+        }.implements(AuthDepartingCoordinating.self, HomeDepartingCoordinating.self)
     }
 
     internal func assembleAuthCoordinator(container: Container) {
@@ -36,6 +38,15 @@ class CoordinatorsAssembly: Assembly {
             return AuthCoordinator(navigationController: self.navigationController,
                                    departingCoordinator: resolver.safelyResolve(AuthDepartingCoordinating.self),
                                    factory: resolver.safelyResolve(AuthManufacturing.self))
+        }
+    }
+
+    internal func assembleHomeCoordinator(container: Container) {
+        container.register(HomeCoordinator.self) { resolver in
+            let homeFactory = resolver.safelyResolve(HomeManufacturing.self)
+            return HomeCoordinator(navigationController: homeFactory.makeHomeNavigationController(),
+                                   departingCoordinator: resolver.safelyResolve(HomeDepartingCoordinating.self),
+                                   factory: resolver.safelyResolve(HomeManufacturing.self))
         }
     }
 }

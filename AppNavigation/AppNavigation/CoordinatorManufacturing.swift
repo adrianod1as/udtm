@@ -7,8 +7,10 @@
 //
 
 import Auth
+import Home
 
 public protocol CoordinatorManufacturing {
 
     func makeAuthCoordinator() -> AuthCoordinator
+    func makeHomeCoordinator() -> HomeCoordinator
 }

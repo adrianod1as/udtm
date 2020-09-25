@@ -9,6 +9,7 @@
 import UIKit
 import Common
 import Auth
+import Home
 
 public class AppCoordinator: Coordinator {
 
@@ -38,6 +39,9 @@ public class AppCoordinator: Coordinator {
 extension AppCoordinator: AuthDepartingCoordinating {
 
     public func showHome() {
-        #warning("TO-DO: implement navigation to Home")
+        let coordinator = factory.makeHomeCoordinator()
+        coordinator.start()
     }
 }
+
+extension AppCoordinator: HomeDepartingCoordinating {}

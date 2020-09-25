@@ -24,6 +24,7 @@ public class DependencyInjector {
             CoordinatorFactoryAssembly(),
             CoordinatorsAssembly(navigationController: UINavigationController()),
             AuthFlowAssembly(),
+            HomeFlowAssembly(),
             DomainAssembly(),
             DataAssembly(),
             NetworkingAssembly(environment: environment),

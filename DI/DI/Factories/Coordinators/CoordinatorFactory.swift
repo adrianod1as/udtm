@@ -10,6 +10,7 @@ import Swinject
 import Common
 import AppNavigation
 import Auth
+import Home
 
 public class CoordinatorFactory: DependencyManufacturing {
 
@@ -25,5 +26,9 @@ extension CoordinatorFactory: CoordinatorManufacturing {
 
     public func makeAuthCoordinator() -> AuthCoordinator {
         resolver.safelyResolve(AuthCoordinator.self)
+    }
+
+    public func makeHomeCoordinator() -> HomeCoordinator {
+        resolver.safelyResolve(HomeCoordinator.self)
     }
 }

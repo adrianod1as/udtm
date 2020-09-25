@@ -24,7 +24,7 @@ public class AuthCoordinator: Coordinator {
 
     private let factory: AuthManufacturing
 
-    private weak var departingCoordinator: AuthDepartingCoordinating?
+    private let departingCoordinator: AuthDepartingCoordinating
 
     public init(navigationController: UINavigationController,
                 departingCoordinator: AuthDepartingCoordinating,
@@ -56,6 +56,6 @@ extension AuthCoordinator: UsersSceneCoordinating {
 extension AuthCoordinator: LoginSceneCoordinating {
 
     public func showHome() {
-        departingCoordinator?.showHome()
+        departingCoordinator.showHome()
     }
 }
