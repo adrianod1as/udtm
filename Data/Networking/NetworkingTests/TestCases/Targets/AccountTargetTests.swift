@@ -42,7 +42,7 @@ class AccountTargetTests: XCTestCase {
     }
 
     func testSpecificHeaderTypes() {
-        XCTAssert(sut.specificHeaderTypes.isEmpty)
+        XCTAssertEqual(sut.specificHeaderTypes.map({ $0.key }), [SpecificHeaderType.tmdb.key])
     }
 
     func testKeyPathForData() {
@@ -66,13 +66,13 @@ class AccountTargetTests: XCTestCase {
     }
 
     func testTask() {
-        let task = Task.requestParameters(parameters: ["session_id": sessionIdStub], encoding: JSONEncoding.default)
+        let task = Task.requestParameters(parameters: ["session_id": sessionIdStub], encoding: URLEncoding.default)
         switch (sut.task, task) {
         case (.requestParameters(let parametersA, let encodingA),
               .requestParameters(let parametersB, let encodingB)):
             XCTAssertEqual(parametersA as? [String: String], parametersB as? [String: String])
-            XCTAssertNotNil(encodingA as? JSONEncoding)
-            XCTAssertNotNil(encodingB as? JSONEncoding)
+            XCTAssertNotNil(encodingA as? URLEncoding)
+            XCTAssertNotNil(encodingB as? URLEncoding)
         default:
             XCTFail("Different tasks")
         }
