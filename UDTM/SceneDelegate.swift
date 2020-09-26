@@ -9,8 +9,10 @@
 import UIKit
 import Swinject
 import DI
+import AppData
 import AlamofireNetworkActivityLogger
 import IQKeyboardManagerSwift
+import SwinjectAutoregistration
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -39,9 +41,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         dependencyInjector.build { assembler, appCoordinator in
             self.assembler = assembler
             setupWindow(navigationController: appCoordinator.navigationController, scene: windowScene)
+            self.manageUserInformation()
             appCoordinator.start()
         }
 
+    }
+
+    func sceneDidDisconnect(_ scene: UIScene) {
+        manageUserInformation()
     }
 
     private func setupLogger() {
@@ -54,5 +61,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         IQKeyboardManager.shared.shouldShowToolbarPlaceholder = false
         IQKeyboardManager.shared.toolbarPreviousNextAllowedClasses = [IQPreviousNextView.self]
         IQKeyboardManager.shared.layoutIfNeededOnUpdate = true
+    }
+
+    func manageUserInformation() {
+        guard let assembler = assembler else {
+            return
+        }
+        let localDataSource = assembler.resolver.safelyResolve(AppData.SessionLocalDataSource.self)
+        localDataSource.deleteUserInformation { _ in
+            localDataSource.recordFirsLaunch()
+        }
     }
 }

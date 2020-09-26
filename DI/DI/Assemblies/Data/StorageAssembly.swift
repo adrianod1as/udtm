@@ -29,6 +29,9 @@ class StorageAssembly: Assembly {
         container.register(AuthCredentialsStorage.self) { _ in
             AuthCredentialsStorage(service: self.service, accessGroup: self.accessGroup)
         }
+        container.register(TransitoryStorage.self) { _ in
+            TransitoryStorage(userDefaults: .standard)
+        }
         container.register(RealmStoring.self) { _ in
             RealmStorage(group: self.accessGroup, indentifier: self.service)
         }

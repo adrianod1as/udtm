@@ -38,8 +38,6 @@ def diPods
   oxeNetworking
   pod 'Swinject', '~> 2.7.0'
   pod 'SwinjectAutoregistration', '~> 2.7.0'
-  pod 'SwinjectStoryboard', :git => 'https://github.com/Swinject/SwinjectStoryboard', :branch => 'master'
-  pod 'SFSafeSymbols', '~> 1.2.0'
 end
 
 def oxeNetworking

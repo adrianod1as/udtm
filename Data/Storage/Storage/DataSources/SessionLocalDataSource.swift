@@ -12,13 +12,15 @@ import Domain
 public class SessionLocalDataSource {
 
     public let keychainStorage: AuthCredentialsStorage
+    public let userDefaultsStorage: TransitoryStorage
 
-    public init(keychainStorage: AuthCredentialsStorage) {
+    public init(keychainStorage: AuthCredentialsStorage, userDefaultsStorage: TransitoryStorage) {
         self.keychainStorage = keychainStorage
+        self.userDefaultsStorage = userDefaultsStorage
     }
 }
 
-extension SessionLocalDataSource: AppData.SessionLocalDataSource {
+extension SessionLocalDataSource: AppData.SessionLocalDataSource, Storage.SignOutLocalDataSource {
 
     public func select(sessionId: String, completion: @escaping GenericCompletion<Void>) {
         do {
@@ -70,5 +72,9 @@ extension SessionLocalDataSource: AppData.SessionLocalDataSource {
                 }
             }
         }
+    }
+
+    public func recordFirsLaunch() {
+        userDefaultsStorage.set(true, keyable: .hasLaunched, userId: nil)
     }
 }

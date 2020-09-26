@@ -98,8 +98,10 @@ extension UsersPresenter: UsersViewPresenting {
             guard let self = self else {
                 return
             }
-            self.view?.manage(isLoading: false)
-            self.handleSignInAsRegisteredAccount(result)
+            DispatchQueue.main.async {
+                self.view?.manage(isLoading: false)
+                self.handleSignInAsRegisteredAccount(result)
+            }
         }
     }
 
