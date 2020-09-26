@@ -32,6 +32,7 @@ public class LoginView: UIView {
         field.keyboardDistanceFromTextField = 16
         field.translatesAutoresizingMaskIntoConstraints = false
         field.keyboardType = .emailAddress
+        field.autocorrectionType = .no
         return field
     }()
 
@@ -41,6 +42,7 @@ public class LoginView: UIView {
         field.placeholder = L10n.LoginView.Password.placeholder
         field.translatesAutoresizingMaskIntoConstraints = false
         field.isSecureTextEntry = true
+        field.autocorrectionType = .no
         return field
     }()
 
@@ -103,9 +105,56 @@ public class LoginView: UIView {
         setupView()
     }
 
-    public override func layoutSubviews() {
-        super.layoutSubviews()
+    private func addSubviews() {
+        addSubview(imgLogo)
+        addSubview(txtUsername)
+        addSubview(txtPassword)
+        addSubview(lblSavingSession)
+        addSubview(swtSavingSession)
+        addSubview(btnLogin)
+    }
 
+    private func activateImgLogoConstraints() {
+        imgLogo.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 16).isActive = true
+        imgLogo.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.4).isActive = true
+        imgLogo.heightAnchor.constraint(equalTo: imgLogo.widthAnchor).isActive = true
+        imgLogo.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
+    }
+
+    private func activateTxtUsernameConstraints() {
+        txtUsername.topAnchor.constraint(equalTo: imgLogo.bottomAnchor, constant: 16).isActive = true
+        txtUsername.rightAnchor.constraint(equalTo: rightAnchor, constant: -32).isActive = true
+        txtUsername.leftAnchor.constraint(equalTo: leftAnchor, constant: 32).isActive = true
+        txtUsername.heightAnchor.constraint(greaterThanOrEqualToConstant: 48).isActive = true
+    }
+
+    private func activateTxtPasswordConstraints() {
+        txtPassword.topAnchor.constraint(equalTo: txtUsername.bottomAnchor, constant: 16).isActive = true
+        txtPassword.rightAnchor.constraint(equalTo: txtUsername.rightAnchor).isActive = true
+        txtPassword.leftAnchor.constraint(equalTo: txtUsername.leftAnchor).isActive = true
+        txtPasswordHeightAnchor.isActive = true
+    }
+
+    private func activateSwitchSavingSessionConstraints() {
+        swtSavingSessionTopAnchor.isActive = true
+        swtSavingSession.leftAnchor.constraint(equalTo: txtPassword.leftAnchor).isActive = true
+    }
+
+    private func activateLblSavingSessionConstraints() {
+        lblSavingSession.leftAnchor.constraint(equalTo: swtSavingSession.rightAnchor, constant: 8).isActive = true
+        lblSavingSession.topAnchor.constraint(equalTo: swtSavingSession.topAnchor).isActive = true
+        lblSavingSession.bottomAnchor.constraint(equalTo: swtSavingSession.bottomAnchor).isActive = true
+        lblSavingSession.rightAnchor.constraint(equalTo: txtPassword.rightAnchor).isActive = true
+    }
+
+    private func activateBtnLoginConstraints() {
+        btnLoginTopAnchor.isActive = true
+        btnLogin.rightAnchor.constraint(equalTo: txtPassword.rightAnchor).isActive = true
+        btnLogin.leftAnchor.constraint(equalTo: txtPassword.leftAnchor).isActive = true
+        btnLoginHeightAnchor.isActive = true
+    }
+
+    private func setKeyboardDistanceFromTxtPassword() {
         txtPassword.keyboardDistanceFromTextField = txtPasswordHeightAnchor.constant
                                                     + btnLoginTopAnchor.constant
                                                     + btnLoginHeightAnchor.constant + 16
@@ -115,40 +164,14 @@ public class LoginView: UIView {
 
     private func setupView() {
         backgroundColor = ColorName.blackPearl
-        addSubview(imgLogo)
-        addSubview(txtUsername)
-        addSubview(txtPassword)
-        addSubview(lblSavingSession)
-        addSubview(swtSavingSession)
-        addSubview(btnLogin)
-
-        imgLogo.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 16).isActive = true
-        imgLogo.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.4).isActive = true
-        imgLogo.heightAnchor.constraint(equalTo: imgLogo.widthAnchor).isActive = true
-        imgLogo.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
-
-        txtUsername.topAnchor.constraint(equalTo: imgLogo.bottomAnchor, constant: 16).isActive = true
-        txtUsername.rightAnchor.constraint(equalTo: rightAnchor, constant: -32).isActive = true
-        txtUsername.leftAnchor.constraint(equalTo: leftAnchor, constant: 32).isActive = true
-        txtUsername.heightAnchor.constraint(greaterThanOrEqualToConstant: 48).isActive = true
-
-        txtPassword.topAnchor.constraint(equalTo: txtUsername.bottomAnchor, constant: 16).isActive = true
-        txtPassword.rightAnchor.constraint(equalTo: txtUsername.rightAnchor).isActive = true
-        txtPassword.leftAnchor.constraint(equalTo: txtUsername.leftAnchor).isActive = true
-        txtPasswordHeightAnchor.isActive = true
-
-        swtSavingSessionTopAnchor.isActive = true
-        swtSavingSession.leftAnchor.constraint(equalTo: txtPassword.leftAnchor).isActive = true
-
-        lblSavingSession.leftAnchor.constraint(equalTo: swtSavingSession.rightAnchor, constant: 8).isActive = true
-        lblSavingSession.topAnchor.constraint(equalTo: swtSavingSession.topAnchor).isActive = true
-        lblSavingSession.bottomAnchor.constraint(equalTo: swtSavingSession.bottomAnchor).isActive = true
-        lblSavingSession.rightAnchor.constraint(equalTo: txtPassword.rightAnchor).isActive = true
-
-        btnLoginTopAnchor.isActive = true
-        btnLogin.rightAnchor.constraint(equalTo: txtPassword.rightAnchor).isActive = true
-        btnLogin.leftAnchor.constraint(equalTo: txtPassword.leftAnchor).isActive = true
-        btnLoginHeightAnchor.isActive = true
+        addSubviews()
+        activateImgLogoConstraints()
+        activateTxtUsernameConstraints()
+        activateTxtPasswordConstraints()
+        activateSwitchSavingSessionConstraints()
+        activateLblSavingSessionConstraints()
+        activateBtnLoginConstraints()
+        setKeyboardDistanceFromTxtPassword()
     }
 
 }

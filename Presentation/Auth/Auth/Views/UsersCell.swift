@@ -16,7 +16,7 @@ class UsersCell: UICollectionViewCell {
         imgView.translatesAutoresizingMaskIntoConstraints = false
         imgView.contentMode = .scaleAspectFill
         imgView.layer.borderWidth = 2
-        imgView.layer.borderColor = UIColor.white.cgColor
+        imgView.layer.borderColor = ColorName.white.cgColor
         imgView.clipsToBounds = true
         imgView.layer.cornerRadius = 4
         return imgView
@@ -26,7 +26,7 @@ class UsersCell: UICollectionViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
-        label.textColor = .white
+        label.textColor = ColorName.white
         label.font = FontFamily.Rubik.regular.font(size: 18)
         return label
     }()
@@ -43,18 +43,29 @@ class UsersCell: UICollectionViewCell {
         setup()
     }
 
-    internal func setup() {
+    private func addSubviews() {
         addSubview(imgAvatar)
         addSubview(lblTitle)
+    }
 
+    private func activateImgAvatarConstraints() {
         imgAvatar.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
         imgAvatar.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
         imgAvatar.topAnchor.constraint(equalTo: topAnchor).isActive = true
         imgAvatar.bottomAnchor.constraint(equalTo: lblTitle.topAnchor, constant: -4).isActive = true
+    }
+
+    private func activateLblTitleConstraints() {
         lblTitle.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
         lblTitle.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
         lblTitle.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
         lblTitle.heightAnchor.constraint(equalToConstant: 20).isActive = true
+    }
+
+    private func setup() {
+        addSubviews()
+        activateImgAvatarConstraints()
+        activateLblTitleConstraints()
     }
 
     func bind(user: LogableUser) {

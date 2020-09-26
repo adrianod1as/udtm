@@ -49,12 +49,15 @@ public class UsersView: UIView {
         setupView()
     }
 
-    private func setupView() {
-        addSubview(collectionView)
-
+    private func activateCollectionViewConstraints() {
         collectionView.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
         collectionView.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
         collectionView.topAnchor.constraint(equalTo: topAnchor).isActive = true
         collectionView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+    }
+
+    private func setupView() {
+        addSubview(collectionView)
+        activateCollectionViewConstraints()
     }
 }
