@@ -31,6 +31,7 @@ def presentationPods
   pod 'SwiftMessages'
   pod 'SwiftRichString'
   pod 'NVActivityIndicatorView/Extended'
+  pod 'SFSafeSymbols', '~> 1.2.0'
 end
 
 def diPods
@@ -38,6 +39,7 @@ def diPods
   pod 'Swinject', '~> 2.7.0'
   pod 'SwinjectAutoregistration', '~> 2.7.0'
   pod 'SwinjectStoryboard', :git => 'https://github.com/Swinject/SwinjectStoryboard', :branch => 'master'
+  pod 'SFSafeSymbols', '~> 1.2.0'
 end
 
 def oxeNetworking

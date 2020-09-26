@@ -38,10 +38,12 @@ public class AppCoordinator: Coordinator {
 
 extension AppCoordinator: AuthDepartingCoordinating {
 
-    public func showHome() {
-        let coordinator = factory.makeHomeCoordinator()
+    public func showMenu() {
+        let coordinator = factory.makeMenuCoordinator()
         coordinator.start()
     }
 }
+
+extension AppCoordinator: MenuDepartingCoordinating {}
 
 extension AppCoordinator: HomeDepartingCoordinating {}

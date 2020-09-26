@@ -33,9 +33,7 @@ public class HomeCoordinator: Coordinator {
     }
 
     public func start() {
-        let tabBarController = factory.makeTabBarController()
-        UIApplication.shared.windows.first?.rootViewController = tabBarController
-        UIApplication.shared.windows.first?.makeKeyAndVisible()
+
     }
 }
 

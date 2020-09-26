@@ -23,6 +23,7 @@ class CoordinatorsAssembly: Assembly {
     func assemble(container: Container) {
         assembleAppCoordinator(container: container)
         assembleAuthCoordinator(container: container)
+        assembleMenuCoordinator(container: container)
         assembleHomeCoordinator(container: container)
     }
 
@@ -30,7 +31,7 @@ class CoordinatorsAssembly: Assembly {
         container.register(AppCoordinator.self) { resolver in
             return AppCoordinator(navigationController: self.navigationController,
                                   factory: resolver.safelyResolve(CoordinatorManufacturing.self))
-        }.implements(AuthDepartingCoordinating.self, HomeDepartingCoordinating.self)
+        }.implements(AuthDepartingCoordinating.self, MenuDepartingCoordinating.self, HomeDepartingCoordinating.self)
     }
 
     internal func assembleAuthCoordinator(container: Container) {
@@ -38,6 +39,14 @@ class CoordinatorsAssembly: Assembly {
             return AuthCoordinator(navigationController: self.navigationController,
                                    departingCoordinator: resolver.safelyResolve(AuthDepartingCoordinating.self),
                                    factory: resolver.safelyResolve(AuthManufacturing.self))
+        }
+    }
+
+    internal func assembleMenuCoordinator(container: Container) {
+        container.register(MenuCoordinator.self) { resolver in
+            return MenuCoordinator(navigationController: self.navigationController,
+                                   departingCoordinator: resolver.safelyResolve(MenuDepartingCoordinating.self),
+                                   factory: resolver.safelyResolve(MenuManufacturing.self))
         }
     }
 

@@ -10,7 +10,6 @@ import Common
 
 public protocol HomeManufacturing {
 
-    func makeTabBarController() -> UDTTabBarController
     func makeHomeNavigationController() -> UINavigationController
     func makeHomeViewController() -> HomeViewController
 }

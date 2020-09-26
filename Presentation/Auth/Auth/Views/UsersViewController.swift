@@ -44,7 +44,7 @@ public class UsersViewController: UIViewController, UDTAnimatorViewable {
 extension UsersViewController {
 
     func setupUI() {
-        title = "Who's searching?"
+        title = L10n.UsersViewController.title
         navigationController?.asTranslucentWithImageNavigationController()
     }
 }

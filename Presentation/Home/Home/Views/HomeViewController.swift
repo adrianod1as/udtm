@@ -12,6 +12,13 @@ public class HomeViewController: UIViewController, UDTAnimatorViewable {
 
     // MARK: Properties
     private lazy var homeView = HomeView()
+    private lazy var titleView: HomeTitleView = {
+        let view = HomeTitleView()
+        if let bounds = navigationController?.navigationBar.bounds {
+            view.frame = bounds
+        }
+        return view
+    }()
     private let presenter: HomeViewPresenting
 
     // MARK: Init
@@ -34,14 +41,13 @@ public class HomeViewController: UIViewController, UDTAnimatorViewable {
         super.viewDidLoad()
 
         setupUI()
-        navigationController?.asTranslucentWithImageNavigationController()
     }
 }
 
 extension HomeViewController {
 
     func setupUI() {
-        navigationItem.title = "The Searcher"
+        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: titleView)
     }
 }
 

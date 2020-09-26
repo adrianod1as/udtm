@@ -24,6 +24,8 @@
 	<string>LaunchScreen</string>
 	<key>LSApplicationCategoryType</key>
 	<string></string>
+    <key>NSFaceIDUsageDescription</key>
+    <string>The Searcher needs FaceID to authenticate the user.</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

@@ -12,5 +12,6 @@ import Home
 public protocol CoordinatorManufacturing {
 
     func makeAuthCoordinator() -> AuthCoordinator
+    func makeMenuCoordinator() -> MenuCoordinator
     func makeHomeCoordinator() -> HomeCoordinator
 }

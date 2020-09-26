@@ -26,7 +26,7 @@ class LogableUserTests: XCTestCase {
     func testUsersTitle() {
         let account = Account.getFakedItem()
         let users: [LogableUser] = [.registered(account), .new, .guest]
-        let titles = [account.username, "New User", "Guest"]
+        let titles = [account.username, Auth.L10n.LogableUser.New.title, Auth.L10n.LogableUser.Guest.title]
         XCTAssertEqual(users.map({ $0.title }), titles)
     }
 

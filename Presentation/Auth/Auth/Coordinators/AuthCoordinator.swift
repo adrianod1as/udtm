@@ -11,7 +11,7 @@ import UIKit
 
 public protocol AuthDepartingCoordinating: AnyObject {
 
-    func showHome()
+    func showMenu()
 }
 
 public class AuthCoordinator: Coordinator {
@@ -56,6 +56,6 @@ extension AuthCoordinator: UsersSceneCoordinating {
 extension AuthCoordinator: LoginSceneCoordinating {
 
     public func showHome() {
-        departingCoordinator.showHome()
+        departingCoordinator.showMenu()
     }
 }

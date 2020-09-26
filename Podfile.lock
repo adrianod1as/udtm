@@ -116,6 +116,7 @@ PODS:
   - Realm/Headers (5.4.3)
   - RealmSwift (5.4.3):
     - Realm (= 5.4.3)
+  - SFSafeSymbols (1.2.0)
   - SwiftDate (6.2.0)
   - SwiftGen (6.3.0)
   - SwiftLint (0.40.3)
@@ -145,6 +146,7 @@ DEPENDENCIES:
   - NVActivityIndicatorView/Extended
   - OxeNetworking
   - RealmSwift
+  - SFSafeSymbols (~> 1.2.0)
   - SwiftDate (from `https://github.com/malcommac/SwiftDate`, branch `master`)
   - SwiftGen (~> 6.0)
   - SwiftLint
@@ -181,6 +183,7 @@ SPEC REPOS:
     - Protobuf
     - Realm
     - RealmSwift
+    - SFSafeSymbols
     - SwiftGen
     - SwiftLint
     - SwiftMessages
@@ -248,6 +251,7 @@ SPEC CHECKSUMS:
   Protobuf: 3dac39b34a08151c6d949560efe3f86134a3f748
   Realm: e3d5fcc50fd79ddf87a2d86301f6edbf57531f84
   RealmSwift: db608068eccc54bce47928e8118bde13c120c307
+  SFSafeSymbols: deeb973675d234251b215d3cf4c1965249fb7440
   SwiftDate: d117c3eb6beed72e47d3f4d1e3bc63fa1e66d7c3
   SwiftGen: 3d5024a47ea79e408cded20763d7a17d18a4548c
   SwiftLint: dfd554ff0dff17288ee574814ccdd5cea85d76f7
@@ -259,6 +263,6 @@ SPEC CHECKSUMS:
   SwinjectStoryboard: f0d5b1c16459949d6ff1cbb6610107946b18e1f8
   UIGradient: 2364e9ebac232686db220713b4d42a68222fffb2
 
-PODFILE CHECKSUM: c2c447138417852668de1047eff2dd4bb45faef7
+PODFILE CHECKSUM: 2781362ceb48794d01bbd50c4809574e660fbe17
 
 COCOAPODS: 1.9.3

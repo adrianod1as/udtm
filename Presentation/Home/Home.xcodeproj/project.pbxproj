@@ -24,6 +24,10 @@
 		E1D435E8251D659F004BCC44 /* HomeSceneCoordinating.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D435E7251D659F004BCC44 /* HomeSceneCoordinating.swift */; };
 		E1D435EC251D65A9004BCC44 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D435EB251D65A9004BCC44 /* HomeCoordinator.swift */; };
 		E1D435F0251D65BB004BCC44 /* HomeManufacturing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D435EF251D65BB004BCC44 /* HomeManufacturing.swift */; };
+		E1D43600251E9CFF004BCC44 /* MenuManufacturing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D435FF251E9CFF004BCC44 /* MenuManufacturing.swift */; };
+		E1D43608251E9DF4004BCC44 /* MenuSceneCoordinating.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D43607251E9DF4004BCC44 /* MenuSceneCoordinating.swift */; };
+		E1D4360C251E9E19004BCC44 /* MenuCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D4360B251E9E19004BCC44 /* MenuCoordinator.swift */; };
+		E1D4361E251EA8B6004BCC44 /* HomeTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D4361D251EA8B6004BCC44 /* HomeTitleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,10 @@
 		E1D435E7251D659F004BCC44 /* HomeSceneCoordinating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneCoordinating.swift; sourceTree = "<group>"; };
 		E1D435EB251D65A9004BCC44 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		E1D435EF251D65BB004BCC44 /* HomeManufacturing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeManufacturing.swift; sourceTree = "<group>"; };
+		E1D435FF251E9CFF004BCC44 /* MenuManufacturing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuManufacturing.swift; sourceTree = "<group>"; };
+		E1D43607251E9DF4004BCC44 /* MenuSceneCoordinating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSceneCoordinating.swift; sourceTree = "<group>"; };
+		E1D4360B251E9E19004BCC44 /* MenuCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCoordinator.swift; sourceTree = "<group>"; };
+		E1D4361D251EA8B6004BCC44 /* HomeTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTitleView.swift; sourceTree = "<group>"; };
 		EA8261DEB30197BF6BB8C648 /* Pods-Home.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Home.debug.xcconfig"; path = "Target Support Files/Pods-Home/Pods-Home.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -197,6 +205,7 @@
 				E1D435D9251D6572004BCC44 /* HomeViewable.swift */,
 				E1D435E1251D658B004BCC44 /* HomeView.swift */,
 				E1D435DD251D6582004BCC44 /* HomeViewController.swift */,
+				E1D4361D251EA8B6004BCC44 /* HomeTitleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -220,6 +229,8 @@
 		E1D43483251D4765004BCC44 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				E1D43607251E9DF4004BCC44 /* MenuSceneCoordinating.swift */,
+				E1D4360B251E9E19004BCC44 /* MenuCoordinator.swift */,
 				E1D435E7251D659F004BCC44 /* HomeSceneCoordinating.swift */,
 				E1D435EB251D65A9004BCC44 /* HomeCoordinator.swift */,
 			);
@@ -230,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				E1D435EF251D65BB004BCC44 /* HomeManufacturing.swift */,
+				E1D435FF251E9CFF004BCC44 /* MenuManufacturing.swift */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -430,14 +442,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1D435DE251D6582004BCC44 /* HomeViewController.swift in Sources */,
+				E1D4360C251E9E19004BCC44 /* MenuCoordinator.swift in Sources */,
 				E1D435D6251D6565004BCC44 /* HomePresenter.swift in Sources */,
 				E1D435F0251D65BB004BCC44 /* HomeManufacturing.swift in Sources */,
 				E1D435DA251D6572004BCC44 /* HomeViewable.swift in Sources */,
 				E1D435E8251D659F004BCC44 /* HomeSceneCoordinating.swift in Sources */,
 				E1D435E2251D658B004BCC44 /* HomeView.swift in Sources */,
 				E1D435EC251D65A9004BCC44 /* HomeCoordinator.swift in Sources */,
+				E1D4361E251EA8B6004BCC44 /* HomeTitleView.swift in Sources */,
+				E1D43608251E9DF4004BCC44 /* MenuSceneCoordinating.swift in Sources */,
 				E1D435D2251D6559004BCC44 /* HomeViewPresenting.swift in Sources */,
 				E1D43487251D4765004BCC44 /* SwiftGenStrings.swift in Sources */,
+				E1D43600251E9CFF004BCC44 /* MenuManufacturing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

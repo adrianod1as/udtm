@@ -31,4 +31,8 @@ extension CoordinatorFactory: CoordinatorManufacturing {
     public func makeHomeCoordinator() -> HomeCoordinator {
         resolver.safelyResolve(HomeCoordinator.self)
     }
+
+    public func makeMenuCoordinator() -> MenuCoordinator {
+        resolver.safelyResolve(MenuCoordinator.self)
+    }
 }
