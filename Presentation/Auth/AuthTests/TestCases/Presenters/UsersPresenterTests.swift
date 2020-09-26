@@ -110,12 +110,21 @@ class UsersPresenterTests: XCTestCase {
     }
 
     func testHandleSignInSuccess() {
-        sut.handleSignIn(.success(()))
+        sut.handleSignInAsRegisteredAccount(.success(()))
         successulfulSignInTesting()
     }
 
-    func testHandleSignInFailure() {
-        sut.handleSignIn(.failure(InteractionError.failedRequest("")))
+    func testHandleSignInAsRegisteredAccountFailure() {
+        sut.handleSignInAsRegisteredAccount(.failure(InteractionError.failedRequest("")))
+        guard let view = (sut.view as? UsersViewableSpy) else {
+            XCTFail("View should be castable")
+            return
+        }
+        XCTAssert(view.showErrorCalled)
+    }
+
+    func testHandleSignInAsGuestFailure() {
+        sut.handleSignInAsGuest(.failure(InteractionError.failedRequest("")))
         guard let view = (sut.view as? UsersViewableSpy) else {
             XCTFail("View should be castable")
             return

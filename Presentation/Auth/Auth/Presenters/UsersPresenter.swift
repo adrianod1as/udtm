@@ -88,7 +88,7 @@ extension UsersPresenter: UsersViewPresenting {
                 return
             }
             self.view?.manage(isLoading: false)
-            self.handleSignIn(result)
+            self.handleSignInAsGuest(result)
         }
     }
 
@@ -99,16 +99,26 @@ extension UsersPresenter: UsersViewPresenting {
                 return
             }
             self.view?.manage(isLoading: false)
-            self.handleSignIn(result)
+            self.handleSignInAsRegisteredAccount(result)
         }
     }
 
-    internal func handleSignIn(_ result: Result<Void, Error>) {
+    internal func handleSignInAsGuest(_ result: Result<Void, Error>) {
         switch result {
         case .success:
             coordinator.showHome()
         case .failure(let error):
             view?.show(error: error.localizedDescription)
+        }
+    }
+
+    internal func handleSignInAsRegisteredAccount(_ result: Result<Void, Error>) {
+        switch result {
+        case .success:
+            coordinator.showHome()
+        case .failure(let error):
+            view?.show(error: error.localizedDescription)
+            coordinator.showNewUser()
         }
     }
 }

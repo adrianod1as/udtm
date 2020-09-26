@@ -52,4 +52,3 @@ extension MenuFlowAssembly: MenuFlowAssembling {
         container.register(MenuSceneCoordinating.self) { _ in coordinator}
     }
 }
-

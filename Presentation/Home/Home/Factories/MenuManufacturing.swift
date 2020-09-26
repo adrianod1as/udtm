@@ -12,4 +12,3 @@ public protocol MenuManufacturing {
 
     func makeTabBarController() -> UDTTabBarController
 }
-
