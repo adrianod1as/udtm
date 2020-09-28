@@ -199,7 +199,6 @@
 				E145727624DF508C0026D925 /* AppDelegate.swift */,
 				E145728124DF508E0026D925 /* LaunchScreen.storyboard */,
 				E145728424DF508E0026D925 /* Info.plist */,
-				E1C9F26624EE19A300DEE93E /* SetupConstants.swift */,
 				E12F4EC824F2EE190084EAD6 /* SceneDelegate.swift */,
 			);
 			path = UDTM;
@@ -234,6 +233,7 @@
 		E180EC7C24E8A9ED00308069 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				E1C9F26624EE19A300DEE93E /* SetupConstants.swift */,
 				E180EC7D24E8A9F200308069 /* Generated */,
 			);
 			path = Constants;

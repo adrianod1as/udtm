@@ -106,7 +106,9 @@ class UsersPresenterTests: XCTestCase {
             XCTFail("View should be castable")
             return
         }
-        XCTAssertFalse(view.manageIsLoadingCalled)
+        DispatchQueue.main.async {
+            XCTAssertFalse(view.manageIsLoadingCalled)
+        }
     }
 
     func testHandleSignInSuccess() {
@@ -137,6 +139,8 @@ class UsersPresenterTests: XCTestCase {
             XCTFail("Coordinator should be castable")
             return
         }
-        XCTAssert(coordinator.showHomeCalled)
+        DispatchQueue.main.async {
+            XCTAssert(coordinator.showHomeCalled)
+        }
     }
 }

@@ -26,7 +26,11 @@ public class AuthenticationRepository {
     }
 }
 
-extension AuthenticationRepository: Domain.AuthenticationRepository {
+extension AuthenticationRepository: Domain.AuthenticationRepository, AppData.SignOutRepository {
+
+    public var signOutLocalDataSource: SignOutLocalDataSource {
+        authLocalDataSource
+    }
 
     public func createUserAuthorization(completion: @escaping GenericCompletion<UserAuthorization>) {
         authRemoteDataSource.createUserAuthorization(completion: completion)

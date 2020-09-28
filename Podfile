@@ -21,6 +21,7 @@ def sharedPods
   pod 'SwiftLint'
   pod 'Fakery', :git => 'https://github.com/vadymmarkov/Fakery', :branch => 'master'
   pod 'SwiftDate', :git => 'https://github.com/malcommac/SwiftDate', :branch => 'master'
+  swiftyJSON
 end
 
 def presentationPods
@@ -35,13 +36,16 @@ def presentationPods
 end
 
 def diPods
-  oxeNetworking
   pod 'Swinject', '~> 2.7.0'
   pod 'SwinjectAutoregistration', '~> 2.7.0'
 end
 
 def oxeNetworking
-    pod 'OxeNetworking'
+  pod 'OxeNetworking'
+end
+
+def swiftyJSON
+  pod 'SwiftyJSON', '~> 5.0'
 end
 
 def networkingPods
@@ -118,7 +122,6 @@ end
 target 'Domain' do
   project 'Domain/Domain'
   sharedPods
-  diPods
   target 'DomainTests'
 end
 
@@ -126,27 +129,21 @@ target 'AppData' do
   project 'Data/AppData/AppData'
   use_frameworks!
   sharedPods
-  target 'AppDataTests' do
-    diPods
-  end
+  target 'AppDataTests'
 end
 
 target 'Networking' do
   project 'Data/Networking/Networking'
   sharedPods
   networkingPods
-  target 'NetworkingTests' do
-    diPods
-  end
+  target 'NetworkingTests'
 end
 
 target 'Storage' do
   project 'Data/Storage/Storage'
   sharedPods
   storagePods
-  target 'StorageTests' do
-    diPods
-  end
+  target 'StorageTests'
 end
 
 post_install do |pi|

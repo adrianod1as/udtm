@@ -168,4 +168,9 @@ class AuthenticationRepositoryTests: XCTestCase {
         }
     }
 
+    func testSignOut() {
+        sut.signOut { result in
+            XCTAssertNotNil(result.success)
+        }
+    }
 }
